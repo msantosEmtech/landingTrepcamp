@@ -14,7 +14,7 @@
                 <div class="container" >
                     <div class="carousel-caption text-start">
                         <div>
-                            <img src="<?=base_url('assets/img/imgTarjeta1.svg')?>" class="bd-placeholder-img">
+                            <img src="<?=base_url('assets/img/imgTarjeta1.png')?>" class="bd-placeholder-img">
                         </div>
                         <h1>Awaken your inner Enterpreneur</h1>
                         <p>Start your entrepreneurial journey at Silicon Valley</p>   
