@@ -77,7 +77,7 @@
     
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#"><img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="100"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
