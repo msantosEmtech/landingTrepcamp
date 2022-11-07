@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div>
-    </div><!-- /.container -->
+    </div>
     <div class="secction pt-5 pb-5">
         <div class="container">
             <div class="row">

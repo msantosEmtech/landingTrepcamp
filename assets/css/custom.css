@@ -68,3 +68,23 @@
 	transition: all 250ms ease-out 0s;
 	width: 20px;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0) !important;
+}
+
+.btnAmarillo {
+	width: 360px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    width: 343px;
+    height: 46px;
+    background: #ffd041;
+    border-radius: 25px;
+    align-self: stretch;
+    border: none;
+}
