@@ -85,7 +85,7 @@
     <div class="secction pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-lg-6 col-md-12 text-center">
                     <h2>Transform your life doing something meaningful</h2>
                     <p>Watch a sneak peak of our experience.</p>
                 </div>
