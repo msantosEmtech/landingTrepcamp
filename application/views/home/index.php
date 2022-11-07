@@ -6,54 +6,60 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777" />
-                </svg>
-                <div class="container">
+            <div class="carousel-item active" style="background-color: #6C20ED;">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="transparent" />
+                </svg> -->
+              
+                <div class="container" >
                     <div class="carousel-caption text-start">
+                        <div>
+                            <img src="<?=base_url('assets/img/imgTarjeta1.svg')?>" class="bd-placeholder-img">
+                        </div>
                         <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey at Silicon Valley</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">See programs</a></p>
-                    </div>
+                        <p>Start your entrepreneurial journey at Silicon Valley</p>   
+                        <div>
+                            <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                        </div>
+                    </div>                    
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style="background-color: #FF7733;">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777" />
+                    <rect width="100%" height="100%" fill="transparent" />
                 </svg>
 
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1>Awaken your inner Enterpreneur</h1>
                         <p>Start your entrepreneurial journey at New York</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">See programs</a></p>
+                        <p><a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a></p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style="background-color: #00A8FF;">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777" />
+                    <rect width="100%" height="100%" fill="transparent" />
                 </svg>
 
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1>Awaken your inner Enterpreneur</h1>
                         <p>Start your entrepreneurial journey at TrepCamp</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">See programs</a></p>
+                        <p><a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a></p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style="background-color: #5BCE79;">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777" />
+                    <rect width="100%" height="100%" fill="transparent" />
                 </svg>
 
                 <div class="container">
-                    <div class="carousel-caption text-start">
+                    <div class="carousel-caption text-start ">
                         <h1>Awaken your inner Enterpreneur</h1>
                         <p>Start your entrepreneurial journey from Anywhere</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">See programs</a></p>
+                        <p><a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a></p>
                     </div>
                 </div>
             </div>

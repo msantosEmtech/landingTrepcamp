@@ -1,3 +1,31 @@
+@font-face{
+	font-family: "opensans-regular";
+	src:url("../fonts/OpenSans-Regular.ttf") format('truetype');
+  }
+  
+  @font-face{
+	font-family: "opensans-blod";
+	src:url("../fonts/OpenSans-Bold.ttf") format('truetype');
+  } 
+  
+  @font-face{
+	font-family: "opensans-semiblod";
+	src:url("../fonts/OpenSans-Semibold.ttf") format('truetype');
+  }
+
+  .font-opensans{
+	font-family: "opensans-regular", sans-serif;
+  }
+  
+  .font-blodsans{
+	font-family: "opensans-blod", sans-serif;
+  }
+  
+  .font-semiblod{
+	font-family: "opensans-semiblod", sans-serif;
+  }
+
+
 .shadow-effect {
 	background: #fff;
 	padding: 20px;
