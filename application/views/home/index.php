@@ -411,14 +411,27 @@
         <div class="container">
             <div class="col text-center mb-4" style="background-color:#5BCE79;">
                 <div class="row">
-                    <h2 class="mb-4 p-4" style="color: #fff;">Not sure which one fits you better?</h2>
-                    <p><a class="btn btn-lg btn-outline-light mb-4" href="#">Choose Right</a></p>
+                    <div class="col-lg-12 text-center">
+                        <div class="card card-choose">
+                            <div class="card-body pt-5 pb-5">
+                                <h2>Not sure which one fits you better?</h2>
+                                <p class="pt-4"><a class="btn btn-lg btn-outline-light" href="#">Choose Right</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row mb-5" style="background-color: #33A4FE;">
-                <div class="col text-center">
-                    <h2 class="mb-4 p-4" style="color: #fff;">Interested in learning more about us?</h2>
-                    <p><a class="btn btn-lg btn-outline-light mb-4" href="#">About us</a></p>
+        </div>
+    </div>
+    
+    <div class="section pt-5 pb-5" style="background-color: #33A4FE;">
+        <div class="container">
+            <div class="row">
+                <div class="row pt-4 pb-4">
+                    <div class="col-lg-12 text-center">
+                        <h2 style="color: #fff;">Interested in learning more about us?</h2>
+                        <p class="pt-4"><a class="btn btn-lg btn-outline-light" href="#">About us</a></p>
+                    </div>
                 </div>
             </div>
         </div>
