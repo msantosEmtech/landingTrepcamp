@@ -15,11 +15,11 @@
                         <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="bd-placeholder-img">
                     </div> -->
                     <div class="carousel-caption text-start">                
-                        <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="bd-placeholder-img">
+                        <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="bd-placeholder-img" style="margin-left: -2rem;">
                         <h1>Awaken your inner Enterpreneur</h1>
                         <p>Start your entrepreneurial journey at <i style="color:#FFD041;">Silicon Valley</i></p>
                         <div class="row">
-                            <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                            <a class="btn btn-primary btnAmarilloBanner" href="#">See programs</a>
                         </div>
                     </div>
                     <!-- <div class="row">
@@ -33,11 +33,11 @@
                 </svg> -->
                 <div class="container">
                     <div class="carousel-caption text-start">
-                        <img src="<?= base_url('assets/img/imgTarjeta2.png') ?>" class="bd-placeholder-img">
+                        <img src="<?= base_url('assets/img/imgTarjeta2.png') ?>" class="bd-placeholder-img" style="margin-left: 4rem;">
                         <h1>Awaken your inner Enterpreneur</h1>
                         <p>Start your entrepreneurial journey at <i style="color:#FFD041;">New York</i></p>
                         <div class="row">
-                            <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                            <a class="btn btn-primary btnAmarilloBanner" href="#">See programs</a>
                         </div>
                     </div>
                 </div>
@@ -48,11 +48,11 @@
                 </svg> -->
                 <div class="container">
                     <div class="carousel-caption text-start">
-                        <img src="<?= base_url('assets/img/imgTarjeta3.png') ?>" class="bd-placeholder-img">
+                        <img src="<?= base_url('assets/img/imgTarjeta3.png') ?>" class="bd-placeholder-img" style="margin-left: 4rem;">
                         <h1>Awaken your inner Enterpreneur</h1>
                         <p>Start your entrepreneurial journey at <i style="color:#FFD041;">TrepCamp</i></p>
                         <div class="row">
-                            <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                            <a class="btn btn-primary btnAmarilloBanner" href="#">See programs</a>
                         </div>
                     </div>
                 </div>
@@ -63,11 +63,11 @@
                 </svg> -->
                 <div class="container">
                     <div class="carousel-caption text-start">
-                        <img src="<?= base_url('assets/img/imgTarjeta4.png') ?>" class="bd-placeholder-img">
+                        <img src="<?= base_url('assets/img/imgTarjeta4.png') ?>" class="bd-placeholder-img" style="margin-left: 4rem;">
                         <h1>Awaken your inner Enterpreneur</h1>
                         <p>Start your entrepreneurial journey <i style="color:#FFD041;">from Anywhere</i></p>
                         <div class="row">
-                            <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                            <a class="btn btn-primary btnAmarilloBanner" href="#">See programs</a>
                         </div>
                     </div>
                 </div>
@@ -87,12 +87,12 @@
     <div class="section pt-5 pb-5">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-6 mx-auto">
+                <div class="col-md-6 mx-auto">
                     <div class="one-time text-center">
-                        <div><img src="<?= base_url('assets/img/logo4yfn.png') ?>" width="50"></div>
-                        <div><img src="<?= base_url('assets/img/logoSantander.png') ?>" width="50"></div>
-                        <div><img src="<?= base_url('assets/img/logoBerkeley.png') ?>" width="50"></div>
-                        <div><img src="<?= base_url('assets/img/logoNewyork.png') ?>" width="50"></div>
+                        <div><img src="<?= base_url('assets/img/logo4yfn.png') ?>" width="200"></div>
+                        <div><img src="<?= base_url('assets/img/logoSantander.png') ?>" width="200"></div>
+                        <div><img src="<?= base_url('assets/img/logoBerkeley.png') ?>" width="200"></div>
+                        <div><img src="<?= base_url('assets/img/logoNewyork.png') ?>" width="200"></div>
                     </div>
                 </div>
             </div>
@@ -245,16 +245,7 @@
                                         </div>                                        
                                     </div>                                                          
                                 </div>
-                               <!--  <div class="row" style="justify-content: space-evenly;">
-                                   
-                                </div> -->
                                 <div class="card-body texto-testimonios">
-                                    
-                                    <!-- <div class="row" style="justify-content: space-evenly;">
-                                        <img src="<?= base_url('assets/img/logoUser1.png') ?>" style="width: 15%;">
-                                        <img src="<?= base_url('assets/img/logoUser2.png') ?>" style="width: 15%;">
-                                    </div> -->
-
                                     <h5 class="card-title">Newest Mexican Unicorn</h5>
                                     <p class="card-text">Alfonso De los Rios & Maximiliano Casal</p>
                                     <p class="card-text">Two talented software engineers, first matched at TrepCamp at Silicon Valley 2017. Co-founded Nowports, a digital freight forwarder which gained a $1.1 billion dollars value, becoming the newest Mexico's Unicorn.</p>

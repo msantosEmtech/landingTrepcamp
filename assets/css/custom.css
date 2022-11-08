@@ -4,7 +4,7 @@
   }
   
   @font-face{
-	font-family: "opensans-blod";
+	font-family: "opensans-bold";
 	src:url("../fonts/OpenSans-Bold.ttf") format('truetype');
   } 
   
@@ -18,14 +18,20 @@
   }
   
   .font-blodsans{
-	font-family: "opensans-blod", sans-serif;
+	font-family: "opensans-bold", sans-serif;
   }
   
   .font-semiblod{
 	font-family: "opensans-semiblod", sans-serif;
   }
 
+  h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+	font-family: 'opensans-bold';
+  }
 
+  p, a{
+	font-family: 'opensans-regular';
+  }
 .shadow-effect {
 	background: #fff;
 	padding: 20px;
@@ -103,6 +109,22 @@
 
 .btnAmarillo {
 	width: 360px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    width: 343px;
+    height: 46px;
+    background: #ffd041;
+    border-radius: 25px;
+    align-self: stretch;
+    border: none;
+}
+
+.btnAmarilloBanner {
+	width: 153px !important;
     display: flex;
     flex-direction: row;
     justify-content: center;

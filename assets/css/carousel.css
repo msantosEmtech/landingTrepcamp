@@ -18,7 +18,7 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 8rem;
+  bottom: 3rem;
   z-index: 10;
 }
 
