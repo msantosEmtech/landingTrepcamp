@@ -180,10 +180,13 @@
 	background-color:rgba(108, 32, 237, 0.05);
 }
 
+.card-testimonial2{
+	background-color: rgba(71, 71, 71, 0.05);
+}
+
 .fotos-testimonios{
 	position: absolute;
-    margin-top: -2rem;
-    left: 77px;
+    margin-top: -9rem;
 }
 
 .texto-testimonios{

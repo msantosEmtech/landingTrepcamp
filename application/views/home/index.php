@@ -118,54 +118,6 @@
     <div class="section pt-5 pb-5" style="background-color: rgba(0, 168, 255, 0.05);">
         <div class="container">
             <div class="row">
-                <!-- <div class="text-center" style="padding-left: 1.5rem;">
-                    <div class="row">                        
-                        <div class="col-lg-4 mb-5">
-                            <div class="row justify-content-center mb-4">
-                                <h2 class="titulo-sobrepuesto">WE ARE TURNING 10</h2>
-                                <img class="img-detras" src="<?=base_url('assets/img/10.png')?>" style="width:125px;height:85px;">
-                            </div>                    
-                            <p class="mb-4" style="font-size: 18px;">Transforming entrepreneurs since 2013.</p>
-                            <div class="row mb-4">
-                                <a class="btn btn-lg btn-primary btnAmarillo" href="#">Our story</a>
-                            </div>
-                        </div>
-                        <div id="carouselExampleIndicators" class="carousel slide numeros-seccion" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <p><img src="<?= base_url('assets/img/iconoAplicantes.png') ?>"></p>
-                                    <h4>+10,000</h4>
-                                    <p>applicants each year</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p><img src="<?= base_url('assets/img/iconSchool.png') ?>"></p>
-                                    <h4>+5,000</h4>
-                                    <p>successful graduates</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p><img src="<?= base_url('assets/img/iconLocation.png') ?>"></p>
-                                    <h4>+50 programs</h4>
-                                    <h4>+8 cities</h4>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        
-                    </div>
-                </div> -->
-
                 <div class="col-lg-6 text-center mb-5">
                     <div class="row justify-content-center mb-4">
                         <h2 class="titulo-sobrepuesto">WE ARE TURNING 10</h2>
@@ -216,55 +168,68 @@
         </div>
     </div>
     <div class="section pt-5 pb-5">
-        <div class="container">
+        <div class="container" >
             <div class="row text-center pb-5">
                 <div class="col-lg-12">
-                    <h2>Join TrepCamp</h2>
-                    <h4>and become the next:</h4>
+                    <h2 style="color: #393939;">Join TrepCamp</h2>
+                    <h4 style="color: #393939;">and become the next:</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="sliderTestimonial text-center"><!-- sliderTestimonial -->
+                    <div class="sliderTestimonial text-center">
                         <div>
-                            <div class="card card-testimonial">
-                                <div class="row fotos-testimonios">
-                                    <div class="col">
-                                        <div class="row flex-column align-items-center">
-                                            <img src="<?= base_url('assets/img/user1.png') ?>" style="width: 100%;">
-                                            <img src="<?= base_url('assets/img/logoUser1.png') ?>" style="width: 50%;">
-                                        </div>                                        
-                                    </div>
-                                    
-                                    <div class="col">
-                                        <div class="row flex-column align-items-center">
-                                            <img src="<?= base_url('assets/img/user2.png') ?>" style="width: 100%;">  
-                                            <img src="<?= base_url('assets/img/logoUser2.png') ?>" style="width: 50%;"> 
-                                        </div>                                        
-                                    </div>                                                          
-                                </div>
+                            <div class="card card-testimonial" style="position: relative;z-index: 2;margin-top:3rem;border:none;">
                                 <div class="card-body texto-testimonios">
-                                    <h5 class="card-title">Newest Mexican Unicorn</h5>
-                                    <p class="card-text">Alfonso De los Rios & Maximiliano Casal</p>
-                                    <p class="card-text">Two talented software engineers, first matched at TrepCamp at Silicon Valley 2017. Co-founded Nowports, a digital freight forwarder which gained a $1.1 billion dollars value, becoming the newest Mexico's Unicorn.</p>
+                                    <div class="container">
+                                        <div class="row fotos-testimonios col-7 offset-1">
+                                            <div class="col">
+                                                <div class="row flex-column align-items-center">
+                                                    <img src="<?= base_url('assets/img/user1.png') ?>" style="width: 100%;">
+                                                    <img src="<?= base_url('assets/img/logoUser.svg') ?>" style="width: 60%;">
+                                                </div>                                        
+                                            </div>
+                                            
+                                            <div class="col">
+                                                <div class="row flex-column align-items-center">
+                                                    <img src="<?= base_url('assets/img/user2.png') ?>" style="width: 100%;">  
+                                                    <img src="<?= base_url('assets/img/logoUser1.svg') ?>" style="width: 80%;"> 
+                                                </div>                                        
+                                            </div>                                                          
+                                        </div>
+                                        <h4>Newest Mexican Unicorn</h4>
+                                        <div class="row pb-3">
+                                            <div class="col-lg-12">
+                                                <img src="<?= base_url('assets/img/logoNowports.png') ?>" style="width: 40%;margin:auto;">
+                                            </div>
+                                        </div>
+                                        <h6 style="color: #474747;text-transform: uppercase;">Alfonso De los Rios & Maximiliano Casal</h6>
+                                        <p style="color: #474747;">Two talented software engineers, first matched at TrepCamp at Silicon Valley 2017. Co-founded Nowports, a digital freight forwarder which gained a $1.1 billion dollars value, becoming the newest Mexico's Unicorn.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="card card-testimonial">
-                                <div class="row fotos-testimonios">
-                                    <div class="col"> 
-                                        <div class="row flex-column align-items-center">
-                                            <img src="<?= base_url('assets/img/user3.png') ?>" style="width: 100%;">
-                                            <img src="<?= base_url('assets/img/logoUser3.png') ?>" style="width: 50%;">
-                                        </div>
-                                    </div>
-                                </div>
-
+                            <div class="card card-testimonial2" style="position: relative;z-index: 2;margin-top:3rem;border:none;">
                                 <div class="card-body texto-testimonios">
-                                    <h5 class="card-title">¡Successfull investment round!</h5>                                    
-                                    <p class="card-text">TAMARA CHAYO</p>
-                                    <p class="card-text">Participant at TrepCamp 2020, during the same year founded MEDU, developing sustainable medical protection equipment. During 2022 closed an investment round for 4 million dollars to expand towards the United States.</p>
+                                    <div class="container">
+                                        <div class="row fotos-testimonios col-7 offset-1">
+                                            <div class="col">
+                                                <div class="row flex-column align-items-center">
+                                                    <img src="<?= base_url('assets/img/user3.png') ?>" style="width: 55%;">
+                                                    <img src="<?= base_url('assets/img/logoLaSelle.svg') ?>" style="width: 40%;padding-top: 1rem;">
+                                                </div>                                        
+                                            </div>                                                         
+                                        </div>
+                                        <h4 style="padding-top: 1rem;">¡Successfull investment round!</h4>
+                                        <div class="row pb-3">
+                                            <div class="col-lg-12">
+                                                <img src="<?= base_url('assets/img/logoUser3.png') ?>" style="width: 30%;margin:auto;">
+                                            </div>
+                                        </div>
+                                        <h6 style="color: #474747;text-transform: uppercase;">TAMARA CHAYO</h6>
+                                        <p style="color: #474747;">Participant at TrepCamp 2020, during the same year founded MEDU, developing sustainable medical protection equipment. During 2022 closed an investment round for 4 million dollars to expand towards the United States.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
