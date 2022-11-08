@@ -118,7 +118,7 @@
     <div class="section pt-5 pb-5" style="background-color: rgba(0, 168, 255, 0.05);">
         <div class="container">
             <div class="row">
-                <div class="text-center" style="padding-left: 1.5rem;">
+                <!-- <div class="text-center" style="padding-left: 1.5rem;">
                     <div class="row">                        
                         <div class="col-lg-4 mb-5">
                             <div class="row justify-content-center mb-4">
@@ -162,55 +162,54 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <!-- <div class="col-lg-8"> -->
-                            <!-- <div class="row">
-                                <div class="col-lg-4">
-                                    <p><img src="<?//= base_url('assets/img/iconoAplicantes.png') ?>" width="30"></p>
-                                    <h4>+10,000</h4>
-                                    <p>applicants each year</p>
-                                </div>
-                                <div class="col-lg-4">
-                                    <p><img src="<?//= base_url('assets/img/iconSchool.png') ?>" width="30"></p>
-                                    <h4>+5,000</h4>
-                                    <p>successful graduates</p>
-                                </div>
-                                <div class="col-lg-4">
-                                    <p><img src="<?//= base_url('assets/img/iconLocation.png') ?>" width="30"></p>
-                                    <h4>+50 programs</h4>
-                                    <h4>+8 cities</h4>
-                                </div>
-                            </div> -->
-                            <!-- <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>                                
-                                    </div>
-
-                                    <div class="carousel-item active">
-                                        <p><img src="<?//= base_url('assets/img/iconoAplicantes.png') ?>" width="30"></p>
-                                        <h4>+10,000</h4>
-                                        <p>applicants each year</p>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <p><img src="<?//= base_url('assets/img/iconSchool.png') ?>" width="30"></p>
-                                        <h4>+5,000</h4>
-                                        <p>successful graduates</p>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <p><img src="<?//= base_url('assets/img/iconLocation.png') ?>" width="30"></p>
-                                        <h4>+50 programs</h4>
-                                        <h4>+8 cities</h4>
-                                    </div>
-                                </div>
                         
-                            </div> -->
+                    </div>
+                </div> -->
 
-                        <!-- </div> -->
+                <div class="col-lg-6 text-center mb-5">
+                    <div class="row justify-content-center mb-4">
+                        <h2 class="titulo-sobrepuesto">WE ARE TURNING 10</h2>
+                        <img class="img-detras" src="<?=base_url('assets/img/10.png')?>" style="width:125px;height:85px;">
+                    </div>
+                    <div class="row justify-content-center">
+                        <p class="mb-4" style="font-size: 18px;">Transforming entrepreneurs since 2013.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-lg btn-primary btnAmarillo" href="#">Our story</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div id="carouselExampleIndicators" class="carousel slide numeros-seccion" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p><img src="<?= base_url('assets/img/iconoAplicantes.png') ?>"></p>
+                                <h4>+10,000</h4>
+                                <p>applicants each year</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p><img src="<?= base_url('assets/img/iconSchool.png') ?>"></p>
+                                <h4>+5,000</h4>
+                                <p>successful graduates</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p><img src="<?= base_url('assets/img/iconLocation.png') ?>"></p>
+                                <h4>+50 programs</h4>
+                                <h4>+8 cities</h4>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -229,7 +228,6 @@
                     <div class="sliderTestimonial text-center"><!-- sliderTestimonial -->
                         <div>
                             <div class="card card-testimonial">
-
                                 <div class="row fotos-testimonios">
                                     <div class="col">
                                         <div class="row flex-column align-items-center">
