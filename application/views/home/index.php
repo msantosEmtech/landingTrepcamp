@@ -6,64 +6,74 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" style="background-color: #6C20ED;">
+            <div class="carousel-item active tarjeta1">
                 <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="transparent" />
                 </svg> -->
-              
-                <div class="container" >
-                    <div class="carousel-caption text-start">
-                        <div>
-                            <img src="<?=base_url('assets/img/imgTarjeta1.png')?>" class="bd-placeholder-img">
-                        </div>
+                <div class="container">
+                    <!-- <div class="row">
+                        <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="bd-placeholder-img">
+                    </div> -->
+                    <div class="carousel-caption text-start">                
+                        <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="bd-placeholder-img">
                         <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey at Silicon Valley</p>   
-                        <div>
+                        <p>Start your entrepreneurial journey at <i style="color:#FFD041;">Silicon Valley</i></p>
+                        <div class="row">
                             <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
                         </div>
-                    </div>                    
+                    </div>
+                    <!-- <div class="row">
+                        <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                    </div> -->
                 </div>
             </div>
-            <div class="carousel-item" style="background-color: #FF7733;">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="carousel-item tarjeta2">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="transparent" />
-                </svg>
-
+                </svg> -->
                 <div class="container">
                     <div class="carousel-caption text-start">
+                        <img src="<?= base_url('assets/img/imgTarjeta2.png') ?>" class="bd-placeholder-img">
                         <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey at New York</p>
-                        <p><a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a></p>
+                        <p>Start your entrepreneurial journey at <i style="color:#FFD041;">New York</i></p>
+                        <div class="row">
+                            <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="background-color: #00A8FF;">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="carousel-item tarjeta3">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="transparent" />
-                </svg>
-
+                </svg> -->
                 <div class="container">
                     <div class="carousel-caption text-start">
+                        <img src="<?= base_url('assets/img/imgTarjeta3.png') ?>" class="bd-placeholder-img">
                         <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey at TrepCamp</p>
-                        <p><a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a></p>
+                        <p>Start your entrepreneurial journey at <i style="color:#FFD041;">TrepCamp</i></p>
+                        <div class="row">
+                            <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="background-color: #5BCE79;">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="carousel-item tarjeta4">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="transparent" />
-                </svg>
-
+                </svg> -->
                 <div class="container">
-                    <div class="carousel-caption text-start ">
+                    <div class="carousel-caption text-start">
+                        <img src="<?= base_url('assets/img/imgTarjeta4.png') ?>" class="bd-placeholder-img">
                         <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey from Anywhere</p>
-                        <p><a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a></p>
+                        <p>Start your entrepreneurial journey <i style="color:#FFD041;">from Anywhere</i></p>
+                        <div class="row">
+                            <a class="btn btn-lg btn-primary btnAmarillo" href="#">See programs</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -90,10 +100,10 @@
     </div><!-- /.container -->
     <div class="secction pt-5 pb-5">
         <div class="container">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-lg-6">
                     <h2>Transform your life doing something meaningful</h2>
-                    <p>Watch a sneak peak of our experience.</p>
+                    <p style="color:#999999; font-size:18px;">Watch a sneak peak of our experience.</p>
                 </div>
                 <div class="col-lg-6 my-auto">
                     <div class="thumb wow fadeInUp" data-wow-delay="0.5s">
@@ -105,35 +115,102 @@
             </div>
         </div>
     </div>
-    <div class="section pt-5 pb-5" style="background-color: #DEDEDE;">
+    <div class="section pt-5 pb-5" style="background-color: rgba(0, 168, 255, 0.05);">
         <div class="container">
             <div class="row">
-                <div class="text-center" style="padding-left: 5rem;">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p><img src="<?= base_url('assets/img/iconoAplicantes.png') ?>" width="30"></p>
+                <div class="text-center" style="padding-left: 1.5rem;">
+                    <div class="row">                        
+                        <div class="col-lg-4 mb-5">
+                            <div class="row justify-content-center mb-4">
+                                <h2 class="titulo-sobrepuesto">WE ARE TURNING 10</h2>
+                                <img class="img-detras" src="<?=base_url('assets/img/10.png')?>" style="width:125px;height:85px;">
+                            </div>                    
+                            <p class="mb-4" style="font-size: 18px;">Transforming entrepreneurs since 2013.</p>
+                            <div class="row mb-4">
+                                <a class="btn btn-lg btn-primary btnAmarillo" href="#">Our story</a>
+                            </div>
+                        </div>
+                        <div id="carouselExampleIndicators" class="carousel slide numeros-seccion" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p><img src="<?= base_url('assets/img/iconoAplicantes.png') ?>"></p>
                                     <h4>+10,000</h4>
                                     <p>applicants each year</p>
                                 </div>
-                                <div class="col-lg-4">
-                                    <p><img src="<?= base_url('assets/img/iconSchool.png') ?>" width="30"></p>
+                                <div class="carousel-item">
+                                    <p><img src="<?= base_url('assets/img/iconSchool.png') ?>"></p>
                                     <h4>+5,000</h4>
                                     <p>successful graduates</p>
                                 </div>
-                                <div class="col-lg-4">
-                                    <p><img src="<?= base_url('assets/img/iconLocation.png') ?>" width="30"></p>
+                                <div class="carousel-item">
+                                    <p><img src="<?= base_url('assets/img/iconLocation.png') ?>"></p>
                                     <h4>+50 programs</h4>
                                     <h4>+8 cities</h4>
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="col-lg-4">
-                            <h2>We are turning 10</h2>
-                            <p>Transforming entrepreneurs since 2013.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Our story</a></p>
-                        </div>
+                        <!-- <div class="col-lg-8"> -->
+                            <!-- <div class="row">
+                                <div class="col-lg-4">
+                                    <p><img src="<?//= base_url('assets/img/iconoAplicantes.png') ?>" width="30"></p>
+                                    <h4>+10,000</h4>
+                                    <p>applicants each year</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p><img src="<?//= base_url('assets/img/iconSchool.png') ?>" width="30"></p>
+                                    <h4>+5,000</h4>
+                                    <p>successful graduates</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p><img src="<?//= base_url('assets/img/iconLocation.png') ?>" width="30"></p>
+                                    <h4>+50 programs</h4>
+                                    <h4>+8 cities</h4>
+                                </div>
+                            </div> -->
+                            <!-- <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>                                
+                                    </div>
+
+                                    <div class="carousel-item active">
+                                        <p><img src="<?//= base_url('assets/img/iconoAplicantes.png') ?>" width="30"></p>
+                                        <h4>+10,000</h4>
+                                        <p>applicants each year</p>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <p><img src="<?//= base_url('assets/img/iconSchool.png') ?>" width="30"></p>
+                                        <h4>+5,000</h4>
+                                        <p>successful graduates</p>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <p><img src="<?//= base_url('assets/img/iconLocation.png') ?>" width="30"></p>
+                                        <h4>+50 programs</h4>
+                                        <h4>+8 cities</h4>
+                                    </div>
+                                </div>
+                        
+                            </div> -->
+
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -149,34 +226,54 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="sliderTestimonial text-center">
+                    <div class="sliderTestimonial text-center"><!-- sliderTestimonial -->
                         <div>
-                            <div class="card">
-                                <div class="row" style="justify-content: center;">
-                                    <img src="<?= base_url('assets/img/user1.png') ?>" style="width: 10%;">
-                                    <img src="<?= base_url('assets/img/user2.png') ?>" style="width: 10%;">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Newest Mexican Unicorn</h5>
-                                    <div class="row" style="justify-content: center;">
-                                        <img src="<?= base_url('assets/img/logoUser1.png') ?>" style="width: 10%;">
-                                        <img src="<?= base_url('assets/img/logoUser2.png') ?>" style="width: 10%;">
+                            <div class="card card-testimonial">
+
+                                <div class="row fotos-testimonios">
+                                    <div class="col">
+                                        <div class="row flex-column align-items-center">
+                                            <img src="<?= base_url('assets/img/user1.png') ?>" style="width: 100%;">
+                                            <img src="<?= base_url('assets/img/logoUser1.png') ?>" style="width: 50%;">
+                                        </div>                                        
                                     </div>
+                                    
+                                    <div class="col">
+                                        <div class="row flex-column align-items-center">
+                                            <img src="<?= base_url('assets/img/user2.png') ?>" style="width: 100%;">  
+                                            <img src="<?= base_url('assets/img/logoUser2.png') ?>" style="width: 50%;"> 
+                                        </div>                                        
+                                    </div>                                                          
+                                </div>
+                               <!--  <div class="row" style="justify-content: space-evenly;">
+                                   
+                                </div> -->
+                                <div class="card-body texto-testimonios">
+                                    
+                                    <!-- <div class="row" style="justify-content: space-evenly;">
+                                        <img src="<?= base_url('assets/img/logoUser1.png') ?>" style="width: 15%;">
+                                        <img src="<?= base_url('assets/img/logoUser2.png') ?>" style="width: 15%;">
+                                    </div> -->
+
+                                    <h5 class="card-title">Newest Mexican Unicorn</h5>
                                     <p class="card-text">Alfonso De los Rios & Maximiliano Casal</p>
                                     <p class="card-text">Two talented software engineers, first matched at TrepCamp at Silicon Valley 2017. Co-founded Nowports, a digital freight forwarder which gained a $1.1 billion dollars value, becoming the newest Mexico's Unicorn.</p>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="card">
-                                <div class="row" style="justify-content: center;">
-                                    <img src="<?= base_url('assets/img/user3.png') ?>" style="width: 10%;">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">¡Successfull investment round!</h5>
-                                    <div class="row" style="justify-content: center;">
-                                        <img src="<?= base_url('assets/img/logoUser3.png') ?>" style="width: 10%;">
+                            <div class="card card-testimonial">
+                                <div class="row fotos-testimonios">
+                                    <div class="col"> 
+                                        <div class="row flex-column align-items-center">
+                                            <img src="<?= base_url('assets/img/user3.png') ?>" style="width: 100%;">
+                                            <img src="<?= base_url('assets/img/logoUser3.png') ?>" style="width: 50%;">
+                                        </div>
                                     </div>
+                                </div>
+
+                                <div class="card-body texto-testimonios">
+                                    <h5 class="card-title">¡Successfull investment round!</h5>                                    
                                     <p class="card-text">TAMARA CHAYO</p>
                                     <p class="card-text">Participant at TrepCamp 2020, during the same year founded MEDU, developing sustainable medical protection equipment. During 2022 closed an investment round for 4 million dollars to expand towards the United States.</p>
                                 </div>
@@ -197,12 +294,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="<?= base_url('assets/img/logoTrepcamp.png') ?>" >
+                    <img src="<?= base_url('assets/img/logoTrepcamp.png') ?>">
                     <h2>Experience</h2>
                     <p>Develop your entrepreneurial skills in an immersive week in New York City</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="<?= base_url('assets/img/logoTrepcamp.png') ?>" >
+                    <img src="<?= base_url('assets/img/logoTrepcamp.png') ?>">
                     <h2>Simulator</h2>
                     <p>Build your own start-up in a three week program at Silicon Valley</p>
                 </div>
@@ -215,21 +312,21 @@
                 <div class="col-lg-6">
                     <h3>Connect you with your entrepreneurial higher self.</h3>
                     <p>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><i class="fas fa-clock"></i> Duration: 9 days and 8 nights</li>
-                            <li class="nav-item mb-2"><i class="far fa-calendar"></i> Date: June 2023</li>
-                            <li class="nav-item mb-2"><i class="fas fa-map-marker-alt"></i> Place: New York</li>
-                        </ul> 
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><i class="fas fa-clock"></i> Duration: 9 days and 8 nights</li>
+                        <li class="nav-item mb-2"><i class="far fa-calendar"></i> Date: June 2023</li>
+                        <li class="nav-item mb-2"><i class="fas fa-map-marker-alt"></i> Place: New York</li>
+                    </ul>
                     </p>
                 </div>
                 <div class="col-lg-6">
                     <h3>Help you go from an idea to a pitch in one summer.</h3>
                     <p>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><i class="fas fa-clock"></i> Duration: 3 weeks</li>
-                            <li class="nav-item mb-2"><i class="far fa-calendar"></i> Date: July 2023</li>
-                            <li class="nav-item mb-2"><i class="fas fa-map-marker-alt"></i> Place: Sillicon Valley</li>
-                        </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><i class="fas fa-clock"></i> Duration: 3 weeks</li>
+                        <li class="nav-item mb-2"><i class="far fa-calendar"></i> Date: July 2023</li>
+                        <li class="nav-item mb-2"><i class="fas fa-map-marker-alt"></i> Place: Sillicon Valley</li>
+                    </ul>
                     </p>
                 </div>
                 <div class="row">
@@ -245,7 +342,7 @@
                         <li class="nav-item mb-2"><img src="<?= base_url('assets/img/circleCheck.png') ?>"> You want to get involved with international ecosystems to get out of your confort zone and discover your full potential.</li>
                     </ul>
                     <div class="row">
-                    <p><a class="btn btn-md btn-primary" href="#">Learn more</a></p>
+                        <p><a class="btn btn-md btn-primary" href="#">Learn more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -255,7 +352,7 @@
                         <li class="nav-item mb-2"><img src="<?= base_url('assets/img/circleCheck.png') ?>"> You want to get involved with international ecosystems to get out of your confort zone and discover your full potential.</li>
                     </ul>
                     <div class="row">
-                    <p><a class="btn btn-md btn-primary" href="#">Learn more</a></p>
+                        <p><a class="btn btn-md btn-primary" href="#">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -288,19 +385,19 @@
                     <h2>Get in touch with our journey</h2>
                     <p>Be part of our Treps story. Follow TrepCamp in your favorite social media channel.</p>
                     <ul class="nav col-md-8 justify-content-start list-unstyled d-flex">
-                    <li class="ms-2">
-                        <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/iconFacebookAzul.png') ?>"></a>
-                    </li>
-                    <li class="ms-2">
-                        <a href="https://www.instagram.com/emtech.inst/"><img src="<?= base_url('assets/img/iconGoogleAzul.png') ?>"></a>
-                    </li> 
-                    <li class="ms-2">
-                        <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/iconTwitterAzul.png') ?>"></a>
-                    </li>
-                    <li class="ms-2">
-                        <a href="https://www.linkedin.com/school/emtechinstitute/"><img src="<?= base_url('assets/img/iconShareAzul.png') ?>"></a>
-                    </li>
-                </ul>
+                        <li class="ms-2">
+                            <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/iconFacebookAzul.png') ?>"></a>
+                        </li>
+                        <li class="ms-2">
+                            <a href="https://www.instagram.com/emtech.inst/"><img src="<?= base_url('assets/img/iconGoogleAzul.png') ?>"></a>
+                        </li>
+                        <li class="ms-2">
+                            <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/iconTwitterAzul.png') ?>"></a>
+                        </li>
+                        <li class="ms-2">
+                            <a href="https://www.linkedin.com/school/emtechinstitute/"><img src="<?= base_url('assets/img/iconShareAzul.png') ?>"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
