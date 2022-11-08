@@ -236,13 +236,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="section pt-5 pb-5 section-meet">
+        <div class="container">
             <div class="row pt-5">
                 <div class="col-lg-12 text-center">
-                    <h3>Meet all of our Success Stories</h3>
-                    <p><a class="btn btn-lg btn-primary" href="#">See all</a></p>
+                    <h3 style="color: #333333;">Meet all of our Success Stories</h3>
+                    <a class="btn btn-primary btnAmarilloMeet" href="#" style="margin: auto;">Success stories</a>
                 </div>
             </div>
         </div>
+        
     </div>
     <div class="section pt-5 pb-5">
         <div class="container">

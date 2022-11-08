@@ -192,3 +192,24 @@
 .texto-testimonios{
 	margin-top: 5rem;
 }
+.btnAmarilloMeet {
+	width: 170px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    width: 343px;
+    height: 46px;
+    background: #ffd041;
+    border-radius: 25px;
+    align-self: stretch;
+    border: none;
+}
+
+.btn{
+	border-radius: 25px !important;
+	padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+	font-size: 16px;
+}
