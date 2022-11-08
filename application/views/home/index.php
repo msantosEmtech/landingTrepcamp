@@ -312,13 +312,31 @@
             </div>
         </div>
     </div>
-    <div class="section pt-5 pb-5" style="background-color: #33A4FE;">
+
+    <div class="section pt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="row">
                     <div class="col-lg-12 text-center">
+                        <div class="card card-choose">
+                            <div class="card-body pt-5 pb-5">
+                                <h2>Not sure which one fits you better?</h2>
+                                <p class="pt-4"><a class="btn btn-lg btn-outline-light" href="#">Choose Right</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section pt-5 pb-5" style="background-color: #33A4FE;">
+        <div class="container">
+            <div class="row">
+                <div class="row pt-4 pb-4">
+                    <div class="col-lg-12 text-center">
                         <h2 style="color: #fff;">Interested in learning more about us?</h2>
-                        <p><a class="btn btn-lg btn-outline-light" href="#">About us</a></p>
+                        <p class="pt-4"><a class="btn btn-lg btn-outline-light" href="#">About us</a></p>
                     </div>
                 </div>
             </div>
