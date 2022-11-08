@@ -168,7 +168,7 @@
             </div>
         </div>
     </div>
-    <div class="section pt-5 pb-5 section-slider-emprendedor">
+    <div class="section pt-5 pb-3">
         <div class="container" >
             <div class="row text-center pb-5">
                 <div class="col-lg-12">
@@ -179,48 +179,58 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="sliderTestimonial text-center">
-                        <!-- sliderTestimonial -->
                         <div>
-                            <div class="card card-testimonial">
-                                <div class="row fotos-testimonios">
-                                    <div class="col">
-                                        <div class="row flex-column align-items-center">
-                                            <img src="<?= base_url('assets/img/user1.png') ?>" style="width: 100%;">
-                                            <img src="<?= base_url('assets/img/logoUser1.png') ?>" style="width: 50%;">
-                                        </div>
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="row flex-column align-items-center">
-                                            <img src="<?= base_url('assets/img/user2.png') ?>" style="width: 100%;">
-                                            <img src="<?= base_url('assets/img/logoUser2.png') ?>" style="width: 50%;">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="card card-testimonial" style="position: relative;z-index: 2;margin-top:3rem;border:none;">
                                 <div class="card-body texto-testimonios">
-                                    <h5 class="card-title">Newest Mexican Unicorn</h5>
-                                    <p class="card-text">Alfonso De los Rios & Maximiliano Casal</p>
-                                    <p class="card-text">Two talented software engineers, first matched at TrepCamp at Silicon Valley 2017. Co-founded Nowports, a digital freight forwarder which gained a $1.1 billion dollars value, becoming the newest Mexico's Unicorn.</p>
+                                    <div class="container">
+                                        <div class="row fotos-testimonios col-7 offset-1">
+                                            <div class="col">
+                                                <div class="row flex-column align-items-center">
+                                                    <img src="<?= base_url('assets/img/user1.png') ?>" style="width: 100%;">
+                                                    <img src="<?= base_url('assets/img/logoUser.svg') ?>" style="width: 60%;">
+                                                </div>                                        
+                                            </div>
+                                            
+                                            <div class="col">
+                                                <div class="row flex-column align-items-center">
+                                                    <img src="<?= base_url('assets/img/user2.png') ?>" style="width: 100%;">  
+                                                    <img src="<?= base_url('assets/img/logoUser1.svg') ?>" style="width: 80%;"> 
+                                                </div>                                        
+                                            </div>                                                          
+                                        </div>
+                                        <h4>Newest Mexican Unicorn</h4>
+                                        <div class="row pb-3">
+                                            <div class="col-lg-12">
+                                                <img src="<?= base_url('assets/img/logoNowports.png') ?>" style="width: 40%;margin:auto;">
+                                            </div>
+                                        </div>
+                                        <h6 style="color: #474747;text-transform: uppercase;">Alfonso De los Rios & Maximiliano Casal</h6>
+                                        <p style="color: #474747;">Two talented software engineers, first matched at TrepCamp at Silicon Valley 2017. Co-founded Nowports, a digital freight forwarder which gained a $1.1 billion dollars value, becoming the newest Mexico's Unicorn.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="card card-testimonial">
-                                <div class="row fotos-testimonios">
-                                    <div class="col">
-                                        <div class="row flex-column align-items-center">
-                                            <img src="<?= base_url('assets/img/user3.png') ?>" style="width: 100%;">
-                                            <img src="<?= base_url('assets/img/logoUser3.png') ?>" style="width: 50%;">
+                            <div class="card card-testimonial2" style="position: relative;z-index: 2;margin-top:3rem;border:none;">
+                                <div class="card-body texto-testimonios">
+                                    <div class="container">
+                                        <div class="row fotos-testimonios col-7 offset-1">
+                                            <div class="col">
+                                                <div class="row flex-column align-items-center">
+                                                    <img src="<?= base_url('assets/img/user3.png') ?>" style="width: 55%;">
+                                                    <img src="<?= base_url('assets/img/logoLaSelle.svg') ?>" style="width: 40%;padding-top: 1rem;">
+                                                </div>                                        
+                                            </div>                                                         
+                                        </div>
+                                        <h4 style="padding-top: 1rem;">¡Successfull investment round!</h4>
+                                        <div class="row pb-3">
+                                            <div class="col-lg-12">
+                                                <img src="<?= base_url('assets/img/logoUser3.png') ?>" style="width: 30%;margin:auto;">
+                                            </div>
                                         </div>
                                         <h6 style="color: #474747;text-transform: uppercase;">TAMARA CHAYO</h6>
                                         <p style="color: #474747;">Participant at TrepCamp 2020, during the same year founded MEDU, developing sustainable medical protection equipment. During 2022 closed an investment round for 4 million dollars to expand towards the United States.</p>
                                     </div>
-                                </div>
-
-                                <div class="card-body texto-testimonios">
-                                    <h5 class="card-title">¡Successfull investment round!</h5>
-                                    <p class="card-text">TAMARA CHAYO</p>
-                                    <p class="card-text">Participant at TrepCamp 2020, during the same year founded MEDU, developing sustainable medical protection equipment. During 2022 closed an investment round for 4 million dollars to expand towards the United States.</p>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +239,7 @@
             </div>
         </div>
     </div>
-    <div class="section pt-5 pb-5 ">
+    <div class="section pt-5 pb-5">
         <div class="container section-meet">
             <div class="row pt-5">
                 <div class="col-lg-12 text-center">
@@ -238,7 +248,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 
     <div class="section pt-5 pb-5" style="background-color: rgba(71, 71, 71, 0.05);">
