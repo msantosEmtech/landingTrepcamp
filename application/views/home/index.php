@@ -434,34 +434,48 @@
     </div>
 
     <div class="section pt-5 pb-5">
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-lg-7">
-                    <div class="one-time text-center">
-                        <div><img src="<?= base_url('assets/img/logo4yfn.png') ?>" width="50"></div>
-                        <div><img src="<?= base_url('assets/img/logoSantander.png') ?>" width="50"></div>
-                        <div><img src="<?= base_url('assets/img/logoBerkeley.png') ?>" width="50"></div>
-                        <div><img src="<?= base_url('assets/img/logoNewyork.png') ?>" width="50"></div>
-                    </div>
-                </div>
                 <div class="col-lg-5">
-                    <h2>Get in touch with our journey</h2>
-                    <p>Be part of our Treps story. Follow TrepCamp in your favorite social media channel.</p>
-                    <ul class="nav col-md-8 justify-content-start list-unstyled d-flex">
+                    <h3 style="color:#333333;text-align: center;">Get in touch with our<br> journey</h3>
+                    <p style="color: #999999;">Be part of our Treps story. Follow TrepCamp in your favorite social media channel.</p>
+                    <ul class="nav col-md-8 justify-content-center list-unstyled d-flex pt-3">
                         <li class="ms-2">
-                            <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/iconFacebookAzul.png') ?>"></a>
-                        </li>
+                            <a href="https://www.instagram.com/emtech.inst/"><img src="<?= base_url('assets/img/iconInstagram.png') ?>"></a>
+                        </li>    
                         <li class="ms-2">
-                            <a href="https://www.instagram.com/emtech.inst/"><img src="<?= base_url('assets/img/iconGoogleAzul.png') ?>"></a>
+                            <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/iconTiktok.png') ?>"></a>
                         </li>
-                        <li class="ms-2">
-                            <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/iconTwitterAzul.png') ?>"></a>
-                        </li>
-                        <li class="ms-2">
-                            <a href="https://www.linkedin.com/school/emtechinstitute/"><img src="<?= base_url('assets/img/iconShareAzul.png') ?>"></a>
-                        </li>
+                        
                     </ul>
                 </div>
+
+                <div class="col-lg-7 pt-3">
+                    <div class="sliderInstagram text-center">
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <img src="<?= base_url('assets/img/imagenInstagram1.png') ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <img src="<?= base_url('assets/img/imagenInstagram1.png') ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <img src="<?= base_url('assets/img/imagenInstagram1.png') ?>">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
