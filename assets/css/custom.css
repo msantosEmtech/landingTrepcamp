@@ -139,6 +139,21 @@
     border: none;
 }
 
+.btnAmarilloStories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    width: 200px;
+    height: 46px;
+    background: #ffd041;
+    border-radius: 25px;
+    align-self: stretch;
+    border: none;
+}
+
 .tarjeta1{
 	background-image: url('../img/lineasBackground.png');
 	background-color: #6C20ED;
@@ -174,6 +189,10 @@
 .numeros-seccion{
 	height: 200px; 
 	margin-bottom:0 !important;
+}
+
+.slick-list{
+	/* overflow: visible !important; */
 }
 
 .card-testimonial{
@@ -232,4 +251,18 @@
 .btnAmarillo:hover, .btnAmarillo:focus {
     color: #FFF;
     background: rgba(255, 208, 66, 0.8);
+}
+.input-redondo{
+	border-radius: 19px;
+    background-color: transparent;
+    border: solid 1px #999999;
+    padding: 8px 12px;
+}
+
+.btnSend{
+	background-color: #DEDEDE;
+    width: 100px;
+    height: 45px;
+    border: none;
+    border-radius: 35px;
 }
