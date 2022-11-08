@@ -436,7 +436,7 @@
     <div class="section pt-5 pb-5">
         <div class="container text-center">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <h3 style="color:#333333;text-align: center;">Get in touch with our<br> journey</h3>
                     <p style="color: #999999;">Be part of our Treps story. Follow TrepCamp in your favorite social media channel.</p>
                     <ul class="nav col-md-8 justify-content-center list-unstyled d-flex pt-3">
@@ -450,7 +450,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-7 pt-3">
+                <div class="col-lg-6 pt-3">
                     <div class="sliderInstagram text-center">
                         <div>
                             <div class="container">
