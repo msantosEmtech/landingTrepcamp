@@ -167,7 +167,7 @@
             </div>
         </div>
     </div>
-    <div class="section pt-5 pb-5">
+    <div class="section pt-5 pb-5 section-slider-emprendedor">
         <div class="container" >
             <div class="row text-center pb-5">
                 <div class="col-lg-12">
@@ -238,8 +238,8 @@
             </div>
         </div>
     </div>
-    <div class="section pt-5 pb-5 section-meet">
-        <div class="container">
+    <div class="section pt-5 pb-5 ">
+        <div class="container section-meet">
             <div class="row pt-5">
                 <div class="col-lg-12 text-center">
                     <h3 style="color: #333333;">Meet all of our Success Stories</h3>

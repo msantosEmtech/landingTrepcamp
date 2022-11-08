@@ -202,14 +202,34 @@
     gap: 10px;
     width: 343px;
     height: 46px;
-    background: #ffd041;
+    background: rgb(255, 208, 66);
     border-radius: 25px;
     align-self: stretch;
     border: none;
+}
+
+.btnAmarilloMeet:hover, .btnAmarilloMeet:focus {
+    color: #FFF;
+    background: rgba(255, 208, 66, 0.8);
 }
 
 .btn{
 	border-radius: 25px !important;
 	padding: 0.7rem 1.5rem 0.7rem 1.5rem;
 	font-size: 16px;
+}
+
+.section-meet::after{
+	content:"";
+	background-image: url('../img/rectanguloAzul.png');
+}
+
+.btnAmarilloBanner:hover, .btnAmarilloBanner:focus {
+    color: #FFF;
+    background: rgba(255, 208, 66, 0.8);
+}
+
+.btnAmarillo:hover, .btnAmarillo:focus {
+    color: #FFF;
+    background: rgba(255, 208, 66, 0.8);
 }
