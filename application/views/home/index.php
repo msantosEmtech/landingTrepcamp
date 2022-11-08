@@ -100,13 +100,8 @@
     </div>
     <div class="secction pt-5 pb-5">
         <div class="container">
-<<<<<<< HEAD
-            <div class="row">
-                <div class="col-lg-6 col-lg-6 col-md-12 text-center">
-=======
             <div class="row text-center">
                 <div class="col-lg-6">
->>>>>>> ramaOscar
                     <h2>Transform your life doing something meaningful</h2>
                     <p style="color:#999999; font-size:18px;">Watch a sneak peak of our experience.</p>
                 </div>
