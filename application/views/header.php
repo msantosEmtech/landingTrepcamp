@@ -79,12 +79,12 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="<?=base_url('assets/img/logoTrepcamp.svg')?>" width="100"></a>
+      <a class="navbar-brand" href="#" style="padding-left: 2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.svg')?>" width="110"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="nav nav-pills navbar-nav ms-auto mb-2 mb-lg-0" >
+        <ul class="nav nav-pills navbar-nav ms-auto mb-2 mb-lg-0 pt-3 pb-3" >
           <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Our story</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Simulator</a></li>

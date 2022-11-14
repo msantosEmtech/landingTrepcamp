@@ -17,15 +17,15 @@
         <div class="col mt-5 mb-4 text-center">
             <div class="container">
                 <div class="row">
-                    <a href="#" class="col nav-link p-0 text-muted">Home</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Our story</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Experience</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Simulator</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Home</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Our story</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Experience</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Simulator</a>
                 </div>
                 <div class="row">
-                    <a href="#" class="col nav-link p-0 text-muted">About us</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Blog</a>
-                    <a href="#" class="col nav-link p-0 text-muted">My account</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">About us</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Blog</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">My account</a>
                 </div>
             </div>
         </div>
@@ -66,12 +66,12 @@
     </footer>
 
     <div class="row">
-        <div class="col col div-img-footer">
-            <p>© Copyright 2022 TrepCamp.org. All rights reserved.</p>
+        <div class="col col div-img-footer text-center">
+            <p style="font-size:14px">© Copyright 2022 TrepCamp.org. All rights reserved.</p>
         </div>
         <ul class="nav col-md-6 justify-content-center list-unstyled d-flex">
-            <li class="ms-3"><a style="color: #00A8FF;" href="#">Privacy policy</a></li>
-            <li class="ms-3"><a style="color: #00A8FF;" href="#">Terms of use</a></li>
+            <li class="ms-3"><a style="color: #00A8FF;font-size:14px" href="#">Privacy policy</a></li>
+            <li class="ms-3"><a style="color: #00A8FF;font-size:14px" href="#">Terms of use</a></li>
         </ul>
     </div>
 </div>
