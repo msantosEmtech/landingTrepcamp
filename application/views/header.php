@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome-free-5.15.4-web/css/all.css') ?>" />
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.css') ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/slick-1.8.1/slick/slick-theme.css') ?>"/>
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/animate/animate.min.css') ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/custom.css') ?>"/>
     <style>
       .bd-placeholder-img {
@@ -78,7 +79,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="100"></a>
+      <a class="navbar-brand" href="#"><img src="<?=base_url('assets/img/logoTrepcamp.svg')?>" width="100"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
