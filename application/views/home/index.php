@@ -562,7 +562,7 @@
                     <p style="color: #999999;">Be part of our Treps story. Follow TrepCamp in your favorite social media channel.</p>
                     <ul class="nav col-md-8 justify-content-center list-unstyled d-flex pt-3">
                         <li class="ms-2">
-                            <a href="https://www.instagram.com/emtech.inst/"><img src="<?= base_url('assets/img/iconInstagram.png') ?>"></a>
+                            <a href="https://www.instagram.com/emtech.inst/"><img class="imIn" src="<?= base_url('assets/img/iconInstagram.png') ?>"></a>
                         </li>    
                         <li class="ms-2">
                             <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/iconTiktok.png') ?>"></a>

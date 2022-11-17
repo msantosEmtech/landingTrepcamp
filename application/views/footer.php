@@ -97,9 +97,9 @@
         };
 
         var feed = new Instafeed({
-            accessToken: 'IGQVJYY1dHOTJVaU9yZAElVcDVWdmlaUkxUXzZAENE9GeThOYmZAJQ0lXRnNTWHlMS3JXU1dNXzVRSk1VUzRXVFYxdlcwSmlOQjlKVmVjSDhpS1NSM043c3ljRmF4ZAXFRbWstd2FCSkxYUGg0MW8yU2JSTgZDZD',
+            accessToken: 'IGQVJYSURaZAHdwVkNTZAW9ZAajlhVnIwVm1TcmlCQWZAiYmktUnhZALTJ0TUhoQ3I1LWZAQWXc3eTdRem9rMFduQkEzREwyU0pYMzR0c3RMUUN2TDlHd2RXeGpmYXNiN216RFAyYnhBZAktIMmN0Qm5FRkZAQXwZDZD',
             limit:3,
-            template:'<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="shadow-1-strong rounded mt-5 mb-4" /></a></div>',
+            template:'<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="imgSliderIns shadow-1-strong rounded mt-5 mb-4" /></a></div>',
             after: function(){
                 $('.owl-carousel').owlCarousel({
                     loop:true,

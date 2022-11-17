@@ -86,9 +86,9 @@ body{
 	transform: scale3d(1, 1, 1);
 }
 .owl-carousel .owl-item img {
-	transform-style: preserve-3d;
-	max-width: 90px;
-	margin: 0 auto 17px;
+    transform-style: preserve-3d;
+    max-width: 160px !important;
+    margin: 0 auto 17px;
 }
 #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
@@ -344,5 +344,25 @@ hr {
     margin: 1rem 0;
     border: 1px solid #EEEEEE;
 }
+
+.item {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+.item img {
+	height: 100%;
+	width: 100%;
+}
+
+.imgSliderIns{
+	max-width: 160px !important;
+}
+
+.imIn{
+	width: 300px;
+}
+
+
 
 
