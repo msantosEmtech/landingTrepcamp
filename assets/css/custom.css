@@ -1,3 +1,14 @@
+body{
+	color: #333333 !important;
+}
+
+
+.btn{
+	border-radius: 25px !important;
+	padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+	font-size: 16px;
+}
+
 @font-face{
 	font-family: "opensans-regular";
 	src:url("../fonts/OpenSans-Regular.ttf") format('truetype');
@@ -75,9 +86,9 @@
 	transform: scale3d(1, 1, 1);
 }
 .owl-carousel .owl-item img {
-	transform-style: preserve-3d;
-	max-width: 90px;
-	margin: 0 auto 17px;
+    transform-style: preserve-3d;
+    max-width: 160px !important;
+    margin: 0 auto 17px;
 }
 #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
@@ -191,10 +202,6 @@
 	margin-bottom:0 !important;
 }
 
-.slick-list{
-	/* overflow: visible !important; */
-}
-
 .card-testimonial{
 	background-color:rgba(108, 32, 237, 0.05);
 }
@@ -211,7 +218,47 @@
 .texto-testimonios{
 	margin-top: 5rem;
 }
+.btnAmarilloMeet {
+	width: 170px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    width: 343px;
+    height: 46px;
+    background: rgb(255, 208, 66);
+    border-radius: 25px;
+    align-self: stretch;
+    border: none;
+}
 
+.btnAmarilloMeet:hover, .btnAmarilloMeet:focus {
+    color: #FFF;
+    background: rgba(255, 208, 66, 0.8);
+}
+
+.btn{
+	border-radius: 25px !important;
+	padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+	font-size: 16px;
+}
+
+.section-meet::after{
+	content:"";
+	background-image: url('../img/rectanguloAzul.png');
+}
+
+.btnAmarilloBanner:hover, .btnAmarilloBanner:focus {
+    color: #FFF;
+    background: rgba(255, 208, 66, 0.8);
+}
+
+.btnAmarillo:hover, .btnAmarillo:focus {
+    color: #FFF;
+    background: rgba(255, 208, 66, 0.8);
+}
 .input-redondo{
 	border-radius: 19px;
     background-color: transparent;
@@ -225,4 +272,97 @@
     height: 45px;
     border: none;
     border-radius: 35px;
+
 }
+.card-choose {
+	color: #FFFFFF;
+	border-radius: 25px !important;
+	border: none;
+	background: #5BCE79;
+}
+.slick-track {
+    margin:auto;
+}
+.card-testimonial2{
+	background-color: rgba(71, 71, 71, 0.05);
+}
+@media (max-width: 767.98px) {
+	.div-copyright{
+		text-align: center;
+	}
+	.lista-privacy{
+		justify-content: center !important;
+	}
+	.columna-info{
+		padding-top: 2rem;
+	}
+	.divApplicantsSlider{
+		border-right: 0px solid #6A6A6A !important;
+	}
+	.divSuccessfulSlider{
+		border-right: 0px solid #6A6A6A !important;
+	}
+}
+
+.testimonio {
+    padding-left:8rem;
+    padding-right:8rem;
+}
+
+.sliderDesk {
+    padding:10rem;
+}
+
+@media only screen and (max-width: 991px) {
+    
+    .sliderDesk {
+        padding:0rem;
+    }    
+    
+    .testimonio {
+        padding-left:0rem;
+        padding-right:0rem;
+    }
+
+    .centerMobile {
+        text-align: center!important
+    }
+    
+    .iconosRS{
+        display: inline-flex !important;
+    }
+    
+    .backgroundAzul {
+        background-image: url('../img/fondo-azul.png');
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+}
+
+hr {
+    margin: 1rem 0;
+    border: 1px solid #EEEEEE;
+}
+
+.item {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+.item img {
+	height: 100%;
+	width: 100%;
+}
+
+.imgSliderIns{
+	max-width: 160px !important;
+}
+
+.imIn{
+	width: 300px;
+}
+
+
+
+
