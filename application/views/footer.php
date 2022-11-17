@@ -86,6 +86,7 @@
 <script src="<?= base_url('assets/js/wow.min.js') ?>"></script>
 <script src="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') ?>"></script>
 <script src="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.min.js') ?>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
 <script>
         new WOW().init();
         
@@ -94,6 +95,36 @@
         trepcamp.base = {
             url : '<?= base_url(); ?>'
         };
+
+        var feed = new Instafeed({
+            accessToken: 'IGQVJVMmsyVHJjazNkTWJPeG1VVk9PekRnSzM3V3oyeW1iVmFpREJtTklpX3VWVWdFeXliekczc3RMbmRzd0pGV1AyZAHNsS0dhZAlA4Mi1vcTg3bEZAab2JoSzdkY1Flck1vUWlfQWpsaVFPTF9udVBURgZDZD',
+            limit:3,
+            template:'<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="shadow-1-strong rounded mt-5 mb-4" /></a></div>',
+            after: function(){
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:1,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:2,
+                            nav:false
+                        },
+                        600:{
+                            items:2,
+                            nav:false
+                        },
+                        1000:{
+                            items:3,
+                            nav:false,
+                            loop:true
+                        }
+                    }
+                });
+            }
+        });
+
+        feed.run();
 
 </script>
 <?php if(isset($scriptVista)){ echo $scriptVista; } ?>

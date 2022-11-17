@@ -87,7 +87,7 @@ body{
 }
 .owl-carousel .owl-item img {
 	transform-style: preserve-3d;
-	max-width: 90px;
+	max-width: 160px;
 	margin: 0 auto 17px;
 }
 #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,

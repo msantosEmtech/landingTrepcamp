@@ -572,7 +572,7 @@
                 </div>
 
                 <div class="col-lg-6 pt-3">
-                    <div class="sliderInstagram text-center">
+                    <!-- <div class="sliderInstagram text-center">
                         <div>
                             <div class="container">
                                 <div class="row">
@@ -594,7 +594,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <div id="instafeed" class="row owl-carousel owl-theme owl-loaded owl-drag"></div>
                 </div>
 
             </div>

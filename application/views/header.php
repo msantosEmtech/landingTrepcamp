@@ -12,6 +12,10 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.css') ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/slick-1.8.1/slick/slick-theme.css') ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/animate/animate.min.css') ?>"/>
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css') ?>"/>
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css') ?>"/>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/custom.css') ?>"/>
     <style>
       .bd-placeholder-img {
