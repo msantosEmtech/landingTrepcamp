@@ -1,4 +1,4 @@
-<div class="secction pt-5 pb-5 seccion1-experience">
+<section class="pt-5 pb-5 seccion1-experience">
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-6 mb-5">
@@ -17,9 +17,9 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="secction pt-5 pb-5" style="background-color:#F4F4F4;">
+<section class="pt-5 pb-5" style="background-color:#F4F4F4;">
     <div class="container">
         <div class="row">
 
@@ -38,9 +38,9 @@
 
         </div>
     </div>
-</div>
+</section>
 
-<div class="secction pt-5 pb-5">
+<section class="pt-5 pb-5">
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center">
@@ -171,9 +171,9 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="secction pt-5 pb-5">
+<section class="pt-5 pb-5">
     <div class="container">
         <div class="row">
             <div class="color-section">
@@ -411,4 +411,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>
