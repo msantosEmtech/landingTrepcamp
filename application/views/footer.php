@@ -5,11 +5,7 @@
         <div class="col mb-3">
             <div class="container">
                 <a href="/" class="row justify-content-center mb-5 link-dark text-decoration-none">
-<<<<<<< HEAD
-                    <img src="<?= base_url('assets/img/logoTrepcamp.png') ?>" style="width:45%">
-=======
                     <img src="<?= base_url('assets/img/logoTrepcamp.svg') ?>" style="width:45%">
->>>>>>> ramaMario2
                 </a>
 
                 <div class="row text-center">
@@ -21,17 +17,6 @@
         <div class="col mt-5 mb-4 text-center">
             <div class="container">
                 <div class="row">
-<<<<<<< HEAD
-                    <a href="#" class="col nav-link p-0 text-muted">Home</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Our story</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Experience</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Simulator</a>
-                </div>
-                <div class="row">
-                    <a href="#" class="col nav-link p-0 text-muted">About us</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Blog</a>
-                    <a href="#" class="col nav-link p-0 text-muted">My account</a>
-=======
                     <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Home</a>
                     <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Our story</a>
                     <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Experience</a>
@@ -41,7 +26,6 @@
                     <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">About us</a>
                     <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Blog</a>
                     <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">My account</a>
->>>>>>> ramaMario2
                 </div>
             </div>
         </div>
@@ -113,7 +97,7 @@
         };
 
         var feed = new Instafeed({
-            accessToken: 'IGQVJYSURaZAHdwVkNTZAW9ZAajlhVnIwVm1TcmlCQWZAiYmktUnhZALTJ0TUhoQ3I1LWZAQWXc3eTdRem9rMFduQkEzREwyU0pYMzR0c3RMUUN2TDlHd2RXeGpmYXNiN216RFAyYnhBZAktIMmN0Qm5FRkZAQXwZDZD',
+            accessToken: 'IGQVJWMnNEeXdJdEREenFHVExIc2NqRHFfLTlMRUZAITm1salZAVTzBDVEx2dl8tclhnZAjcxc0JndTM1X0ZAMMUNIdmtCNGNrZAkp6d0toWHNoMVFxTk9IVWlvUllXZAkxxOE0yZA1B5QTlxN01weWxlRVVlaAZDZD',
             limit:3,
             template:'<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="imgSliderIns shadow-1-strong rounded mt-5 mb-4" /></a></div>',
             after: function(){

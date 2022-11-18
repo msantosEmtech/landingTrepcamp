@@ -90,7 +90,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav nav-pills navbar-nav ms-auto mb-2 mb-lg-0 pt-3 pb-3" >
           <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Our story</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="<?= base_url('Experience')?>" class="nav-link">Experience</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Simulator</a></li>
           <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>

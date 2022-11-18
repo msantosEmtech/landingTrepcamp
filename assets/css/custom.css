@@ -234,7 +234,28 @@ body{
     border: none;
 }
 
+.btnAmarilloJoin {
+	width: 115px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    width: 343px;
+    height: 46px;
+    background: rgb(255, 208, 66);
+    border-radius: 25px;
+    align-self: stretch;
+    border: none;
+}
+
 .btnAmarilloMeet:hover, .btnAmarilloMeet:focus {
+    color: #FFF;
+    background: rgba(255, 208, 66, 0.8);
+}
+
+.btnAmarilloJoin:hover, .btnAmarilloJoin:focus {
     color: #FFF;
     background: rgba(255, 208, 66, 0.8);
 }
@@ -286,6 +307,7 @@ body{
 .card-testimonial2{
 	background-color: rgba(71, 71, 71, 0.05);
 }
+
 @media (max-width: 767.98px) {
 	.div-copyright{
 		text-align: center;
@@ -361,6 +383,89 @@ hr {
 
 .imIn{
 	width: 300px;
+}
+
+.seccion1-experience{
+	background-image: url('../img/lineasBackExp.png');
+	background-color: #FFFFFF;
+}
+
+.accordion-custom{
+    margin-bottom: 2rem;
+    /* border: none; */
+    border: solid 1px #474747 !important;
+    border-radius: 7px !important;
+    outline: none !important;
+}
+
+.item-custom{
+    border-radius: 7px !important;
+    outline: none !important;
+}
+
+.holder-barra::after{
+    background-image: url('../img/barra-puntos.png');
+}
+
+.button-custom{
+    border-radius: 7px !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button-reto::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url('../img/add.svg') !important;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+.accordion-button-reto:not(.collapsed)::after {
+    background-image: url('../img/remove.svg') !important;
+    transform: rotate(-180deg);
+}
+
+
+
+.accordion-button-faqs::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+.accordion-button-faqs:not(.collapsed)::after {
+    background-image: none !important;
+    transform: rotate(-180deg);
+}
+
+.accordion-button-faqs img::after {
+    content:  url('../img/add.svg');
+}
+.accordion-button-faqs:not(.collapsed) img::after {
+    content: url('../img/remove.svg');
+    transform: rotate(-180deg);
+}
+
+/* .dot-titulo{
+
+} */
+
+.color-section{
+    background-image: url('../img/lineasBackground.png');
+	background-color: #6C20ED;
+}
+
+.carousel-item-custom{
+    height: 24rem !important;
 }
 
 
