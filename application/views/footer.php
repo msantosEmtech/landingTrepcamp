@@ -1,4 +1,5 @@
 <!-- FOOTER -->
+
 <div class="container">
     <footer class="container py-5 my-5">
 
@@ -95,37 +96,6 @@
         trepcamp.base = {
             url : '<?= base_url(); ?>'
         };
-
-        var feed = new Instafeed({
-            accessToken: 'IGQVJYSURaZAHdwVkNTZAW9ZAajlhVnIwVm1TcmlCQWZAiYmktUnhZALTJ0TUhoQ3I1LWZAQWXc3eTdRem9rMFduQkEzREwyU0pYMzR0c3RMUUN2TDlHd2RXeGpmYXNiN216RFAyYnhBZAktIMmN0Qm5FRkZAQXwZDZD',
-            limit:3,
-            template:'<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="imgSliderIns shadow-1-strong rounded mt-5 mb-4" /></a></div>',
-            after: function(){
-                $('.owl-carousel').owlCarousel({
-                    loop:true,
-                    margin:1,
-                    responsiveClass:true,
-                    responsive:{
-                        0:{
-                            items:2,
-                            nav:false
-                        },
-                        600:{
-                            items:2,
-                            nav:false
-                        },
-                        1000:{
-                            items:3,
-                            nav:false,
-                            loop:true
-                        }
-                    }
-                });
-            }
-        });
-
-        feed.run();
-
 </script>
 <?php if(isset($scriptVista)){ echo $scriptVista; } ?>
 </body>

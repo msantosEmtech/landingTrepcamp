@@ -116,3 +116,38 @@
             // instead of a settings object
         ]
     });
+
+    var feed = new Instafeed({
+        accessToken: 'IGQVJWMnNEeXdJdEREenFHVExIc2NqRHFfLTlMRUZAITm1salZAVTzBDVEx2dl8tclhnZAjcxc0JndTM1X0ZAMMUNIdmtCNGNrZAkp6d0toWHNoMVFxTk9IVWlvUllXZAkxxOE0yZA1B5QTlxN01weWxlRVVlaAZDZD',
+        limit:3,
+        template:'<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="imgSliderIns shadow-1-strong rounded mt-5 mb-4" /></a></div>',
+        after: function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:2,
+                        nav:false,
+                        loop:true
+                    },
+                    600:{
+                        items:2,
+                        nav:false,
+                        loop:true
+                    },
+                    1000:{
+                        items:3,
+                        nav:false,
+                        loop:true
+                    }
+                }
+            });
+        }
+    });
+
+    feed.run();

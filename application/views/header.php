@@ -17,6 +17,7 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/custom.css') ?>"/>
+    <?php if(isset($linkVista)){ echo $linkVista; } ?>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -94,7 +95,7 @@
           <li class="nav-item"><a href="#" class="nav-link">Simulator</a></li>
           <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Account</a></li>
+          <li class="nav-item"><a href="<?= base_url('Login') ?>" class="nav-link">Account</a></li>
           <li class="nav-item"><button class="btn btn-primary btnAmarillo" type="submit">join challenge</button></li>
         </ul>
       </div>

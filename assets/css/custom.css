@@ -87,7 +87,7 @@ body{
 }
 .owl-carousel .owl-item img {
     transform-style: preserve-3d;
-    max-width: 160px !important;
+    max-width: 200px !important;
     margin: 0 auto 17px;
 }
 #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
@@ -345,23 +345,29 @@ hr {
     border: 1px solid #EEEEEE;
 }
 
-.item {
-	display: block;
-	width: 100%;
-	height: 300px;
-}
-.item img {
-	height: 100%;
-	width: 100%;
-}
+.text-divider {
+    --text-divider-gap: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.9375rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .text-divider::before, .text-divider::after {
+    content: '';
+    height: 1px;
+    background-color: #999999;
+    flex-grow: 1;
+  }
+  
+  .text-divider::before {
+    margin-right: var(--text-divider-gap);
+  }
+  
+  .text-divider::after {
+    margin-left: var(--text-divider-gap);
+  }
 
-.imgSliderIns{
-	max-width: 160px !important;
-}
-
-.imIn{
-	width: 300px;
-}
 
 
 
