@@ -1,24 +1,17 @@
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
         <div class="carousel-inner">
-            <div class="carousel-item active tarjeta1">
+            <div class="carousel-item active tarjeta1" style="transition:none">
                 <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="transparent" />
                 </svg> -->
                 <div class="container">
-                    <!-- <div class="row">
-                        <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="bd-placeholder-img">
-                    </div> -->
-                    <div class="carousel-caption text-start">
-                        <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="bd-placeholder-img" style="margin-left: -2rem;">
-                        <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey at <i style="color:#FFD041;">Silicon Valley</i></p>
-                        <div class="row">
+                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                        <div class="text-center">
+                            <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="" style="margin-left: -1rem;">
+                        </div>                                                
+                        <h1 class="pt-3 pb-2">Awaken your inner Enterpreneur</h1>
+                        <h4>Start your entrepreneurial journey at <i style="color:#FFD041;">Silicon Valley</i></h4>
+                        <div class="pt-3">
                             <a class="btn btn-primary btnAmarilloBanner" href="#">See programs</a>
                         </div>
                     </div>
@@ -27,61 +20,52 @@
                     </div> -->
                 </div>
             </div>
-            <div class="carousel-item tarjeta2">
-                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="transparent" />
-                </svg> -->
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <img src="<?= base_url('assets/img/imgTarjeta2.png') ?>" class="bd-placeholder-img" style="margin-left: 4rem;">
-                        <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey at <i style="color:#FFD041;">New York</i></p>
-                        <div class="row">
+            <div class="carousel-item tarjeta2" style="transition:none">
+                <div class="container">                   
+                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                        <div class="text-center" style="margin-top: 5rem !important;">
+                            <img src="<?= base_url('assets/img/imgTarjeta2.png') ?>">
+                        </div>                         
+                        <h1 class="pt-3 pb-2">Awaken your inner Enterpreneur</h1>
+                        <h4>Start your entrepreneurial journey at <i style="color:#FFD041;">New York</i></h4>
+                        <div class="pt-3">
                             <a class="btn btn-primary btnAmarilloBanner" href="#">See programs</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item tarjeta3">
+            <div class="carousel-item tarjeta3" style="transition:none">
                 <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="transparent" />
                 </svg> -->
                 <div class="container">
-                    <div class="carousel-caption text-start">
-                        <img src="<?= base_url('assets/img/imgTarjeta3.png') ?>" class="bd-placeholder-img" style="margin-left: 4rem;">
-                        <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey at <i style="color:#FFD041;">TrepCamp</i></p>
-                        <div class="row">
+                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">   
+                        <div class="text-center">
+                            <img src="<?= base_url('assets/img/imgTarjeta3.png') ?>" class="">
+                        </div>                          
+                        <h1 class="pt-3 pb-2">Awaken your inner Enterpreneur</h1>
+                        <h4>Start your entrepreneurial journey at <i style="color:#FFD041;">TrepCamp</i></h4>
+                        <div class="pt-3">
                             <a class="btn btn-primary btnAmarilloBanner" href="#">See programs</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item tarjeta4">
-                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="transparent" />
-                </svg> -->
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <img src="<?= base_url('assets/img/imgTarjeta4.png') ?>" class="bd-placeholder-img" style="margin-left: 4rem;">
-                        <h1>Awaken your inner Enterpreneur</h1>
-                        <p>Start your entrepreneurial journey <i style="color:#FFD041;">from Anywhere</i></p>
-                        <div class="row">
+            <div class="carousel-item tarjeta4" style="transition:none">
+                <div class="container">                                        
+                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                        <div class="text-center">
+                            <img src="<?= base_url('assets/img/imgTarjeta4.png') ?>" class="">
+                        </div>                        
+                        <h1 class=" pb-2">Awaken your inner Enterpreneur</h1>
+                        <h4>Start your entrepreneurial journey <i style="color:#FFD041;">from Anywhere</i></h4>
+                        <div class="pt-3">
                             <a class="btn btn-primary btnAmarilloBanner" href="#">See programs</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
     <div class="section pt-5 pb-5">
@@ -122,10 +106,10 @@
                 <div class="col-lg-6 text-center mb-5">
                     <div class="row justify-content-center mb-4">
                         <h2 class="titulo-sobrepuesto">WE ARE TURNING 10</h2>
-                        <img class="img-detras" src="<?= base_url('assets/img/10.png') ?>" style="width:125px;height:85px;">
+                        <img class="img-detras" src="<?= base_url('assets/img/10.png') ?>" style="width:125px;height:75px;">
                     </div>
                     <div class="row justify-content-center">
-                        <p class="mb-4" style="font-size: 18px;">Transforming entrepreneurs since 2013.</p>
+                        <p class="mb-4 p-4" style="font-size: 18px;">Transforming entrepreneurs since 2013.</p>
                     </div>
                     <div class="row justify-content-center">
                         <a class="btn btn-lg btn-primary btnAmarillo" href="#">Our story</a>
@@ -141,17 +125,17 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <p><img src="<?= base_url('assets/img/iconoAplicantes.png') ?>"></p>
-                                <h4>+10,000</h4>
+                                <h4 class="pt-2">+10,000</h4>
                                 <p>applicants each year</p>
                             </div>
                             <div class="carousel-item">
                                 <p><img src="<?= base_url('assets/img/iconSchool.png') ?>"></p>
-                                <h4>+5,000</h4>
+                                <h4 class="pt-2">+5,000</h4>
                                 <p>successful graduates</p>
                             </div>
                             <div class="carousel-item">
                                 <p><img src="<?= base_url('assets/img/iconLocation.png') ?>"></p>
-                                <h4>+50 programs</h4>
+                                <h4 class="pt-2">+50 programs</h4>
                                 <h4>+8 cities</h4>
                             </div>
                         </div>
@@ -174,10 +158,10 @@
                 <div class="col-lg-4 text-center my-auto py-3">
                     <div class="row justify-content-center mb-4">
                         <h2 class="titulo-sobrepuesto">WE ARE TURNING 10</h2>
-                        <img class="img-detras" src="<?= base_url('assets/img/10.png') ?>" style="width:125px;height:85px;">
+                        <img class="img-detras" src="<?= base_url('assets/img/10.png') ?>" style="width:125px;height:73px;">
                     </div>
                     <div class="row justify-content-center">
-                        <p class="mb-4" style="font-size: 20px;color: #393939;font-weight: 600;">Transforming entrepreneurs since 2013.</p>
+                        <p class="mb-4" style="font-size: 20px;color: #393939;font-weight: 600;padding-left: 3rem;padding-right: 3rem;">Transforming entrepreneurs since 2013.</p>
                     </div>
                     <div class="row justify-content-center">
                         <a class="btn btn-primary btnAmarilloMeet" style="background-color: #FFD041;" href="#">Our story</a>
@@ -362,7 +346,7 @@
         <div class="container section-meet">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3 style="color: #333333;">Meet all of our Success Stories</h3>
+                    <h3 class="pb-4" style="color: #333333;">Meet all of our Success Stories</h3>
                     <a class="btn btn-primary btnAmarilloMeet" href="#" style="margin: auto;">Success stories</a>
                 </div>
             </div>
@@ -373,7 +357,7 @@
         <div class="container">
 
             <div class="row mb-4">
-                <div class="row text-center mb-5">
+                <div class="text-center mb-5">
                     <h2 class="mb-4" style="color: #333333;">
                         Two paths towards entrepreneurial success.
                     </h2>
@@ -384,7 +368,7 @@
                 </div>
 
                 <div class="col text-center">
-                    <img class="mb-5" src="<?= base_url('assets/img/experience.svg') ?>">
+                    <img class="" style="margin-bottom:2.78rem" src="<?= base_url('assets/img/experience.svg') ?>">
                     <!-- <h2>Experience</h2> -->
                     <p style="color: #393939;font-weight: 700;">Develop your entrepreneurial skills in an immersive week in New York City</p>
 
@@ -400,10 +384,10 @@
 
 
             <div class="row mb-5">
-                <div class="row text-center">
+                <div class="text-center">
                     <h5 style="color: #333333;"><b>Designed to:</b></h4>
                 </div>
-                <div class="col">
+                <div class="col text-center">
                     <hr>
                     <p style="color: #333333;">Connect you with your entrepreneurial higher self.</p>
 
@@ -434,7 +418,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col text-center">
                     <hr>
                     <p style="color: #333333;">Help you go from an idea to a pitch in one summer.</p>
                     <div class="col text-center">
@@ -468,7 +452,7 @@
 
 
             <div class="row mb-4">
-                <div class="row text-center">
+                <div class="text-center">
                     <h5 style="color: #333333;"><b>This program is for you if:</b></h5>
                 </div>
                 <div class="col">
@@ -492,8 +476,10 @@
                             </p>
                             <p style="color: #333333;">You want to get involved with international ecosystems to get out of your confort zone and discover your full potential.</p>
                         </div>
-                        <div class="row mt-3">
-                            <p><a class="btn btn-md btn-primary btnAmarilloBanner" href="#">Learn more</a></p>
+                        <div class="row mt-3 text-center align-items-center">
+                            <div class="col-12 text-center">
+                                <a class="btn btn-md btn-primary btnAmarilloBanner" href="#" style="display:inline-block !important">Learn more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -520,8 +506,10 @@
                             <p style="color: #333333;">You want to get involved with international ecosystems to get out of your confort zone and discover your full potential.</p>
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <p><a class="btn btn-md btn-primary btnAmarilloBanner" href="#">Learn more</a></p>
+                    <div class="row mt-3 text-center align-items-center">
+                            <div class="col-12 text-center">
+                                <a class="btn btn-md btn-primary btnAmarilloBanner" href="#" style="display:inline-block !important">Learn more</a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -574,23 +562,9 @@
                 <div class="col-lg-6 pt-3">
                     <div class="sliderInstagram text-center">
                         <div>
-                            <div class="container">
+                            <div class="container pt-5">
                                 <div class="row">
-                                    <img src="<?= base_url('assets/img/imagenInstagram1.png') ?>">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="container">
-                                <div class="row">
-                                    <img src="<?= base_url('assets/img/imagenInstagram1.png') ?>">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="container">
-                                <div class="row">
-                                    <img src="<?= base_url('assets/img/imagenInstagram1.png') ?>">
+                                    <img src="<?= base_url('assets/img/mosaicoTC.png') ?>">
                                 </div>
                             </div>
                         </div>
@@ -604,9 +578,9 @@
     <div class="section pt-4 pb-4" style="background-color: rgba(0, 168, 255, 0.05);">
         <div class="container">
             <div class="row text-center">
-                <div class="row mb-3">
+                <div class="mb-3">
                     <h2 class="mb-3">Receive more information</h2>
-                    <p style="font-size:20px">Join our worldwide community to learn more.</p>
+                    <p class="p-2" style="font-size:20px">Join our worldwide community to learn more.</p>
                 </div>
                 <div class="col">
                     <p class="mb-4">Fill the following form to receive more information:</p>
