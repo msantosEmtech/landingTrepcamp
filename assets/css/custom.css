@@ -520,17 +520,17 @@ hr {
 .menu-h a {
 	color: #999999;
 }
-a {
+.menu-h a {
 	text-decoration: none;
 }
-nav {
+.menu-h nav {
 	position: relative;
 	z-index: 2;
 	height: 2.5rem;
 	overflow-y: hidden;
 	scroll-behavior: smooth;
 }
-nav ul {
+.menu-h nav ul {
 	display: inline-flex;
 	flex-wrap: nowrap;
 	padding-bottom: 1.5rem;
@@ -541,13 +541,13 @@ nav ul {
 	text-align: center;
 	white-space: nowrap;
 }
-nav a {
+.menu-h nav a {
 	color: #999999;
 	display: block;
 	padding: 0.5rem 0.75rem;
 	border-bottom: 10px solid #EEEEEE;
 }
-nav .active {
+.menu-h nav .active {
 	color: #333333;
 	border-bottom: 10px solid #333333;
 	font-weight: 600;
