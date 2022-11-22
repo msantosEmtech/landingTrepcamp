@@ -118,7 +118,7 @@
     });
 
     var feed = new Instafeed({
-        accessToken: 'IGQVJWMnNEeXdJdEREenFHVExIc2NqRHFfLTlMRUZAITm1salZAVTzBDVEx2dl8tclhnZAjcxc0JndTM1X0ZAMMUNIdmtCNGNrZAkp6d0toWHNoMVFxTk9IVWlvUllXZAkxxOE0yZA1B5QTlxN01weWxlRVVlaAZDZD',
+        accessToken: 'IGQVJWRlV6U1dNSWJiWVZASQ2F3UEZAXbGZA2RU5ZAaU1zQzhwMWcxa3lMMEVSTURTZAmFCV2R6NXFxOVM0NmRlZAFIzdU1RZAjdkS0dhUTU0S1dkanFvTXZAFWG1BOHhxRnZA5WURKU0IwUHRuU2lQdXlDaUxEQgZDZD',
         limit:3,
         template:'<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="imgSliderIns shadow-1-strong rounded mt-5 mb-4" /></a></div>',
         after: function(){
