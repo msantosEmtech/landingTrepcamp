@@ -58,7 +58,7 @@
                             <div class="text-divider"><span style="color: #6A6A6A;">or use your email</span></div>
                             <div class="row pt-5 pb-3">
                                 <div class="col-lg-12">
-                                    <h5>Sign in to TrepChallenge</h5>
+                                    <h5>Sign up to TrepChallenge</h5>
                                 </div>
                             </div>
                             <div class="row pt-3 pb-3">
@@ -103,7 +103,7 @@
                                     <span style="color: #474747;font-weight: 400;font-size: 16px;">Already have an account?</span>
                                 </div>
                                 <div class="col-lg-6">
-                                    <a href="#" style="color: #00A8FF;font-weight: 600;font-size: 16px;">Sign in to TrepChallenge</a>
+                                    <a href="<?= base_url('Login/signIn') ?>" style="color: #00A8FF;font-weight: 600;font-size: 16px;">Sign in to TrepChallenge</a>
                                 </div>
                             </div>
                         </div>
