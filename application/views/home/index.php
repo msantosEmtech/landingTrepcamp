@@ -569,8 +569,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-                    <div id="instafeed" class="row owl-carousel owl-theme owl-loaded owl-drag"></div>
+                    </div>
                 </div>
 
             </div>

@@ -82,11 +82,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
-    <!-- <script src="<?= base_url('assets/js/instafeed.min.js') ?>"></script> -->
+
 <script src="<?= base_url('assets/js/wow.min.js') ?>"></script>
 <script src="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') ?>"></script>
 <script src="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.min.js') ?>"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
 <script>
         new WOW().init();
         
@@ -95,6 +94,7 @@
         trepcamp.base = {
             url : '<?= base_url(); ?>'
         };
+
 </script>
 <?php if(isset($scriptVista)){ echo $scriptVista; } ?>
 </body>
