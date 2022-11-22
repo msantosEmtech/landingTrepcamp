@@ -40,7 +40,7 @@ body{
 	font-family: 'opensans-bold';
   }
 
-  p, a{
+  p, a, span{
 	font-family: 'opensans-regular';
   }
 .shadow-effect {
@@ -378,7 +378,7 @@ hr {
   .text-divider::before, .text-divider::after {
     content: '';
     height: 1px;
-    background-color: #999999;
+    background-color: #6A6A6A;
     flex-grow: 1;
   }
   
@@ -474,6 +474,13 @@ hr {
     height: 24rem !important;
 }
 
-
+.section-head-sign-in{
+    background-image: url('../img/lineasBackSignIn.png');
+	background-color: #ffffff;
+    background-position: center;
+    background-position-y: 7px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 

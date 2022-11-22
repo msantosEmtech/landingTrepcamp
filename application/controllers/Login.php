@@ -8,7 +8,7 @@ class Login extends CI_Controller {
 		$linkJsVista = base_url('assets/js/show-password-toggle.min.js');
         $linkCssVista = base_url('assets/css/show-password-toggle.min.css');
         $header = array(
-            'linkVista' => '<link href="'.$linkCssVista.'" rel="stylesheet">'
+            'linkVista' => '<link rel="stylesheet" type="text/css" href="'.$linkCssVista.'"/>'
         );
 
         $footer = array(
