@@ -165,6 +165,13 @@ body{
     border: none;
 }
 
+.btnAmarilloWinners{
+    background: #ffd041;
+    border-radius: 25px;
+	color: #FFF;
+	font-family: 'opensans-bold';
+}
+
 .tarjeta1{
 	background-image: url('../img/lineasBackground.png');
 	background-color: #6C20ED;
@@ -313,7 +320,16 @@ body{
     padding:10rem;
 }
 
+.trepChallenge-logo{
+	width: 16rem;
+}
+
+
 @media only screen and (max-width: 991px) {
+
+	.trepChallenge-logo{
+		width: 12rem;
+	}
     
     .sliderDesk {
         padding:0rem;
@@ -338,6 +354,13 @@ body{
         background-repeat: no-repeat; 
         background-size: cover; 
     }
+
+    .backgroundLineas {
+        background-image: url('../img/fondo-lineas.png');
+        background-position: top; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }	
 }
 
 hr {
@@ -346,3 +369,48 @@ hr {
 }
 
 
+
+
+/* MENU HORIZONTAL DE WINNERS*/
+.menu-h {
+	padding: 1rem 1rem 0.5rem;
+	color: #999999;
+	text-align: center;
+	background-color: #FFF;
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.menu-h a {
+	color: #999999;
+}
+a {
+	text-decoration: none;
+}
+nav {
+	position: relative;
+	z-index: 2;
+	height: 2.5rem;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+}
+nav ul {
+	display: inline-flex;
+	flex-wrap: nowrap;
+	padding-bottom: 1.5rem;
+	padding-left: 0;
+	margin-block: 0;
+	overflow-x: auto;
+	list-style: none;
+	text-align: center;
+	white-space: nowrap;
+}
+nav a {
+	color: #999999;
+	display: block;
+	padding: 0.5rem 0.75rem;
+	border-bottom: 10px solid #EEEEEE;
+}
+nav .active {
+	color: #333333;
+	border-bottom: 10px solid #333333;
+	font-weight: 600;
+}                   
