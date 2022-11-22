@@ -5,7 +5,7 @@
         <div class="col mb-3">
             <div class="container">
                 <a href="/" class="row justify-content-center mb-5 link-dark text-decoration-none">
-                    <img src="<?= base_url('assets/img/logoTrepcamp.png') ?>" style="width:45%">
+                    <img src="<?= base_url('assets/img/logoTrepcamp.svg') ?>" style="width:45%">
                 </a>
 
                 <div class="row text-center">
@@ -17,15 +17,15 @@
         <div class="col mt-5 mb-4 text-center">
             <div class="container">
                 <div class="row">
-                    <a href="#" class="col nav-link p-0 text-muted">Home</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Our story</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Experience</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Simulator</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Home</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Our story</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Experience</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Simulator</a>
                 </div>
                 <div class="row">
-                    <a href="#" class="col nav-link p-0 text-muted">About us</a>
-                    <a href="#" class="col nav-link p-0 text-muted">Blog</a>
-                    <a href="#" class="col nav-link p-0 text-muted">My account</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">About us</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Blog</a>
+                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">My account</a>
                 </div>
             </div>
         </div>
@@ -66,99 +66,37 @@
     </footer>
 
     <div class="row">
-        <div class="col col div-img-footer">
-            <p>© Copyright 2022 TrepCamp.org. All rights reserved.</p>
+        <div class="col col div-img-footer text-center">
+            <p style="font-size:14px">© Copyright 2022 TrepCamp.org. All rights reserved.</p>
         </div>
         <ul class="nav col-md-6 justify-content-center list-unstyled d-flex">
-            <li class="ms-3"><a style="color: #00A8FF;" href="#">Privacy policy</a></li>
-            <li class="ms-3"><a style="color: #00A8FF;" href="#">Terms of use</a></li>
+            <li class="ms-3"><a style="color: #00A8FF;font-size:14px" href="#">Privacy policy</a></li>
+            <li class="ms-3"><a style="color: #00A8FF;font-size:14px" href="#">Terms of use</a></li>
         </ul>
     </div>
 </div>
 </main>
 <script src="<?= base_url('assets/plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/jquery/js/query-3.6.0.min.js') ?>"></script>
+<!-- <script src="<?= base_url('assets/plugins/jquery/js/query-3.6.0.min.js') ?>"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <!-- <script src="<?= base_url('assets/js/instafeed.min.js') ?>"></script> -->
 <script src="<?= base_url('assets/js/wow.min.js') ?>"></script>
 <script src="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') ?>"></script>
 <script src="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.min.js') ?>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
 <script>
-    new WOW().init();
-</script>
-<script>
-    $('.one-time').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        autoplay: true,
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
+        new WOW().init();
+        
+        var trepcamp = {};
 
-    $('.sliderTestimonial').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        autoplay: true,
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
+        trepcamp.base = {
+            url : '<?= base_url(); ?>'
+        };
 </script>
+<?php if(isset($scriptVista)){ echo $scriptVista; } ?>
 </body>
 
 </html>
