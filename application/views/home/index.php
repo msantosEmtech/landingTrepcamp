@@ -168,7 +168,7 @@
                         <a class="btn btn-primary btnAmarilloMeet" style="background-color: #FFD041;" href="#">Our story</a>
                     </div>
                 </div>
-                <div class="col-lg-8 text-center py-3">
+                <div class="col-lg-8 text-center py-3 my-auto">
                     <div class="row">
                         <div class="sliderNumeros">
                             <div class="col-md-4 divApplicantsSlider" style="border-right: 1px solid #6A6A6A;">
@@ -451,73 +451,73 @@
                 </div>
             </div>
 
-
             <div class="row mb-4">
                 <div class="text-center">
                     <h5 style="color: #333333;"><b>This program is for you if:</b></h5>
                 </div>
-                <div class="col">
-                    <hr>
-                    <div class="col text-center">
-                        <div class="row">
-                            <p>
-                                <img src="<?= base_url('assets/img/circleCheck.png') ?>">
-                            </p>
-                            <p style="color: #333333;">You want to strengthen your entrepreneurial skills and mindset before launching your own start up.</p>
-                        </div>
-                        <div class="row">
-                            <p>
-                                <img src="<?= base_url('assets/img/circleCheck.png') ?>">
-                            </p>
-                            <p style="color: #333333;">You want to make significant connections that will be key for your professional development.</p>
-                        </div>
-                        <div class="row">
-                            <p>
-                                <img src="<?= base_url('assets/img/circleCheck.png') ?>">
-                            </p>
-                            <p style="color: #333333;">You want to get involved with international ecosystems to get out of your confort zone and discover your full potential.</p>
-                        </div>
-                        <div class="row mt-3 text-center align-items-center">
-                            <div class="col-12 text-center">
-                                <a class="btn btn-md btn-primary btnAmarilloBanner" href="#" style="display:inline-block !important">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <hr>
-                    <div class="col text-center">
-                        <div class="row">
-                            <p>
-                                <img src="<?= base_url('assets/img/circleCheck.png') ?>">
-                            </p>
-                            <p style="color: #333333;">You want to strengthen your entrepreneurial skills and mindset before launching your own start up.</p>
-                        </div>
-                        <div class="row">
-                            <p>
-                                <img src="<?= base_url('assets/img/circleCheck.png') ?>">
-                            </p>
-                            <p style="color: #333333;">You want to make significant connections that will be key for your professional development</p>
-                        </div>
-                        <div class="row">
-                            <p>
-                                <img src="<?= base_url('assets/img/circleCheck.png') ?>">
-                            </p>
-                            <p style="color: #333333;">You want to get involved with international ecosystems to get out of your confort zone and discover your full potential.</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3 text-center align-items-center">
-                            <div class="col-12 text-center">
-                                <a class="btn btn-md btn-primary btnAmarilloBanner" href="#" style="display:inline-block !important">Learn more</a>
-                            </div>
-                    </div>
-                </div>
             </div>
+            <div class="row text-center">
+                <div class="col">
+                    <p>
+                        <img src="<?= base_url('assets/img/circleCheck.png') ?>">
+                    </p>
+                    <p style="color: #333333;">You want to strengthen your entrepreneurial skills and mindset before launching your own start up.</p>                   
+                </div>
+                <div class="col">
+                    <p>
+                        <img src="<?= base_url('assets/img/circleCheck.png') ?>">
+                    </p>
+                    <p style="color: #333333;">You want to start your entrepreneurial journey right away, whether you have an existing idea or not.</p>                    
+                </div>               
+            </div>
+
+            <div class="row text-center">
+                <div class="col">
+                    <p>
+                        <img src="<?= base_url('assets/img/circleCheck.png') ?>">
+                    </p>
+                    <p style="color: #333333;">You want to make significant connections that will be key for your professional development.</p>                   
+                </div>
+                <div class="col">
+                    <p>
+                        <img src="<?= base_url('assets/img/circleCheck.png') ?>">
+                    </p>
+                    <p style="color: #333333;">You want to prepare yourself, alongside international aspiring entrepreneurs.</p>                    
+                </div>               
+            </div>
+            
+            <div class="row text-center">
+                <div class="col">
+                    <p>
+                        <img src="<?= base_url('assets/img/circleCheck.png') ?>">
+                    </p>
+                    <p style="color: #333333;">You want to get involved with international ecosystems to get out of your confort zone and discover your full potential.</p>                   
+                </div>
+                <div class="col">
+                    <p>
+                        <img src="<?= base_url('assets/img/circleCheck.png') ?>">
+                    </p>
+                    <p style="color: #333333;">You want to ask questions and be supported by industry leaders, and find the resources to make it possible.</p>                    
+                </div>               
+            </div>            
+
+            <div class="row text-center pt-3">
+                <div class="col">
+                    <a class="btn btn-md btn-primary btnAmarilloBanner" href="<?= base_url('Experience') ?>" style="display:inline-block !important">Learn more</a>
+                </div>
+                <div class="col">
+                    <button class="btn btn-md btn-primary btn-outline-secondary" href="#" style="display:inline-block !important;border-color:#6c757d" disabled>Coming soon</button>           
+                </div>               
+            </div>           
+
+
+
+
+
         </div>
     </div>
 
-    <div class="section pt-5 pb-5">
+  <!--  <div class="section pt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -530,9 +530,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
-    <div class="section pt-5 pb-5 backgroundAzul" style="background-color: #33A4FE;">
+   <!-- <div class="section pt-5 pb-5 backgroundAzul" style="background-color: #33A4FE;">
         <div class="container">
             <div class="row pt-4 pb-4">
                 <div class="col-lg-12 text-center">
@@ -541,7 +541,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="section pt-5 pb-5">
         <div class="container text-center">
