@@ -5,7 +5,7 @@
                     <rect width="100%" height="100%" fill="transparent" />
                 </svg> -->
                 <div class="container">
-                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                    <div class="carousel-caption text-start" style="right: 10%;left: 2%;">
                         <div class="text-center">
                             <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="" style="margin-left: -1rem;">
                         </div>                                                
@@ -22,7 +22,7 @@
             </div>
             <div class="carousel-item tarjeta2" style="transition:none">
                 <div class="container">                   
-                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                    <div class="carousel-caption text-start" style="right: 10%;left: 4%;">
                         <div class="text-center" style="margin-top: 5rem !important;">
                             <img src="<?= base_url('assets/img/imgTarjeta2.png') ?>">
                         </div>                         
@@ -39,7 +39,7 @@
                     <rect width="100%" height="100%" fill="transparent" />
                 </svg> -->
                 <div class="container">
-                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">   
+                    <div class="carousel-caption text-start" style="right: 10%;left: 4%;">   
                         <div class="text-center">
                             <img src="<?= base_url('assets/img/imgTarjeta3.png') ?>" class="">
                         </div>                          
@@ -53,7 +53,7 @@
             </div>
             <div class="carousel-item tarjeta4" style="transition:none">
                 <div class="container">                                        
-                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                    <div class="carousel-caption text-start" style="right: 10%;left: 4%;">
                         <div class="text-center">
                             <img src="<?= base_url('assets/img/imgTarjeta4.png') ?>" class="">
                         </div>                        
@@ -84,6 +84,7 @@
     </div>
     <div class="secction pt-5 pb-5">
         <div class="container">
+            <div class="row">
             <div class="row text-center">
                 <div class="col-lg-6 pb-3 wow zoomIn">
                     <h2 style="color: #333333;">Transform your life doing something meaningful</h2>
@@ -548,7 +549,7 @@
                 <div class="col-lg-6">
                     <h3 style="color:#333333;text-align: center;">Get in touch with our<br> journey</h3>
                     <p style="color: #999999;">Be part of our Treps story. Follow TrepCamp in your favorite social media channel.</p>
-                    <ul class="nav col-md-8 justify-content-center list-unstyled d-flex pt-3">
+                    <ul class="nav col-md-12 justify-content-center list-unstyled d-flex pt-3">
                         <li class="ms-2">
                             <a href="https://www.instagram.com/emtech.inst/"><img src="<?= base_url('assets/img/iconInstagram.png') ?>"></a>
                         </li>    
@@ -560,7 +561,7 @@
                 </div>
 
                 <div class="col-lg-6 pt-3">
-                    <div class="sliderInstagram text-center">
+                    <!-- <div class="sliderInstagram text-center">
                         <div>
                             <div class="container pt-5">
                                 <div class="row">
@@ -568,7 +569,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <div id="instafeed" class="row owl-carousel owl-theme owl-loaded owl-drag"></div>
                 </div>
 
             </div>

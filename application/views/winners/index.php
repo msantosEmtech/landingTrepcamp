@@ -1,4 +1,10 @@
-    <div class="secction-banner backgroundLineas" style="background-color: #FFF;">
+   <style> 
+   ::-webkit-scrollbar {
+    display: none;
+}
+   </style>
+   
+   <div class="secction-banner backgroundLineas" style="background-color: #FFF;">
         <div class="container">
             <div class="row py-5">
                 <div class="col-md-6 col-xs-12 my-auto wow zoomIn text-left pt-4">
@@ -19,7 +25,7 @@
             <div class="row text-center">
                 <div class="col-lg-12 text-center my-auto">
                     <div class="thumb wow fadeInUp" data-wow-delay="0.5s">
-                        <video class="video-trailer" controls poster="<?= base_url('assets/img/portadaVideoWinners.png') ?>" style="cursor: pointer;width:100%">
+                        <video class="video-trailer" controls poster="<?= base_url('assets/img/video-experiece.png') ?>" style="cursor: pointer;width:100%">
                             <source src="<?= base_url('assets/videos/ADS_S4S.mp4') ?>" type="video/mp4">
                         </video>
                     </div>

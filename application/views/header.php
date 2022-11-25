@@ -4,15 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
+    <meta name="author" content="TrepCamp 2022">
+    <meta name="generator" content="TrepCamp">
     <title>Trepcamp | Home</title>
+    <link rel="icon" type="image/x-icon" href="<?= base_url('assets/img/favicon.ico') ?>">    
     <link href="<?= base_url('assets/plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome-free-5.15.4-web/css/all.css') ?>" />
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.css') ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/slick-1.8.1/slick/slick-theme.css') ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/animate/animate.min.css') ?>"/>
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css') ?>"/>
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css') ?>"/>
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/custom.css') ?>"/>
+    <?php if(isset($linkVista)){ echo $linkVista; } ?>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -79,19 +86,19 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#" style="padding-left: 2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.svg')?>" width="110"></a>
+      <a class="navbar-brand" href="<?= base_url('Home') ?>" style="padding-left: 0.2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="120"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav nav-pills navbar-nav ms-auto mb-2 mb-lg-0 pt-3 pb-3" >
           <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Our story</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="<?= base_url('Experience')?>" class="nav-link">Experience</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Simulator</a></li>
           <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Account</a></li>
-          <li class="nav-item"><button class="btn btn-primary btnAmarillo" type="submit">join challenge</button></li>
+          <li class="nav-item"><a href="<?= base_url('Login') ?>" class="nav-link">Account</a></li>
+          <li class="nav-item"><button class="btn btn-primary btnAmarillo" type="submit">Join challenge</button></li>
         </ul>
       </div>
     </div>
