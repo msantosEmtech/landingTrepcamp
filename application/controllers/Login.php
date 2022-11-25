@@ -57,7 +57,7 @@ class Login extends CI_Controller {
 
 		//restrict users to go back to login if session has been set
 		if($this->session->userdata('user')){
-			redirect('Login');
+			redirect('Profile');
 		}
 		else{
 			$this->load->view('header', $header);

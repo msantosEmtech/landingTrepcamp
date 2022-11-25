@@ -5,7 +5,10 @@ class Account extends CI_Controller {
 
     public function __construct(){
 		parent::__construct();
-
+        
+        if(!$this->session->userdata('user')){
+			redirect(base_url('Login'));
+		}
         header('Access-Control-Allow-Origin: *');
         Header('Access-Control-Allow-Headers: *');
         Header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");

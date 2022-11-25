@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 defined('EMAIL_FROM')              OR define('EMAIL_FROM',              'info@trepcamp.net');
 defined('EMAIL_FROM_NAME')         OR define('EMAIL_FROM_NAME',         'Trepcamp');
 defined('EMAIL_TO')                OR define('EMAIL_TO',                'xxxx@xxx.xx');
-defined('EMAIL_SUBJECT')           OR define('EMAIL_SUBJECT',           'Thanks! for sign up, please verified your email');
+defined('EMAIL_SUBJECT')           OR define('EMAIL_SUBJECT',           'Thanks! for sign up, please verify your email address');
 defined('EMAIL_ENABLED')           OR define('EMAIL_ENABLED',            TRUE);
 
 /*

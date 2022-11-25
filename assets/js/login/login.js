@@ -90,7 +90,7 @@
                     timer: 1500
                 }).then(result => {
                     if(result){
-                        window.location.replace(trepcamp.base.url + "Login");
+                        window.location.replace(`${trepcamp.base.url}Account`);
                     }
                 });
                 

@@ -1,4 +1,4 @@
-<section class="pt-5 pb-5">
+<section class="pt-5 pb-5" style="background-image: url('<?= base_url('assets/img/backAccount.png') ?>');">
     <div class="container">
         <div class="row pb-5">
             <div class="col-md-12">
