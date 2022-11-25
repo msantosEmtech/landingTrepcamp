@@ -20,9 +20,11 @@
                     </div>
                     <div class="mb-3">
                         <select class="form-select" aria-label="Default select example" style="border-radius: 50px;">
-                            <option selected>Select a option</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Feminino</option>
+                            <option selected>Gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="2">Other</option>
+                            <option value="2">Prefer no to answer</option>
                         </select>
                     </div>
                     <div class="mb-3">
