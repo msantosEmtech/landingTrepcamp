@@ -5,8 +5,19 @@
                 <h2 style="color: #00A8FF;">Welcome, <?= $nombre_user ?>!</h2>
                 <p><img style="margin-right: 5px;" src="<?= base_url('assets/img/check-chapter.svg') ?>">Chapter: <?= $chapter_name ?></p>
                 <p><img style="margin-right: 5px;" src="<?= base_url('assets/img/Calendar.svg') ?>">Date: <?= $chapter_date_start ?> to <?= $chapter_date_ends ?></p>
-                <?if ($estado_user>1) {?>
+                <?php if ($estado_user >1 && $estado_user <= 4) {?>
                     <p class="mb-2 mt-5">You are currently taking the Challenge</p>
+                    
+                    <div class="d-flex justify-content-between">
+                        <div class="progress">                         
+                            <div class="progress-bar" style="width:<?=$chapter_progreso?>%;"><!-- width es el porcentaje de recorrido -->                            
+                                <img  src="<?= base_url('assets/img/flag.svg')?>" alt="">                          
+                            </div>
+                        </div>
+                        <p style="margin-right: 13px;"><?=$chapter_progreso_text?>%</p>
+                    </div>               
+                <?php }else if ($estado_user == 5 && $tiktok_challenge == 1 && $ac_challenge == 0) {// falta ac challenge?>
+                    <p class="mb-2 mt-5">You completed TikTok Viral Challenge</p>
                     
                     <div class="d-flex justify-content-between">
                         <div class="progress">                         
@@ -17,24 +28,63 @@
                         <p style="margin-right: 13px;"><?=$chapter_progreso_text?>%</p>
                     </div>
                     
-                <?}?>
+                <?php }else if ($estado_user == 5 && $ac_challenge == 1 && $tiktok_challenge == 0) {//falta tiktok challenge?>
+                    <p class="mb-2 mt-5">You completed Competencies Challenge</p>
+                    
+                    <div class="d-flex justify-content-between">
+                        <div class="progress">                         
+                            <div class="progress-bar" style="width:<?=$chapter_progreso?>%;"><!-- width es el porcentaje de recorrido -->                            
+                                <img  src="<?= base_url('assets/img/flag.svg')?>" alt="">                          
+                            </div>
+                        </div>
+                        <p style="margin-right: 13px;"><?=$chapter_progreso_text?>%</p>
+                    </div>
+                
+                <?php }else if ($estado_user == 6 && $all_challenges == 1) {?>
+                    <p class="mb-2 mt-5">You completed the "Growth Mindset" Edition Challenge</p>
+                    
+                    <div class="d-flex justify-content-between">
+                        <div class="progress">                         
+                            <div class="progress-bar" style="width:<?=$chapter_progreso?>%;"><!-- width es el porcentaje de recorrido -->                            
+                                <img  src="<?= base_url('assets/img/flag.svg')?>" alt="">                          
+                            </div>
+                        </div>
+                        <p style="margin-right: 13px;"><?=$chapter_progreso_text?>%</p>
+                    </div>
+                    
+                <?php }?>
             </div>
             <div class="col-md-6">
                 <div class="px-3">
                     <div class="row text-center" style="background-color: #00A8FF;border-radius: 8px;">
-                    <?if ($estado_user == 1) {?>
+                    <?php if ($estado_user == 1) {?>
                         <h4 style="color:#FFF;" class="px-5 pt-5">Are you ready to start our TrepChallenge?</h4>
                         <p style="color:#FFF; font-size:14px;" class="px-5 mb-4">Get ready to prove your communication and personal competencies to win an all-paid unique experience to transform your mindset at New York City.</p>
                         <div class="d-flex justify-content-center mb-4">
                             <button class="btn btn-primary btnAmarilloStories"><b>Start Challenge</b></button>
                         </div>
-                    <?}else if ($estado_user>1) {?>
+                    <?php }else if ($estado_user > 1 && $estado_user <= 4) {?>
                         <h4 style="color:#FFF;" class="px-5 pt-5">You are currently taking the Challenge</h4>
                         <p style="color:#FFF; font-size:14px;" class="px-5 mb-4">Please move on to step 1 "Participation Fee"</p>
                         <div class="d-flex justify-content-center mb-4">
                             <button class="btn btn-primary btnAmarilloMeet"><b>Next Step</b></button>
                         </div>
-                    <?}?>
+                    <?php }else if ($estado_user == 5 && $all_challenges != 1) {?>
+                        <h4 style="color:#FFF;" class="px-5 pt-5">You're currently participating in our TrepChallenge</h4>
+                        <p style="color:#FFF; font-size:14px;" class="px-5 mb-4">Double your chances of winning to make your effort count! Remember you can complete our Entrepreneurial 
+                        Competencies Assessment/TikTok Viral Challenge to add another participation entry and increase your chances of becoming a winner.</p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <a href="<?= base_url('Intranet/challengeAc')?>" class="btn btn-primary btnAmarilloMeet">Extra Shot</a>
+                        </div>
+                    <?php }else if ($estado_user == 6 && $all_challenges == 1) {//esta seria la vista de closed challeng ?>
+                        <h4 style="color:#FFF;" class="px-5 pt-5">Congratulations! You covered all our Challenge steps</h4>
+                        <p style="color:#FFF; font-size:14px;" class="px-5 mb-4">Be patient, our jury will be reviewing all participant's 
+                        applications until December 16, 2022. You're at the final stretch of joining our Experience Program at New York City, yet remember 
+                        to check constantly your registered email, where we'll notify if you won our TrepChallenge.</p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <button class="btn btn-primary btnAmarillo"><b>See Last Chapters Winners</b></button>
+                        </div>
+                    <?php }?>
                     </div>
                 </div>
 
