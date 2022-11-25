@@ -16,7 +16,7 @@
                             The most voted candidates from our Entrepreneurial Jury will receive the prize.
                         </p>
                         <div class="d-flex justify-content-start mb-4">
-                            <button class="btn btn-primary btnAmarilloJoin">Participate</button>
+                            <a href="<?= base_url('Intranet/sumary')?>" class="btn btn-primary btnAmarilloJoin">Participate</a>
                         </div>
                     </div>                    
                 </div>
@@ -28,7 +28,7 @@
                             following the theme guidelines. The most viral TikToks will receive the prize.
                         </p>
                         <div class="d-flex justify-content-start mb-4">
-                            <button class="btn btn-primary btnAmarilloJoin">Participate</button>
+                            <a href="#" class="btn btn-primary btnAmarilloJoin">Participate</a>
                         </div>
                     </div>                    
                 </div>
