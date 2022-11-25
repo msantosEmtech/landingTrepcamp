@@ -21,7 +21,7 @@ class Users extends CI_Model
         users.Status        AS user_status,
         genders.Description AS user_gender_description");
 		$this->db->from("users");
-        $this->db->join('genders', 'genders.Id = users.IdGender', 'inner');
+        $this->db->join('genders', 'genders.Id = users.IdGender', 'left');
 
 		return $this->db->get()->result_array();
     }
@@ -43,7 +43,7 @@ class Users extends CI_Model
         users.Status        AS user_status,
         genders.Description AS user_gender_description");
 		$this->db->from("users");
-        $this->db->join('genders', 'genders.Id = users.IdGender', 'inner');
+        $this->db->join('genders', 'genders.Id = users.IdGender', 'left');
         $this->db->where($condicional);
 
 		return $this->db->get()->row_array();
@@ -66,14 +66,14 @@ class Users extends CI_Model
         users.Status        AS user_status,
         genders.Description AS user_gender_description");
 		$this->db->from("users");
-        $this->db->join('genders', 'genders.Id = users.IdGender', 'inner');
+        $this->db->join('genders', 'genders.Id = users.IdGender', 'left');
         $this->db->where($condicional);
 
 		return $this->db->get()->row_array();
     }
 
     public function GetByCredentials($email, $pasword){
-        $condicional = array('users.Email' => $email, 'users.Password' => $pasword);
+        $condicional = array('users.Email' => $email, 'users.Password' => $pasword, 'Status' => 1);
 
         $this->db->select("
         users.Id            AS user_id, 
@@ -89,7 +89,7 @@ class Users extends CI_Model
         users.Status        AS user_status,
         genders.Description AS user_gender_description");
 		$this->db->from("users");
-        $this->db->join('genders', 'genders.Id = users.IdGender', 'inner');
+        $this->db->join('genders', 'genders.Id = users.IdGender', 'left');
         $this->db->where($condicional);
 
 		return $this->db->get()->row_array();
@@ -150,4 +150,21 @@ class Users extends CI_Model
 		$where = array('Id' => $id);
 		return $this->db->delete('users', $where);
 	}
+
+    public function verified($email){
+        $exist = $this->db->get_where('users', array('Email' => $email, 'Status' => 0));
+        $result = $exist->num_rows();
+
+        if($result > 0){
+            $where = array('Email' => $email);
+            $data = [
+                'Status'        => 1
+            ];
+            return $this->db->update("users", $data, $where);
+        }else{
+            return false;
+        }
+            
+        
+    }
 }
