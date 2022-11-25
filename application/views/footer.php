@@ -1,80 +1,68 @@
-<!-- FOOTER -->
-<div class="container">
-    <footer class="container py-5 my-5">
-
-        <div class="col mb-3">
-            <div class="container">
-                <a href="/" class="row justify-content-center mb-5 link-dark text-decoration-none">
-                    <img src="<?= base_url('assets/img/logoTrepcamp.svg') ?>" style="width:45%">
-                </a>
-
-                <div class="row text-center">
-                    <p class="text-muted">TrepCamp is an entrepreneurial academy focused on transformation, mindset, and practice that prepares aspiring entrepreneurs to launch real projects.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col mt-5 mb-4 text-center">
-            <div class="container">
-                <div class="row">
-                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Home</a>
-                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Our story</a>
-                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Experience</a>
-                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Simulator</a>
-                </div>
-                <div class="row">
-                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">About us</a>
-                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Blog</a>
-                    <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">My account</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 offset-md-2 mb-3">
-            <div class="container">
-                <div class="row text-center">
-                    <p>
-                        <img src="<?= base_url('assets/img/pin-blanco.svg') ?>" alt="">
+<div class="section pt-5 pb-5" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row py-2 pt-4 centerMobile">
+                <div class="col-lg-6">
+                    <a href="/" class=" align-items-center mb-3 link-dark text-decoration-none">
+                        <img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="200">
+                    </a>
+                    <p class="text-muted pt-3 pb-3" style="color: #6A6A6A;">TrepCamp is an entrepreneurial academy focused on transformation, 
+                        mindset, and practice that prepares aspiring entrepreneurs to launch real projects.
                     </p>
-                    <p class="mb-0">28 Liberty Street </p>
-                    <p>Silicon Valley, California. EE. UU.</p>
+
+                    <div class="container">
+                        <div class="row">
+                            <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Home</a>
+                            <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Our story</a>
+                            <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Experience</a>
+                        </div>
+                        <div class="row">
+                            <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">About us</a>
+                            <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">Blog</a>
+                            <a href="#" class="col nav-link p-0 text-muted" style="color:#000 !important">My account</a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="row text-center">
-                    <p><img src="<?= base_url('assets/img/telefono.svg') ?>" alt=""><a style="color:#999;margin-left:7px">4563635635</a></p>
+
+                <div class="col-lg-3 offset-lg-3 columna-info">
+                    <div class="container">
+                        <div class="row text-center">
+                            <p>
+                                <img src="<?= base_url('assets/img/pin-blanco.svg') ?>" alt="">
+                            </p>
+                            <p class="mb-0">28 Liberty Street </p>
+                            <p>Silicon Valley, California. EE. UU.</p>
+                        </div>
+                        <div class="row text-center">
+                            <p><img src="<?= base_url('assets/img/telefono.svg') ?>" alt=""><a style="color:#999;margin-left:7px">+521 5578325423</a></p>
+                        </div>
+                        <div class="row text-center">
+                            <p><img src="<?= base_url('assets/img/correo.svg') ?>" alt=""><a style="margin-left:7px">info@trepcamp.org</a></p>
+                        </div>
+                        <div class="row text-center mt-3">
+                            <ul class="nav justify-content-center">
+                                <li class="ms-4">
+                                    <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/tiktok.png') ?>"></a>
+                                </li>
+                                <li class="ms-4">
+                                    <a href="https://www.instagram.com/emtech.inst/"><img src="<?= base_url('assets/img/instagram.png') ?>"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="row text-center">
-                    <p><img src="<?= base_url('assets/img/correo.svg') ?>" alt=""><a style="margin-left:7px">info@trepcamp.com</a></p>
-                </div>
-                <div class="row text-center mt-3">
-                    <ul class="nav justify-content-center">
-                        <li class="ms-4">
-                            <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/tiktok.png') ?>"></a>
-                        </li>
-                        <li class="ms-4">
-                            <a href="https://www.instagram.com/emtech.inst/"><img src="<?= base_url('assets/img/instagram.png') ?>"></a>
-                        </li>
-                        <li class="ms-4">
-                            <a href="https://www.facebook.com/emtech.inst"><img src="<?= base_url('assets/img/facebook.png') ?>"></a>
-                        </li>
-                        <li class="ms-4">
-                            <a href="https://www.linkedin.com/school/emtechinstitute/"><img src="<?= base_url('assets/img/linkedin.png') ?>"></a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+        </div>
+    </div>
+<!-- FOOTER -->
+    
+    <footer class="container" style="background-color:#ffffff;">
+        <div class="row">
+            <div class="col-lg-6 div-copyright">
+                    <p style="margin-top: 0.5rem;color: #333333;">© Copyright 2022 TrepCamp.org. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <div class="row">
-        <div class="col col div-img-footer text-center">
-            <p style="font-size:14px">© Copyright 2022 TrepCamp.org. All rights reserved.</p>
-        </div>
-        <ul class="nav col-md-6 justify-content-center list-unstyled d-flex">
-            <li class="ms-3"><a style="color: #00A8FF;font-size:14px" href="#">Privacy policy</a></li>
-            <li class="ms-3"><a style="color: #00A8FF;font-size:14px" href="#">Terms of use</a></li>
-        </ul>
-    </div>
-</div>
 </main>
 <script src="<?= base_url('assets/plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js') ?>"></script>
 <!-- <script src="<?= base_url('assets/plugins/jquery/js/query-3.6.0.min.js') ?>"></script> -->

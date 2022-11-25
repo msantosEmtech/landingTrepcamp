@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
+    <meta name="author" content="TrepCamp 2022">
+    <meta name="generator" content="TrepCamp">
     <title>Trepcamp | Home</title>
+    <link rel="icon" type="image/x-icon" href="<?= base_url('assets/img/favicon.ico') ?>">    
     <link href="<?= base_url('assets/plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome-free-5.15.4-web/css/all.css') ?>" />
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.css') ?>"/>
@@ -84,7 +85,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="<?= base_url('Home') ?>" style="padding-left: 2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.svg')?>" width="110"></a>
+      <a class="navbar-brand" href="<?= base_url('Home') ?>" style="padding-left: 0.2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="120"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -96,7 +97,7 @@
           <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
           <li class="nav-item"><a href="<?= base_url('Login') ?>" class="nav-link">Account</a></li>
-          <li class="nav-item"><button class="btn btn-primary btnAmarillo" type="submit">join challenge</button></li>
+          <li class="nav-item"><button class="btn btn-primary btnAmarillo" type="submit">Join challenge</button></li>
         </ul>
       </div>
     </div>

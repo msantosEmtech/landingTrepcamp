@@ -1,4 +1,4 @@
-<section class="pt-5 pb-5 seccion1-experience">
+<section class="pt-5 pb-5 seccion1-experience backgroundLineas">
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-6 mb-5">
@@ -242,13 +242,13 @@
                 </div>
             </div>
             <div>
-                <div class="col-md-12">
+                <div class="col-md-12 pt-3">
                     <div class="row text-center">
                         <p class="" style="color: #6C20ED; font-size:18px">Got questions?</p>
                         <h2>We have answers</h2>
                     </div>
                     <div class="row">
-                        <div class="mt-5">
+                        <div class="mt-4">
                             <div class="accordion accordion-flush" id="acordeonPreguntas">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-heder1">

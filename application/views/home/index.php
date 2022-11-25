@@ -5,7 +5,7 @@
                     <rect width="100%" height="100%" fill="transparent" />
                 </svg> -->
                 <div class="container">
-                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                    <div class="carousel-caption text-start" style="right: 10%;left: 2%;">
                         <div class="text-center">
                             <img src="<?= base_url('assets/img/imgTarjeta1.png') ?>" class="" style="margin-left: -1rem;">
                         </div>                                                
@@ -22,7 +22,7 @@
             </div>
             <div class="carousel-item tarjeta2" style="transition:none">
                 <div class="container">                   
-                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                    <div class="carousel-caption text-start" style="right: 10%;left: 4%;">
                         <div class="text-center" style="margin-top: 5rem !important;">
                             <img src="<?= base_url('assets/img/imgTarjeta2.png') ?>">
                         </div>                         
@@ -39,7 +39,7 @@
                     <rect width="100%" height="100%" fill="transparent" />
                 </svg> -->
                 <div class="container">
-                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">   
+                    <div class="carousel-caption text-start" style="right: 10%;left: 4%;">   
                         <div class="text-center">
                             <img src="<?= base_url('assets/img/imgTarjeta3.png') ?>" class="">
                         </div>                          
@@ -53,7 +53,7 @@
             </div>
             <div class="carousel-item tarjeta4" style="transition:none">
                 <div class="container">                                        
-                    <div class="carousel-caption text-start" style="right: 10%;left: 10%;">
+                    <div class="carousel-caption text-start" style="right: 10%;left: 4%;">
                         <div class="text-center">
                             <img src="<?= base_url('assets/img/imgTarjeta4.png') ?>" class="">
                         </div>                        
