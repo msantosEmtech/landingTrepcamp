@@ -51,7 +51,7 @@
                 
                 let res = JSON.parse(result);
                 if(res){
-                    Swal.fire('se ha enviado un correo de verificación');
+                    Swal.fire('a verification email has been sent');
                         elements.$txtEmail.val("");
                         elements.$txtPassword.val("");
                         elements.$txtPassword2.val("");
@@ -81,7 +81,7 @@
             var data = JSON.parse(result);
 
             if(data != false){
-                var titulo = "Acceso Correcto";
+                var titulo = "Access success";
                 Swal.fire({
                     position: 'center',
                     icon: 'success',

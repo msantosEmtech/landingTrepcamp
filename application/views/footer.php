@@ -85,7 +85,9 @@
             url : '<?= base_url(); ?>'
         };
 </script>
+<?php if (isset($scriptDatePicker)){ echo $scriptDatePicker; }  ?>
 <?php if (isset($scriptAlert)){ echo $scriptAlert; }  ?>
+<?php if(isset($scriptMoment)){echo $scriptMoment;} ?>
 <?php if(isset($scriptVista)){ echo $scriptVista; } ?>
 <?php if(isset($scriptLogin)){ echo $scriptLogin; } ?>
 

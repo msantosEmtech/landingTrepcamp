@@ -120,30 +120,8 @@ class Users extends CI_Model
     }
 
     public function Update($datos, $id){
-
-        $exist = $this->db->query("SELECT Id FROM users WHERE Id <> '.$id.' AND Email ='".$datos['Email']."'");
-
-        $result = $exist->num_rows();
-
-		if($result > 0){
-			return false;
-		}else{
         $where = array('Id' => $id);
-
-        $data = [
-            'Name'          => $datos['Name'],
-            'LastName'      => $datos['LastName'],
-            'Email'         => $datos['Email'],
-            'IdGender'      => $datos['IdGender'],
-            'CountryCode'   => $datos['CountryCode'],
-            'RegisterDate'  => $datos['RegisterDate'],
-            'Birthday'      => $datos['Birthday'],
-            'Password'      => $datos['Password'],
-            'Status'        => $datos['Status']
-        ];
-
-        return $this->db->update("users", $data, $where);
-        }
+        return $this->db->update("users", $datos, $where);
     }
 
     public function Delete($id){

@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
-    <title>Trepcamp | Home</title>
+    <meta name="author" content="TrepCamp 2022">
+    <meta name="generator" content="TrepCamp">
+    <title>Trepcamp | <?= isset($title) ? $title : "" ?></title>
+    <link rel="icon" type="image/x-icon" href="<?= base_url('assets/img/favicon.ico') ?>">    
     <link href="<?= base_url('assets/plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome-free-5.15.4-web/css/all.css') ?>" />
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/slick-1.8.1/slick/slick.css') ?>"/>
@@ -17,7 +18,11 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/custom.css') ?>"/>
-    <?php if(isset($linkVista)){ echo $linkVista; } ?>
+    <?php if(isset($header)){ 
+        foreach ($header as $head) {
+            echo $head;
+        }
+    }?>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -80,88 +85,42 @@
     <link href="<?= base_url('assets/css/carousel.css') ?>" rel="stylesheet">
   </head>
   <body>
-  <aside class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-      <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-5 fw-semibold">Collapsible</span>
-    </a>
-    <ul class="list-unstyled ps-0">
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-          Home
-        </button>
-        <div class="collapse" id="home-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-          Dashboard
-        </button>
-        <div class="collapse" id="dashboard-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-          Orders
-        </button>
-        <div class="collapse" id="orders-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Processed</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Shipped</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Returned</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="border-top my-3"></li>
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-          Account
-        </button>
-        <div class="collapse" id="account-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </aside>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="dropdown text-end">
-                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="<?= isset($fotoPerfil) ? $fotoPerfil : base_url('assets/img/user1.svg') ?>" alt="mdo" width="32" height="32" class="rounded-circle">
-                            </a>
-                            <ul class="dropdown-menu text-small">
-                                <li><a class="dropdown-item" href="#">New project...</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Sign out</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
     
-    <main>
-    
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="<?= base_url('Home') ?>" style="padding-left: 0.2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="120"></a>
+      
+      <div class="dropdown">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="<?= isset($fotoPerfil) ? $fotoPerfil : base_url('assets/img/user1.svg') ?>" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav nav-pills navbar-nav ms-auto mb-2 mb-lg-0 pt-3 pb-3" >
+          <li class="nav-item"><a href="<?= base_url('Intranet/sumary')?>" class="nav-link" aria-current="page"><i class="fas fa-home"></i> Summary</a></li>
+          <li class="nav-item"><a href="<?= base_url('Intranet/payFee')?>" class="nav-link"><i class="fas fa-dollar-sign"></i> Participation fee</a></li>
+          <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-flag"></i> Challenge</a>
+              <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Competencies Challenge</a>
+                  <a href="#" class="dropdown-item">TikTok Viral Challenge</a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>

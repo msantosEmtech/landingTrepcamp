@@ -31,9 +31,15 @@ class Login extends CI_Controller {
             'scriptVista' => '<script src="' . $linkJsVista . '"></script>',
             'scriptLogin' => '<script src="' . $linkJsLogin . '"></script>'
         );
-        $this->load->view('header', $header);
-		$this->load->view('login/index');
-        $this->load->view('footer', $footer);
+
+        if($this->session->userdata('user')){
+			redirect('Profile');
+		}
+		else{
+            $this->load->view('header', $header);
+            $this->load->view('login/index');
+            $this->load->view('footer', $footer);
+        }
 	}
 
     public function signIn(){
