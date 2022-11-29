@@ -63,18 +63,24 @@
                         <div class="d-flex justify-content-center mb-4">
                             <button class="btn btn-primary btnAmarilloStories"><b>Start Challenge</b></button>
                         </div>
-                    <?php }else if ($estado_user > 1 && $estado_user <= 4) {?>
+                    <?php }else if ($estado_user > 1 && $estado_user <=2) {?>
                         <h4 style="color:#FFF;" class="px-5 pt-5">You are currently taking the Challenge</h4>
                         <p style="color:#FFF; font-size:14px;" class="px-5 mb-4">Please move on to step 1 "Participation Fee"</p>
                         <div class="d-flex justify-content-center mb-4">
-                            <button class="btn btn-primary btnAmarilloMeet"><b>Next Step</b></button>
+                            <a href="<?= base_url('Intranet/payFee')?>" class="btn btn-primary btnAmarilloMeet"><b>Next Step</b></a>
                         </div>
-                    <?php }else if ($estado_user == 5 && $all_challenges != 1) {?>
+                    <?php }else if ($estado_user >= 3 && $estado_user <= 4 && $all_challenges == 0) {//escoges un reto independiente de ?>
+                        <h4 style="color:#FFF;" class="px-5 pt-5">You're currently participating in our TrepChallenge</h4>
+                        <p style="color:#FFF; font-size:14px;" class="px-5 mb-4">Please move on to step 2 "Challenge"</p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <a href="<?= base_url('Intranet/takeChallenge')?>" class="btn btn-primary btnAmarilloMeet">Next Step</a>
+                        </div>
+                    <?php }else if ($estado_user >= 5 && $all_challenges == 0) {//escoges un reto independiente de ?>
                         <h4 style="color:#FFF;" class="px-5 pt-5">You're currently participating in our TrepChallenge</h4>
                         <p style="color:#FFF; font-size:14px;" class="px-5 mb-4">Double your chances of winning to make your effort count! Remember you can complete our Entrepreneurial 
                         Competencies Assessment/TikTok Viral Challenge to add another participation entry and increase your chances of becoming a winner.</p>
                         <div class="d-flex justify-content-center mb-4">
-                            <a href="<?= base_url('Intranet/challengeAc')?>" class="btn btn-primary btnAmarilloMeet">Extra Shot</a>
+                            <a href="<?= base_url('Intranet/takeChallenge')?>" class="btn btn-primary btnAmarilloMeet">Extra Shot</a>
                         </div>
                     <?php }else if ($estado_user == 6 && $all_challenges == 1) {//esta seria la vista de closed challeng ?>
                         <h4 style="color:#FFF;" class="px-5 pt-5">Congratulations! You covered all our Challenge steps</h4>

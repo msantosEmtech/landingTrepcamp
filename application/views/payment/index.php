@@ -98,6 +98,17 @@
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col">
+                                            <div id="card-number"></div>
+                                            <div id="card-expiry" style="border: 0.5px solid #D3CFCF; width: 50%; border-radius: 0 0 0 5px; padding: 5px; box-shadow: 1px 2px 2px #A0A0A0; font-family: 'Montserrat';"></div>
+                                            <div id="card-cvc" style="border: 0.5px solid #D3CFCF; width: 50%; border-radius: 0 0 5px 0; padding: 5px; box-shadow: 1px 2px 2px #A0A0A0; font-family: 'Montserrat';"></div>
+                                            <button id="buttonPayStripe" class="botonStripe">pagar</button>
+                                        </div>
+                                        <div id="secTok">
+
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row mb-3">
+                                        <div class="col">
                                             <input type="number" name="pay_cardNumber" class="form-control" placeholder="Card number" aria-label="Card number">
                                         </div>
                                     </div>                                    
@@ -108,7 +119,7 @@
                                         <div class="col">
                                             <input type="text" name="pay_cvv" class="form-control" placeholder="CVV" aria-label="CVV">
                                         </div>
-                                    </div>                                                                                                                                                                                                                                                                                                                                 
+                                    </div>   -->                                                                                                                                                                                                                                                                                                                               
                                 </form>                                                                                                                            
                             </div>                            
 

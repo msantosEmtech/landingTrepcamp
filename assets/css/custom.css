@@ -641,13 +641,32 @@ hr {
 	color: #333333;
 	border-bottom: 10px solid #333333;
 	font-weight: 600;
+}     
+
+
+.ac-seccion{
+	background-image: url('../img/backLineasAzules.png');
+	background-color: rgba(0, 168, 255, 0.05);/* rgb(95%, 98%, 100%) */
 }
 
+.radio-custom{
+    border:2px solid #333333;
+    padding: 6px;
+    -webkit-appearance: none;
+    border-radius: 2px;
+  }
+  
+  .radio-custom:checked {
+    background: url('../img/check-radio.svg') no-repeat center center;
+    background-size: 8px 8px;
+    /* color: blue; */
+  }
+  
+  .radio-custom:focus {
+    outline-color: transparent;
+  }
 
-/* CARRUSEL WINNERS */
 
-
-/* ********* */
 .accordion-button:not(.collapsed) {
     color: #333333; 
     background-color: #FFF; 
