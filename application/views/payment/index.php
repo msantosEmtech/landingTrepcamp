@@ -106,6 +106,7 @@
                                         <div id="secTok">
 
                                         </div>
+                                        <input type="hidden" id="idChapterActive" value="<?= $idChapter ?>" />
                                     </div>
                                     <!-- <div class="row mb-3">
                                         <div class="col">

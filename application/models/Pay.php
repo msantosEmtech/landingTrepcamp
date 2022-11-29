@@ -1,5 +1,5 @@
 <?php
-class Payment extends CI_Model
+class Pay extends CI_Model
 {
     public function __construct()
     {
@@ -46,6 +46,16 @@ class Payment extends CI_Model
         ];
 
         return $this->db->insert("payments", $data);
+    }
+
+    public function validChapterActive(){
+        $sqlProcedure = "CALL `sp_validarChallengeActivo`()";
+        $query_result = $this->db->query($sqlProcedure);
+        $result = $query_result->row_array();
+        $query_result->next_result();
+        $query_result->free_result();
+
+        return $result;
     }
 
 }

@@ -13,7 +13,7 @@
                         <p style="color:#FFF; font-size:14px;" class="mb-4">For 9 days and 8 nights, at New York City valued in $5,000 USD.</p>
                     </div>
                     <div class="d-flex justify-content-center mb-4">
-                        <button class="btn btn-primary btnAmarillo" style="width: 215px !important;"><b>Continue To Payment</b></button>
+                        <a href="<?= base_url('Payment/index?chapter=').$idChapter ?>" class="btn btn-primary btnAmarillo" style="width: 215px !important;"><b>Continue To Payment</b></a>
                     </div>
                 </div>
             </div>

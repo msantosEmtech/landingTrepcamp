@@ -6,11 +6,16 @@ class Intranet extends CI_Controller {
     public function __construct(){
 		parent::__construct();
 
+        if(!$this->session->userdata('user')){
+			redirect(base_url('Login/signIn'));
+		}
+
         header('Access-Control-Allow-Origin: *');
         Header('Access-Control-Allow-Headers: *');
         Header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 
 		$this->load->model('Assessment_model');
+        $this->load->model('Pay');
         
         //Zona horaria
 		date_default_timezone_set('America/Mexico_City');
@@ -18,13 +23,16 @@ class Intranet extends CI_Controller {
 
 	public function sumary()
 	{
+        $user = $this->session->userdata('user');
+        $chapterActive = $this->Pay->validChapterActive();
         //data provicional
         $data['estado_user'] = 4;
-        $data['nombre_user'] = 'Oscar Villicaña';
-        $data['chapter_name'] = 'Business Sense';
-        $data['chapter_date_start'] = 'December 5, 2022'; 
-        $data['chapter_date_ends'] = 'December 16, 2022'; 
-
+        $data['nombre_user'] =  $user['user_name']." ".$user['user_last_name'];
+        $data['chapter_name'] = $chapterActive['chapter_description'];
+        // $data['chapter_date_start'] = 'December 5, 2022'; 
+        // $data['chapter_date_ends'] = 'December 16, 2022'; 
+        $data['descriptionChapterDate'] = $chapterActive['dates_description'];
+        $data['idChapter'] = $chapterActive['dates_id_chapter'];
 
         //challenges
         $data['tiktok_challenge'] = 0;//0 no se completo, 1 se completo
@@ -58,21 +66,25 @@ class Intranet extends CI_Controller {
 
     public function payFee()
 	{
+        $user = $this->session->userdata('user');
+        $chapterActive = $this->Pay->validChapterActive();
         //data provicional
-        $data['estado_user'] = 2;
-        $data['nombre_user'] = 'Oscar Villicaña';
-        $data['chapter_name'] = 'Business Sense';
-        $data['chapter_date_start'] = 'December 5, 2022'; 
-        $data['chapter_date_ends'] = 'December 16, 2022'; 
+        $data['estado_user'] = 1;
+        $data['nombre_user'] = $user['user_name']." ".$user['user_last_name'];
+        $data['chapter_name'] = $chapterActive['chapter_description'];
+        // $data['chapter_date_start'] = 'December 5, 2022'; 
+        // $data['chapter_date_ends'] = 'December 16, 2022'; 
+        $data['descriptionChapterDate'] = $chapterActive['dates_description'];
+        $data['idChapter'] = $chapterActive['dates_id_chapter'];
 
 		$linkJsVista = base_url('assets/js/intranet/participation-fee.js');
 
         $footer = array(
             'scriptVista' => '<script src="' . $linkJsVista . '"></script>'
         );
-        $this->load->view('header');
+        $this->load->view('headerUser');
         //validacion de estado del usuario
-        if ($data['estado_user']<2) {
+        if ($data['estado_user'] < 2) {
             $this->load->view('intranet/sumary', $data);
         }else{
             $this->load->view('intranet/participation-fee', $data);
