@@ -36,14 +36,53 @@
         
         if(resp["codigo"] == 1){
             //modal success
-            alert('complete pay');
+            addPayment(1,200);
         }else{
             //modal error
-            alert('error');
+            var titulo = "payment error";
+            alertaMensajeDenied(titulo);
         }
 
     });
     /* }, 500); */
 
-    
+    function addPayment(idChapter, price){
+        let model = {
+            'IdChapter': idChapter,
+            'Price': price
+        }
+
+        let uriAdd = `${trepcamp.base.url}Payment/Create`;
+        $.post(uriAdd, model, "JSON")
+        .done(function(result){
+            let data = JSON.parse(result);
+            if(data){
+                var titulo = "payment complete";
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: titulo,
+                    showConfirmButton: false,
+                    timer: 1500
+                }).then(result => {
+                    if(result){
+                        window.location.replace(`${trepcamp.base.url}Intranet/sumary`);
+                    }
+                });
+            }else{
+                var titulo = "payment error";
+                alertaMensajeDenied(titulo);
+            }
+        });
+    }
+
+    function alertaMensajeDenied(titulo){
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: titulo,
+            showConfirmButton: false,
+            timer: 1500
+        });
+    };
 }

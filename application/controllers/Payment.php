@@ -3,11 +3,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Payment extends CI_Controller {
 
+    public function __construct(){
+		parent::__construct();
+        
+        if(!$this->session->userdata('user')){
+			redirect(base_url('Login'));
+		}
+        header('Access-Control-Allow-Origin: *');
+        Header('Access-Control-Allow-Headers: *');
+        Header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+
+		$this->load->model('Payment');
+        
+        //Zona horaria
+		date_default_timezone_set('America/Mexico_City');
+	}
+
 	public function index()
 	{
         $linkStripe = base_url('assets/js/payments/stripePayJs/charge.js');
 		$linkJsVista = base_url('assets/js/payments/payment.js');
+        $linkJsAlert = base_url('assets/plugins/sweetalert/sweetalert2.all.min.js');
         $footer = array(
+            'scriptAlert' => '<script src="'.$linkJsAlert.'"></script>',
             'scriptVista' => '<script src="' . $linkJsVista . '"></script>',
             'scriptStripe' => '<script src="' . $linkStripe . '"></script>'
         );
@@ -58,6 +76,28 @@ class Payment extends CI_Controller {
         } catch (Exception $e) {
             echo 2;
             echo "error: " . $e->getMessage();
+        }
+    }
+
+    public function Create(){
+        $user = $this->session->userdata('user');
+
+        $IdChapter = $this->input->post('IdChapter');
+        $Price = $this->input->post('Price');
+
+        $datos = array('IdChapter' => $IdChapter,
+				'IdUser' => $user['user_id'],
+				'Date' => date('Y-m-d H:i:s'),
+				'Price' => $Price,
+				'ConfirmationNumber' => date('Y-m-d H:i:s'));
+
+        $result = $this->Payment->Add($datos);
+
+        if($result){
+            echo json_encode(1);
+            
+        }else{
+            echo json_encode(0);
         }
     }
 }
