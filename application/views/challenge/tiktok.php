@@ -122,6 +122,14 @@
                             <div class="item"><img src="<?= base_url('assets/img/fotoTikTok.png') ?>" style="width: 100%;"></div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="<?= base_url('assets/img/iconTiktok.png') ?>" class="img_fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <p style="font-weight: 400;font-size: 16px;line-height: 26px;color: #474747;">Go to our TikTok account to find out more</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tab-pane fade show row py-2 p-3 pb-4  profileCard" id="upload" role="tabpanel" aria-labelledby="upload-tab">
