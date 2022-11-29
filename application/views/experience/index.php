@@ -27,7 +27,7 @@
                 <h2 class="mb-4">Experience New York City for 9 days and 8 nights</h2>
                 <p class="px-5">Transform your mindset at "the capital of the world" to make a positive impact in your society.</p>
                 <div class="row justify-content-center">
-                    <button class="btn btn-primary btnAmarilloStories"><b>Download Itinerary</b></button>
+                    <button class="btn btn-secundary btnAmarilloStories"><b>Download Itinerary</b></button>
                 </div>
             </div>
             <div class="col-md-7">

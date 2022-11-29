@@ -451,19 +451,21 @@
                 </div>
             </div>
 
-            <div class="row mb-4">
+            <div class="row mb-1">
                 <div class="text-center">
                     <h5 style="color: #333333;"><b>This program is for you if:</b></h5>
-                </div>
+                </div>               
             </div>
             <div class="row text-center">
                 <div class="col">
+                    <hr>
                     <p>
                         <img src="<?= base_url('assets/img/circleCheck.png') ?>">
                     </p>
                     <p style="color: #333333;">You want to strengthen your entrepreneurial skills and mindset before launching your own start up.</p>                   
                 </div>
                 <div class="col">
+                    <hr>
                     <p>
                         <img src="<?= base_url('assets/img/circleCheck.png') ?>">
                     </p>
@@ -577,7 +579,7 @@
         </div>
     </div>
 
-    <div class="section pt-4 pb-4" style="background-color: rgba(0, 168, 255, 0.05);">
+    <!-- <div class="section pt-4 pb-4" style="background-color: rgba(0, 168, 255, 0.05);">
         <div class="container">
             <div class="row text-center">
                 <div class="mb-3">
@@ -603,4 +605,4 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
