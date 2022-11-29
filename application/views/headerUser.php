@@ -92,10 +92,11 @@
       <a class="navbar-brand" href="<?= base_url('Home') ?>" style="padding-left: 0.2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="120"></a>
       
       <div class="dropdown">
-          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <a href="<?= base_url('Profile') ?>" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="<?= isset($fotoPerfil) ? $fotoPerfil : base_url('assets/img/user1.svg') ?>" alt="mdo" width="32" height="32" class="rounded-circle">
           </a>
           <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="<?= base_url('Profile') ?>"><i class="fas fa-id-card"></i> Profile</a></li>
               <li><a class="dropdown-item" href="<?= base_url('Intranet/sumary') ?>"><i class="fas fa-search-plus"></i> TrepChallenge</a></li>
               <li><a class="dropdown-item" href="<?= base_url('Account') ?>"><i class="far fa-user"></i> Account</a></li>
               <li><hr class="dropdown-divider"></li>

@@ -663,3 +663,8 @@ hr {
     border-color: transparent;
     border-bottom: 1px solid #333333;
 }
+
+.iti {
+    position: relative;
+    display: block !important;
+}

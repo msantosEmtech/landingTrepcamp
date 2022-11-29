@@ -14,6 +14,8 @@ class Profile extends CI_Controller {
         Header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 
 		$this->load->model('Users');
+		$this->load->model('Chapters');
+		$this->load->model('ChallengeDetail');
         
         //Zona horaria
 		date_default_timezone_set('America/Mexico_City');
@@ -22,9 +24,28 @@ class Profile extends CI_Controller {
 	public function index()
 	{
         $data['user'] = $this->session->userdata('user');
+		$data['historicChapter'] = $this->Chapters->GetByHistoricByChapterIdUser($data['user']['user_id']);
+		$data['new_historic'] = array();
+		$data['historicDetail'] = $this->ChallengeDetail->GetByDetailByIdUserIdChapter($data['user']['user_id']);
 
         $this->load->view('headerUser');
 		$this->load->view('profile/index',$data);
         $this->load->view('footer');
+	}
+
+	public function downloadVideo(){
+        $this->load->helper('download');
+		$rutaVideo = $this->input->get('urlVideo');
+		
+        // $routeFile = "assets/course/syllabus/syllabusAdministrator.pdf";
+        force_download(FCPATH.$rutaVideo,NULL);
+    }
+
+	public function downloadPaymentComprobant(){
+		$this->load->helper('download');
+		$routeDocument = $this->input->get('urlPayment');
+		
+        // $routeFile = "assets/course/syllabus/syllabusAdministrator.pdf";
+        force_download(FCPATH.$routeDocument,NULL);
 	}
 }
