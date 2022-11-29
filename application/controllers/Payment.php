@@ -13,7 +13,7 @@ class Payment extends CI_Controller {
         Header('Access-Control-Allow-Headers: *');
         Header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 
-		$this->load->model('Payment');
+		$this->load->model('Pay');
         
         //Zona horaria
 		date_default_timezone_set('America/Mexico_City');
@@ -21,6 +21,7 @@ class Payment extends CI_Controller {
 
 	public function index()
 	{
+        $data['idChapter'] = !empty($this->input->get('chapter')) ? $this->input->get('chapter') : "";
         $linkStripe = base_url('assets/js/payments/stripePayJs/charge.js');
 		$linkJsVista = base_url('assets/js/payments/payment.js');
         $linkJsAlert = base_url('assets/plugins/sweetalert/sweetalert2.all.min.js');
@@ -30,8 +31,8 @@ class Payment extends CI_Controller {
             'scriptStripe' => '<script src="' . $linkStripe . '"></script>'
         );
 
-        $this->load->view('header');
-		$this->load->view('payment/index');
+        $this->load->view('headerUser', $data);
+		$this->load->view('payment/index', $data);
         $this->load->view('footer', $footer);
 	}
 
@@ -88,7 +89,7 @@ class Payment extends CI_Controller {
 				'Price' => $Price,
 				'ConfirmationNumber' => date('Y-m-d H:i:s'));
 
-        $result = $this->Payment->Add($datos);
+        $result = $this->Pay->Add($datos);
 
         if($result){
             echo json_encode(1);

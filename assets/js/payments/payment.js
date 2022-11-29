@@ -36,7 +36,7 @@
         
         if(resp["codigo"] == 1){
             //modal success
-            addPayment(1,200);
+            addPayment($("#idChapterActive").val(),$("#totalPayment").text());
         }else{
             //modal error
             var titulo = "payment error";

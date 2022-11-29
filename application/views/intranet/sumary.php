@@ -4,7 +4,7 @@
             <div class="col-md-6 mb-5">
                 <h2 style="color: #00A8FF;">Welcome, <?= $nombre_user ?>!</h2>
                 <p><img style="margin-right: 5px;" src="<?= base_url('assets/img/check-chapter.svg') ?>">Chapter: <?= $chapter_name ?></p>
-                <p><img style="margin-right: 5px;" src="<?= base_url('assets/img/Calendar.svg') ?>">Date: <?= $chapter_date_start ?> to <?= $chapter_date_ends ?></p>
+                <p><img style="margin-right: 5px;" src="<?= base_url('assets/img/Calendar.svg') ?>">Date: <?= $descriptionChapterDate ?></p>
                 <?php if ($estado_user >1 && $estado_user <= 4) {?>
                     <p class="mb-2 mt-5">You are currently taking the Challenge</p>
                     
