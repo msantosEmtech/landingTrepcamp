@@ -93,7 +93,15 @@
                                             <h5>Second enrollment</h5>
                                         <?php }elseif ($historic['row_number_id'] == 3) { ?>
                                             <h5>Third enrollment</h5>
-                                        <?php }?>
+                                        <?php }elseif ($historic['row_number_id'] == 4) { ?>
+                                            <h5>Fourth enrollment</h5>
+                                        <?php }elseif ($historic['row_number_id'] == 5) { ?>
+                                            <h5>Fifth enrollment</h5>
+                                        <?php }elseif ($historic['row_number_id'] == 6) { ?>
+                                            <h5>Sixth enrollment</h5>
+                                        <?php }elseif ($historic['row_number_id'] == 7) { ?>
+                                            <h5>Seventh enrollment</h5>
+                                        <?php } ?>
                                     </div>
                                     <div class="col-5 text-center">
                                         <p style="border: 1px solid #FFD041;border-radius: 12px;padding:0.1rem">Participating</p>
