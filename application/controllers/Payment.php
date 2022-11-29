@@ -39,9 +39,6 @@ class Payment extends CI_Controller {
     public function payOnStripe(){
         require_once('application/libraries/stripePayLib/init.php');
         // CLAVE PRIVADA
-        //test key: sk_test_51K6jXeHe7k83l43GZryV5UIWwY7jKNbrRqnbbPklZ8XNVydXeRPMCeno7JkmmbeFUEKrYm02igM4cZmpC8tMoMR200YOn4CGjh
-        //live key: sk_live_0Y39ZQ3aVH7MOit2NUaTfWAs00EXkrnkQU
-
         \Stripe\Stripe::setApiKey('sk_test_51K6jXeHe7k83l43GZryV5UIWwY7jKNbrRqnbbPklZ8XNVydXeRPMCeno7JkmmbeFUEKrYm02igM4cZmpC8tMoMR200YOn4CGjh');
 
         $token = $this->input->post('stripeToken');

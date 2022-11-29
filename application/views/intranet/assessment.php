@@ -1,4 +1,4 @@
-<section class="secction pt-5 pb-5">
+<section class="secction pt-5 pb-5" id="instrucctions">
     <div class="container">
         <div class="col-md-12 seccion1-sumary">
             <div class="row">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-md-12 mt-5">
                     <div class="d-flex justify-content-center mb-4">
-                        <button class="btn btn-primary btnAmarilloStories"><b>Start Assessment</b></button>
+                        <button id="start_AC" class="btn btn-primary btnAmarilloStories"><b>Start Assessment</b></button>
                     </div>
                 </div>
             </div>
@@ -31,19 +31,18 @@
 </section>
 
 
-<section class="secction pt-5 pb-5">
+<section class="secction pb-5" id="AC" style="display: none;">
     <div class="container ac-seccion">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-center align-content-center">
+                <div class="col-md-6 align-items-center col-md-6 d-flex justify-content-center">
+                    <div class="mt-5">
                         <img src="<?= base_url('assets/img/ac-icon.png') ?>" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div id="wizard_container" class="px-1 mt-5 mb-4">
                         <form>
-
                             <div id="middle-wizard">
                                 <?php foreach ($arr_ac as $question) { ?>
                                     <div class="step" id="ask<?= $question['question_id'] ?>" hidden>
@@ -82,14 +81,14 @@
                                     
 
                                 <?php } ?>
-                                <hr>
+                                <hr style="height: 5px !important;">
                                 <div class="d-flex justify-content-between">
                                     <button id="btnAtras" type="button" name="backward" class="backward btnAmarilloJoin"><b style="color: #FFF;">Back</b></button>
                                     <p  class="mt-2"><a id="contador">1</a>/<a id="num_preguntas"></a></p>
                                     <button id="btnContinuar" type="button" name="forward" class="forward btnAmarilloJoin"><b style="color: #FFF;">Next</b></button>
                                 </div>
                                 <div class="col-md-12 d-flex justify-content-center mt-4">
-                                    <button id="btnSend" type="submit" name="process" class="submit btnAmarillo"hidden><b style="color: #FFF;">Send</b></button>
+                                    <button id="btnSend" name="process" class="submit btnAmarillo"hidden><b style="color: #FFF;">Send</b></button>
                                 </div>
                             </div>
                         </form>

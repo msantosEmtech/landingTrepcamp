@@ -72,4 +72,15 @@
     })
 
 
+    $('#start_AC').click(function() {
+        $("#instrucctions").fadeOut(250);
+        $("#AC").fadeIn(1350);
+    });
+    
+    /* const start_AC = ()=>{
+        $("#instrucctions").fadeOut(250);
+        $("#AC").fadeIn(1350);
+    } */
+
 })(window.jQuery); 
+

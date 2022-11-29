@@ -1,7 +1,3 @@
-// Stripe API Key CLAVE PUBLICA
-//test key: pk_test_51K6jXeHe7k83l43GJq6Jx5uSkT2QcQYG8vvPYFoGlDIDFW00CER9fxTlnf1QlCh3hMJRgpBNcfzjVlOEh4usft1X00CORAeGgD 	
-//live key: pk_live_xC3WsiOZD9OF7nEfE01EB62M00hLBzwdsG
-
 	var stripe = Stripe('pk_test_51K6jXeHe7k83l43GJq6Jx5uSkT2QcQYG8vvPYFoGlDIDFW00CER9fxTlnf1QlCh3hMJRgpBNcfzjVlOEh4usft1X00CORAeGgD');
 	var elements = stripe.elements();
 	// Custom Styling
