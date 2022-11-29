@@ -49,4 +49,8 @@ class ChallengeDetail extends CI_Model
         return $result;
     }
 
+    public function Add($datos){
+        return $this->db->insert("user_challenge_details", $datos);
+    }
+
 }

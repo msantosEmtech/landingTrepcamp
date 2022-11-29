@@ -117,7 +117,7 @@
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-flag"></i> Challenge</a>
               <div class="dropdown-menu">
                   <a href="#" class="dropdown-item">Competencies Challenge</a>
-                  <a href="#" class="dropdown-item">TikTok Viral Challenge</a>
+                  <a href="<?= base_url('ChallengeTiktok') ?>" class="dropdown-item">TikTok Viral Challenge</a>
               </div>
           </li>
         </ul>
