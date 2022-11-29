@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css') ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css') ?>"/>
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> 
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/custom.css') ?>"/>
@@ -86,7 +87,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="<?= base_url('Home') ?>" style="padding-left: 0.2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="120"></a>
+      <a class="navbar-brand" href="<?= base_url('Home') ?>" style="padding-left: 0.2rem;"><img src="<?=base_url('assets/img/logoTrepcamp.png')?>" width="125"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -94,11 +95,10 @@
         <ul class="nav nav-pills navbar-nav ms-auto mb-2 mb-lg-0 pt-3 pb-3" >
           <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Our story</a></li>
           <li class="nav-item"><a href="<?= base_url('Experience')?>" class="nav-link">Experience</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Simulator</a></li>
           <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
           <li class="nav-item"><a href="<?= base_url('Login') ?>" class="nav-link">Account</a></li>
-          <li class="nav-item"><button class="btn btn-primary btnAmarillo" type="submit">Join challenge</button></li>
+          <li class="nav-item plbtn"><a class="btn btn-primary btnAmarillo" href="<?= base_url('Login') ?>">Join challenge</a></li>
         </ul>
       </div>
     </div>
