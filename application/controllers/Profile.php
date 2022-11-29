@@ -23,12 +23,13 @@ class Profile extends CI_Controller {
 
 	public function index()
 	{
+		$data['title'] = "Profile";
         $data['user'] = $this->session->userdata('user');
 		$data['historicChapter'] = $this->Chapters->GetByHistoricByChapterIdUser($data['user']['user_id']);
 		$data['new_historic'] = array();
 		$data['historicDetail'] = $this->ChallengeDetail->GetByDetailByIdUserIdChapter($data['user']['user_id']);
 
-        $this->load->view('headerUser');
+        $this->load->view('headerUser', $data);
 		$this->load->view('profile/index',$data);
         $this->load->view('footer');
 	}

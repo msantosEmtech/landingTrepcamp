@@ -115,6 +115,13 @@
                             <p style="font-weight: 400;font-size: 16px;line-height: 26px;color: #474747;">Get inspired watching our TikTok examples for this “Business Sense” Chapter.</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div id="owl-tiktok" class="owl-carousel owl-theme">
+                            <div class="item"><img src="<?= base_url('assets/img/fotoTikTok.png') ?>" style="width: 100%;"></div>
+                            <div class="item"><img src="<?= base_url('assets/img/fotoTikTok.png') ?>" style="width: 100%;"></div>
+                            <div class="item"><img src="<?= base_url('assets/img/fotoTikTok.png') ?>" style="width: 100%;"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tab-pane fade show row py-2 p-3 pb-4  profileCard" id="upload" role="tabpanel" aria-labelledby="upload-tab">
@@ -123,3 +130,18 @@
             </div>
         </div>
     </div>
+
+    <style>
+        .owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+.owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+    </style>

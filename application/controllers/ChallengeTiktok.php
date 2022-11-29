@@ -26,9 +26,17 @@ class ChallengeTiktok extends CI_Controller {
         $data['user'] = $this->session->userdata('user');
         $data['title'] = "Challenge Tiktok";
 
+        $linkJsVista = base_url('assets/js/challenge/tiktok.js');
+        $linkJsAlert = base_url('assets/plugins/sweetalert/sweetalert2.all.min.js');
+
+        $footer = array(
+            'scriptAlert' => '<script src="'.$linkJsAlert.'"></script>',
+            'scriptVista' => '<script src="' . $linkJsVista . '"></script>'
+        );
+
         $this->load->view('headerUser',$data);
 		$this->load->view('challenge/tiktok',$data);
-        $this->load->view('footer');
+        $this->load->view('footer', $footer);
 	}
 
     public function AddTiktok(){
