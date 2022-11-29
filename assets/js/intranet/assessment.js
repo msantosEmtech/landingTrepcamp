@@ -41,14 +41,13 @@
 
     $('#btnContinuar').click(function () {
         if (ask_current == num_preguntas) {
-            $('#btnSend').attr({
-                'hidden':false
-            });
-        }else{
+            $("#AC").fadeOut(250);
+            $("#video-up").fadeIn(1350);
+        }/* else{
             $('#btnSend').attr({
                 'hidden':true
             });
-        }
+        } */
         if (ask_current >= 1 && ask_current < num_preguntas) {
             if ($('.radio' + ask_current + ':checked').length > 0) {
                 ask_current++;
@@ -77,10 +76,19 @@
         $("#AC").fadeIn(1350);
     });
     
-    /* const start_AC = ()=>{
-        $("#instrucctions").fadeOut(250);
-        $("#AC").fadeIn(1350);
-    } */
+    $('#btnSend').click(function() {
+
+    });
+
+    $('#launch-file').click(function() {
+        $('#ac-vid').click();
+    });
+
+    $('#ac-vid').change(function () {
+        $('#launch-file').text("File selected successfully");
+    });
+
+
 
 })(window.jQuery); 
 
