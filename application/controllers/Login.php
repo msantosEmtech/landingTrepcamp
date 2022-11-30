@@ -4,7 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Login extends CI_Controller {
 
     public function __construct(){
-        
 		parent::__construct();
 
         header('Access-Control-Allow-Origin: *');
@@ -20,57 +19,32 @@ class Login extends CI_Controller {
 	public function index()
 	{
 		$linkJsVista = base_url('assets/js/show-password-toggle.min.js');
-        $linkJsLogin = base_url('assets/js/login/login.js');
         $linkCssVista = base_url('assets/css/show-password-toggle.min.css');
-        $linkJsAlert = base_url('assets/plugins/sweetalert/sweetalert2.all.min.js');
         $header = array(
             'linkVista' => '<link rel="stylesheet" type="text/css" href="'.$linkCssVista.'"/>'
         );
 
         $footer = array(
-            'scriptAlert' => '<script src="'.$linkJsAlert.'"></script>',
-            'scriptVista' => '<script src="' . $linkJsVista . '"></script>',
-            'scriptLogin' => '<script src="' . $linkJsLogin . '"></script>'
+            'scriptVista' => '<script src="' . $linkJsVista . '"></script>'
         );
-
-        if($this->session->userdata('user')){
-			redirect('Profile');
-		}
-		else{
-            $this->load->view('header', $header);
-            $this->load->view('login/index');
-            $this->load->view('footer', $footer);
-        }
+        $this->load->view('header', $header);
+		$this->load->view('login/index');
+        $this->load->view('footer', $footer);
 	}
 
     public function signIn(){
-        
-        $this->load->library('session');
-
         $linkJsVista = base_url('assets/js/show-password-toggle.min.js');
-        $linkJsLogin = base_url('assets/js/login/login.js');
         $linkCssVista = base_url('assets/css/show-password-toggle.min.css');
-        $linkJsAlert = base_url('assets/plugins/sweetalert/sweetalert2.all.min.js');
         $header = array(
             'linkVista' => '<link rel="stylesheet" type="text/css" href="'.$linkCssVista.'"/>'
         );
 
         $footer = array(
-            
-            'scriptAlert' => '<script src="'.$linkJsAlert.'"></script>',
-            'scriptVista' => '<script src="' . $linkJsVista . '"></script>',
-            'scriptLogin' => '<script src="' . $linkJsLogin . '"></script>'
+            'scriptVista' => '<script src="' . $linkJsVista . '"></script>'
         );
-
-		//restrict users to go back to login if session has been set
-		if($this->session->userdata('user')){
-			redirect('Profile');
-		}
-		else{
-			$this->load->view('header', $header);
-            $this->load->view('login/signIn');
-            $this->load->view('footer', $footer);
-		}
+        $this->load->view('header', $header);
+		$this->load->view('login/signIn');
+        $this->load->view('footer', $footer);
     }
 
     public function Insert(){
@@ -156,12 +130,18 @@ class Login extends CI_Controller {
         $data = $this->Users->GetByCredentials($email, $password);
 
         if(isset($data) && $data != null){
+            if($data['user_name'] != null && $data['user_name'] != ""){
+                $datosRes = array('status' => 1);
+            }else{
+                $datosRes = array('status' => 2);
+            }
             $this->session->set_userdata('user', $data);
-            echo json_encode(true);
+            echo json_encode($datosRes);
         }
         else{
-            echo json_encode(false);
-        } 
+            $datosRes = array('status' => 0);
+            echo json_encode($datosRes);
+        }
     }
 
     public function logOut(){
