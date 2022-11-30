@@ -2,17 +2,10 @@
   trepcamp = trepcamp ? trepcamp : {};
   
   const sendPayStripe = () => {
-    /*  let total = totalPagoStripe;
-     //totalPagoStripe.replace(".00", "");
-     total = totalPagoStripe.replace(",", "");
-     console.log(total); */
+  
     let dato = "";
-    let total = 100;
-    //total = 100;
+    let total = 50;//total del challenge
     let token = $('#stripeToken').val();
-   let mail = 'oscar@valencia.emtech.digital';
-      /*let cardsName = $('#cardName').val(); */
-    let customer = 1;
 
     let hoy = new Date();
     let fecha = hoy.getDate() + '-' + (hoy.getMonth() + 1) + '-' + hoy.getFullYear();
@@ -25,18 +18,16 @@
         url: `${trepcamp.base.url}Payment/payOnStripe`,
         data: {
             total: total,
-            stripeToken: token,
-            customerMail: mail,
-            idCustomer: customer,
+            stripeToken: token
         }
     }).done(function(data) {
         //data;
         let resp = JSON.parse(data);
-        console.log(resp["codigo"], total, resp["stripeId"], fechaYHora);
-        
+        //console.log(resp["codigo"], total, resp["stripeId"], fechaYHora);
         if(resp["codigo"] == 1){
+            //console.log(resp["stripeId"]);
             //modal success
-            addPayment($("#idChapterActive").val(),$("#totalPayment").text());
+            addPayment($("#idChapterActive").val(),$("#totalPayment").text(), resp["stripeId"]);
         }else{
             //modal error
             var titulo = "payment error";
@@ -44,12 +35,12 @@
         }
 
     });
-    /* }, 500); */
 
-    function addPayment(idChapter, price){
+    function addPayment(idChapter, price, id_pay_stripe){
         let model = {
             'IdChapter': idChapter,
-            'Price': price
+            'Price': price,
+            'id_pay_confirm': id_pay_stripe
         }
 
         let uriAdd = `${trepcamp.base.url}Payment/Create`;
@@ -63,7 +54,7 @@
                     icon: 'success',
                     title: titulo,
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 3500
                 }).then(result => {
                     if(result){
                         window.location.replace(`${trepcamp.base.url}Intranet/sumary`);
@@ -85,4 +76,7 @@
             timer: 1500
         });
     };
+
+
+
 }

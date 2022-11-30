@@ -44,8 +44,11 @@ class Pay extends CI_Model
             'Price'                 => $datos['Price'],
             'ConfirmationNumber'    => $datos['ConfirmationNumber']
         ];
-
-        return $this->db->insert("payments", $data);
+        $this->db->insert("payments", $data);
+        //el id de pago
+        $insertId = $this->db->insert_id();
+        return $insertId;
+        
     }
 
     public function validChapterActive(){

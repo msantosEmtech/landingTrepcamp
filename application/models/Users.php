@@ -136,7 +136,7 @@ class Users extends CI_Model
         if($result > 0){
             $where = array('Email' => $email);
             $data = [
-                'Status'        => 1
+                'Status'  => 1
             ];
             return $this->db->update("users", $data, $where);
         }else{

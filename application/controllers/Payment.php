@@ -14,6 +14,7 @@ class Payment extends CI_Controller {
         Header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 
 		$this->load->model('Pay');
+        $this->load->model('User_chapter');
         
         //Zona horaria
 		date_default_timezone_set('America/Mexico_City');
@@ -44,8 +45,6 @@ class Payment extends CI_Controller {
 
         $token = $this->input->post('stripeToken');
         $total  = $this->input->post('total');
-        $userId = $this->input->post('idCustomer');
-        $mail = $this->input->post('customerMail');
 
         $code = "";
         $idStripe = "";
@@ -58,7 +57,7 @@ class Payment extends CI_Controller {
                 array(
                     'amount' => intval($total) * 100,
                     'currency' => "USD",
-                    'source' => $token,
+                    'source' => $token        
                 )
             );
 
@@ -82,18 +81,29 @@ class Payment extends CI_Controller {
 
         $IdChapter = $this->input->post('IdChapter');
         $Price = $this->input->post('Price');
+        $id_confirm_pay = $this->input->post('id_pay_confirm');
 
-        $datos = array('IdChapter' => $IdChapter,
+        $datos = array(
+                'IdChapter' => $IdChapter,
 				'IdUser' => $user['user_id'],
 				'Date' => date('Y-m-d H:i:s'),
 				'Price' => $Price,
-				'ConfirmationNumber' => date('Y-m-d H:i:s'));
+				'ConfirmationNumber' => $id_confirm_pay);
 
         $result = $this->Pay->Add($datos);
 
         if($result){
-            echo json_encode(1);
-            
+            $datos = array(
+                'IdPayment' => $result
+            );
+
+            $resultUpdate = $this->User_chapter->completePayment($datos, $user['user_id'], $IdChapter);
+
+            if ($resultUpdate) {
+                //done update del perfil
+                echo json_encode(1);
+            }
+
         }else{
             echo json_encode(0);
         }

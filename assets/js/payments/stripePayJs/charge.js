@@ -23,7 +23,7 @@
 	//* field card number 
 	var cardNumber = elements.create('cardNumber',{
 		style: style,
-		placeholder: "1234 1234 1234 1234",
+		placeholder: "Card number",
 		showIcon: true
 	});
 	cardNumber.mount('#card-number');
