@@ -67,7 +67,7 @@ class Intranet extends CI_Controller {
     public function payFee()
 	{
         $user = $this->session->userdata('user');
-        $chapterActive = $this->Pay->validChapterActive();
+        $chapterActive = $this->Pay->validChapterActive(); 
         //data provicional
         $data['estado_user'] = 1;
         $data['nombre_user'] = $user['user_name']." ".$user['user_last_name'];
