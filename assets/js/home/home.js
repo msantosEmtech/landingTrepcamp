@@ -151,3 +151,15 @@
     });
 
     feed.run();
+
+
+    $( document ).ready(function() {
+			    
+		if(!localStorage.getItem('complete1') ){
+            $('#modalCorreo').modal('toggle');
+            localStorage.setItem('complete1', 1); 
+        }else{
+        }        
+     
+        
+    });

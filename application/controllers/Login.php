@@ -3,73 +3,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 
-    public function __construct(){
-		parent::__construct();
-
-        header('Access-Control-Allow-Origin: *');
-        Header('Access-Control-Allow-Headers: *');
-        Header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-
-		$this->load->model('Users');
-        
-        //Zona horaria
-		date_default_timezone_set('America/Mexico_City');
-	}
-
 	public function index()
 	{
 		$linkJsVista = base_url('assets/js/show-password-toggle.min.js');
-        $linkJsLogin = base_url('assets/js/login/login.js');
         $linkCssVista = base_url('assets/css/show-password-toggle.min.css');
-        $linkJsAlert = base_url('assets/plugins/sweetalert/sweetalert2.all.min.js');
         $header = array(
             'linkVista' => '<link rel="stylesheet" type="text/css" href="'.$linkCssVista.'"/>'
         );
 
         $footer = array(
-            'scriptAlert' => '<script src="'.$linkJsAlert.'"></script>',
-            'scriptVista' => '<script src="' . $linkJsVista . '"></script>',
-            'scriptLogin' => '<script src="' . $linkJsLogin . '"></script>'
+            'scriptVista' => '<script src="' . $linkJsVista . '"></script>'
         );
-
-        if($this->session->userdata('user')){
-			redirect('Profile');
-		}
-		else{
-            $this->load->view('header', $header);
-            $this->load->view('login/index');
-            $this->load->view('footer', $footer);
-        }
+        $this->load->view('header', $header);
+		$this->load->view('login/index');
+        $this->load->view('footer', $footer);
 	}
 
     public function signIn(){
-        
-        $this->load->library('session');
-
         $linkJsVista = base_url('assets/js/show-password-toggle.min.js');
-        $linkJsLogin = base_url('assets/js/login/login.js');
         $linkCssVista = base_url('assets/css/show-password-toggle.min.css');
-        $linkJsAlert = base_url('assets/plugins/sweetalert/sweetalert2.all.min.js');
         $header = array(
             'linkVista' => '<link rel="stylesheet" type="text/css" href="'.$linkCssVista.'"/>'
         );
 
         $footer = array(
-            
-            'scriptAlert' => '<script src="'.$linkJsAlert.'"></script>',
-            'scriptVista' => '<script src="' . $linkJsVista . '"></script>',
-            'scriptLogin' => '<script src="' . $linkJsLogin . '"></script>'
+            'scriptVista' => '<script src="' . $linkJsVista . '"></script>'
         );
-
-		//restrict users to go back to login if session has been set
-		if($this->session->userdata('user')){
-			redirect('Profile');
-		}
-		else{
-			$this->load->view('header', $header);
-            $this->load->view('login/signIn');
-            $this->load->view('footer', $footer);
-		}
+        $this->load->view('header', $header);
+		$this->load->view('login/signIn');
+        $this->load->view('footer', $footer);
     }
 
     public function Insert(){
