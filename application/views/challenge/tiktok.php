@@ -216,21 +216,21 @@
                         <p class="mt-4">You’ll get access to our next step if guidelines are followed correctly.</p>
                     </div>
 
-                    <form class="profileForm">
+                    <form id="formTiktok" class="profileForm">
                         <div class="row mb-3 mt-2">
                             <div class="col-12 mb-4">
-                                <input type="text" name="tiktok_username" class="form-control"
+                                <input type="text" id="tiktok_username" name="tiktok_username" class="form-control"
                                     placeholder="TikTok username" aria-label="TikTok username">
                             </div>
                             <div class="col-12 mb-3">
-                                <input type="text" name="tiktok_link" class="form-control"
+                                <input type="text" id="tiktok_link" name="tiktok_link" class="form-control"
                                     placeholder="Paste TikTok link (generated from the app)"
                                     aria-label="Paste TikTok link (generated from the app)">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-12 formInput">
-                                <input type="file">
+                                <input id="file_video" name="file_video" type="file">
                                 <p style="margin-bottom:1.5rem"><img src="<?=base_url('assets/img/upload.svg') ?>"
                                         style="width: 40px;padding-right: 1rem;">Upload
                                     original video
@@ -247,8 +247,8 @@
                                 </div>
                             </div>
                             <div class="col-12 pt-4">
-                                <button type="submit" class="btn btn-primary btnSend"
-                                    style="background: #FFD041;border-radius: 25px;width:180px"><b>Upload
+                                <button type="submit" id="btnSaveChallenge" class="btn btn-primary btnSend"
+                                    style="background: #FFD041;border-radius: 25px;width:180px" disabled="disabled"><b>Upload
                                         TikTok</b></button>
                             </div>
                         </div>
@@ -275,3 +275,39 @@
     opacity: .75;
 }
 </style>
+
+<div id="modalCongratulations" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="<?= base_url('assets/img/iconCheckTiktok.png') ?>" ><p style="color: #474747;font-weight: 600;font-size: 16px;line-height: 26px;">Congratulations!</p></h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <p>Your submission for our TikTok Viral Challenge was received successfully and was approved. You're now participating to win our TikTok Category prize. </p>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button id="btnGoChallenge" type="button" class="btn btn-primary btnAmarillo">Go to challenge</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modalErrorTiktok" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="<?= base_url('assets/img/iconErrorTiktok.png') ?>" ><p style="color: #474747;font-weight: 600;font-size: 16px;line-height: 26px;">Your participation could not be processed</p></h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <p>There was a problem loading your TikTok, please upload it again.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button id="btnGoChallenge2" type="button" class="btn btn-primary btnAmarillo">Go to challenge</button>
+      </div>
+    </div>
+  </div>
+</div>

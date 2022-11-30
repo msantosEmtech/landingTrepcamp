@@ -41,7 +41,9 @@ class ChallengeTiktok extends CI_Controller {
 
     public function AddTiktok(){
         
-        $idUserChapter = $this->input->post('IdUserChapter');
+        // $idUserChapter = $this->input->post('IdUserChapter');
+        $user = $this->session->userdata('user');
+        $user_chaper_activo = $this->Chapters->GetByIdUser($user['user_id']);
 		$tiktokUserName = $this->input->post('UserNameTiktok');
         $tiktokLink = $this->input->post('UrlTiktok');
 		
@@ -51,10 +53,10 @@ class ChallengeTiktok extends CI_Controller {
 		if(!empty($_FILES["file_video"])){
 			$video = $_FILES["file_video"];
 				$this->guardarArchivo($video,$rutaArchivo);
-				$rutaGuardar = "assest/videos_tiktok/".$video['name'];
+				$rutaGuardar = "assets/videos_tiktok/".$video['name'];
 
                 $datos = array(
-                    'IdUserChapter' => $idUserChapter,
+                    'IdUserChapter' => $user_chaper_activo['id_chapter'],
                     'IdTypeChallenge' => 1,
                     'PathVideo' => $rutaGuardar,
                     'UrlTiktok' => $tiktokLink,
@@ -66,6 +68,9 @@ class ChallengeTiktok extends CI_Controller {
 
 				$result = $this->ChallengeDetail->Add($datos);
                 if($result){
+                    $res = array('IdStatus' => 6);
+
+                    $this->Chapters->Update($res,$user_chaper_activo['id_chapter']);
                     $result = true;
                 }else{
                     $result = false;
@@ -116,8 +121,8 @@ class ChallengeTiktok extends CI_Controller {
     }
 
     private function guardarArchivo($archivo,$ruta){
-        $rutaArchivo = "assest/".$ruta.$archivo["name"];
-        $RESULT = @move_uploaded_file($archivo["tmp_name"], $rutaArchivo);
+        $rutaArchivo = "assets/".$ruta.$archivo["name"];
+        $RESULT = move_uploaded_file($archivo["tmp_name"], $rutaArchivo);
 
         return $RESULT;
     }

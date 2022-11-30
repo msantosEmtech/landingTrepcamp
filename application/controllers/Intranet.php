@@ -90,7 +90,7 @@ class Intranet extends CI_Controller {
         $footer = array(
             'scriptVista' => '<script src="' . $linkJsVista . '"></script>'
         );
-        $this->load->view('header');
+        $this->load->view('headerUser');
 		$this->load->view('intranet/sumary', $data);
         $this->load->view('footer', $footer);
 	}
