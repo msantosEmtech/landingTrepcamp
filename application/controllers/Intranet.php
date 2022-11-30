@@ -231,7 +231,6 @@ class Intranet extends CI_Controller {
         $this->load->view('footer', $footer);
     }
 
-
     public function AddUserChallenge(){
         $id_estatus = $this->input->post('id_estatus');
         $id_chapter_active = $this->Chapters->GetChapterActive();
@@ -249,6 +248,14 @@ class Intranet extends CI_Controller {
         echo json_encode($result);
 
     }
+
+    public function toolkit(){
+        $this->load->view('header');
+        $this->load->view('intranet/toolkit');
+        $this->load->view('footer');
+    }
+
+
 
     
 }

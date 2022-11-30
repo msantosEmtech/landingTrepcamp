@@ -57,7 +57,7 @@
                     timer: 3500
                 }).then(result => {
                     if(result){
-                        window.location.replace(`${trepcamp.base.url}Intranet/sumary`);
+                        window.location.replace(`${trepcamp.base.url}Intranet/toolkit`);//congratulations
                     }
                 });
             }else{
