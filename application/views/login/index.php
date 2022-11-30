@@ -62,9 +62,9 @@
                                 </div>
                             </div>
                             <div class="row pt-3 pb-3">
-                                <form id="formSignUp">
+                                <form>
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" id="txtEmail" placeholder="Email" autocomplete="username" required>
+                                        <input type="email" class="form-control" id="txtEmail" placeholder="Email" autocomplete="username">
                                     </div>
                                     <div class="mb-3 input-group">
                                         <input type="password" id="txtPassword" name="current-password" autocomplete="current-password" spellcheck="false" autocorrect="off" autocapitalize="off" class="form-control" placeholder="Password" required>
@@ -88,7 +88,7 @@
                                     </div>
                                     <div class="mb-3 text-center">
                                         <div class="d-grid gap-2">
-                                            <button type="submit" id="btnSignUp" class="btn btn-light" style="background-color: #ffd041;"><span style="color: #FFFFFF;font-weight: 700;">Sign up</span></button>
+                                            <button type="submit" class="btn btn-light" style="background-color: #ffd041;"><span style="color: #FFFFFF;font-weight: 700;">Sign up</span></button>
                                         </div>
                                     </div>
                                     <div class="mb-3 text-center">
