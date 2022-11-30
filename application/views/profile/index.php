@@ -13,8 +13,8 @@
                     <img src="<?= base_url('assets/img/profile/defaultProfile.png') ?>" style="width:80px;height:80px">
                 </div>
                 <div class="col-9 my-auto profileName">
-                    <h5 style="color:#333333"><?= $user['user_name'] ?></h5>
-                    <h5 style="color:#6A6A6A"><?= $user['user_last_name'] ?></h5>
+                    <h5 style="color:#333333"><?= $info_profile['user_name'] ?></h5>
+                    <h5 style="color:#6A6A6A"><?= $info_profile['user_last_name'] ?></h5>
                 </div>                
             </div>
             <div class="row py-3">
@@ -45,19 +45,19 @@
                                 <form class="profileForm">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Name</label>
-                                        <input type="text" class="form-control" id="name" value="<?= $user['user_name'] ?>" disabled>
+                                        <input type="text" class="form-control" id="name" value="<?= $info_profile['user_name'] ?>" disabled>
                                     </div>
                                     <div class="mb-3">
                                         <label for="last_name" class="form-label">Last name</label>
-                                        <input type="text" class="form-control" id="last_name" value="<?= $user['user_last_name'] ?>" disabled>
+                                        <input type="text" class="form-control" id="last_name" value="<?= $info_profile['user_last_name'] ?>" disabled>
                                     </div>
                                     <div class="mb-3">
                                         <label for="birthdate" class="form-label">Birthdate</label>
-                                        <input type="text" class="form-control" id="birthdate" value="<?= $user['user_birthday'] ?>" disabled>
+                                        <input type="text" class="form-control" id="birthdate" value="<?= $info_profile['user_birthday'] ?>" disabled>
                                     </div>
                                     <div class="mb-3">
                                         <label for="gender" class="form-label">Gender</label>
-                                        <input type="text" class="form-control" id="gender" value="<?= $user['user_gender_description'] ?>" disabled>
+                                        <input type="text" class="form-control" id="gender" value="<?= $info_profile['user_gender_description'] ?>" disabled>
                                     </div>
                                     <!-- <div class="mb-3">
                                         <label for="country_code" class="form-label">Country code</label>
@@ -65,7 +65,7 @@
                                     </div> -->
                                     <div class="mb-3">
                                         <label for="phone" class="form-label">Phone</label>
-                                        <input type="text" class="form-control" id="phone" value="<?= $user['user_phone'] ?>" disabled>
+                                        <input type="text" class="form-control" id="phone" value="<?= $info_profile['user_phone'] ?>" disabled>
                                     </div>                                                                                                                                                                                   
                                 </form>                                                                                                                            
                             </div>

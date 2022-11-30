@@ -37,4 +37,25 @@ class Chapters extends CI_Model
         return $result;
     }
 
+    public function GetByIdUser($idUser){
+        $sqlChapter = 'SELECT 
+        user_chapters.Id as id_chapter, user_chapters.IdPayment as id_payment_chapter, user_chapters.IdStatus as user_estatus_chapter 
+        FROM `user_chapters` INNER JOIN `chapter_dates` on chapter_dates.IdChapter = user_chapters.IdChapter WHERE user_chapters.IdUser = '.$idUser.' AND 
+        now() BETWEEN chapter_dates.start and chapter_dates.end';
+
+        $query_result = $this->db->query($sqlChapter);
+        $result = $query_result->row_array();
+
+        return $result;
+
+    }
+
+    public function GetChapterActive(){
+        $sqlChapter = 'SELECT chapter_dates.IdChapter as id_chapter FROM `chapter_dates` WHERE now() BETWEEN chapter_dates.start and chapter_dates.end';
+        $query_result = $this->db->query($sqlChapter);
+        $result = $query_result->row_array();
+
+        return $result;
+    }
+
 }

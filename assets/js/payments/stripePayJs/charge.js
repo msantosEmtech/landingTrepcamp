@@ -8,7 +8,7 @@
 			lineHeight: '24px',
 			/* fontFamily: 'Montserrat !important', */
 			fontSmoothing: 'antialiased',
-			fontSize: '16px',
+			fontSize: '15px',
 			/* '::placeholder': {
 				color: '#aab7c4'
 			}, */
@@ -31,14 +31,14 @@
 	//* field card expire 
 	var cardExpiry = elements.create('cardExpiry',{
 		style: style,
-		placeholder: "MM/AA"
+		placeholder: "Expiration date"
 	});
 	cardExpiry.mount('#card-expiry');
 
 	//* field card cvc 
 	var cardCvc = elements.create('cardCvc',{
 		style: style,
-		placeholder: "CVC"
+		placeholder: "CVV"
 	});
 	cardCvc.mount('#card-cvc');
 

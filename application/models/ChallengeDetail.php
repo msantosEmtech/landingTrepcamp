@@ -53,4 +53,29 @@ class ChallengeDetail extends CI_Model
         return $this->db->insert("user_challenge_details", $datos);
     }
 
+
+    public function Tiktok_active($idUser){
+        $sql_tiktok = 'SELECT user_challenge_details.Id as bool_tiktok FROM user_challenge_details INNER JOIN user_chapters 
+        ON user_chapters.Id = user_challenge_details.IdUserChapter AND user_challenge_details.IdTypeChallenge = 1 
+        INNER JOIN chapter_dates on chapter_dates.IdChapter = user_chapters.IdChapter AND now() BETWEEN chapter_dates.start and chapter_dates.end 
+        WHERE user_chapters.IdUser ='.$idUser;
+
+        $query_result = $this->db->query($sql_tiktok);
+        $result = $query_result->row_array();
+
+        return $result;
+    }
+
+    public function Assessment_active($idUser){
+        $sql_assessment = 'SELECT user_challenge_details.Id as bool_tiktok FROM user_challenge_details INNER JOIN user_chapters 
+        ON user_chapters.Id = user_challenge_details.IdUserChapter AND user_challenge_details.IdTypeChallenge = 2
+        INNER JOIN chapter_dates on chapter_dates.IdChapter = user_chapters.IdChapter AND now() BETWEEN chapter_dates.start and chapter_dates.end 
+        WHERE user_chapters.IdUser ='.$idUser;
+
+        $query_result = $this->db->query($sql_assessment);
+        $result = $query_result->row_array();
+
+        return $result;
+    }
+    
 }

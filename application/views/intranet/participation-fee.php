@@ -71,7 +71,7 @@
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="d-flex justify-content-center mb-4 mt-5">
-                                <button class="btn btn-primary btnAmarillo" style="width: 215px !important;"><b>Continue To Payment</b></button>
+                                <a href="<?= base_url('Payment/index?chapter=').$idChapter ?>" class="btn btn-primary btnAmarillo" style="width: 215px !important;"><b>Continue To Payment</b></a>
                             </div>
                         </div>
                     </div>

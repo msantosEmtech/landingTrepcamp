@@ -61,7 +61,7 @@
                         <h4 style="color:#FFF;" class="px-5 pt-5">Are you ready to start our TrepChallenge?</h4>
                         <p style="color:#FFF; font-size:14px;" class="px-5 mb-4">Get ready to prove your communication and personal competencies to win an all-paid unique experience to transform your mindset at New York City.</p>
                         <div class="d-flex justify-content-center mb-4">
-                            <button class="btn btn-primary btnAmarilloStories"><b>Start Challenge</b></button>
+                            <button id="start_challenges" class="btn btn-primary btnAmarilloStories"><b>Start Challenge</b></button>
                         </div>
                     <?php }else if ($estado_user > 1 && $estado_user <=2) {?>
                         <h4 style="color:#FFF;" class="px-5 pt-5">You are currently taking the Challenge</h4>

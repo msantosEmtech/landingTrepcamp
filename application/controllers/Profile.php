@@ -22,9 +22,10 @@ class Profile extends CI_Controller {
 	}
 
 	public function index()
-	{
+	{		
 		$data['title'] = "Profile";
         $data['user'] = $this->session->userdata('user');
+		$data['info_profile'] = $this->Users->GetById($data['user']['user_id']);
 		$data['historicChapter'] = $this->Chapters->GetByHistoricByChapterIdUser($data['user']['user_id']);
 		$data['new_historic'] = array();
 		$data['historicDetail'] = $this->ChallengeDetail->GetByDetailByIdUserIdChapter($data['user']['user_id']);
