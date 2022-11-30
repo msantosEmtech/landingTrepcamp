@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/landingTrepcamp/';
-/* $config['base_url'] = 'http://localhost/TrepCamp_git/landingTrepcamp' */;
+/* $config['base_url'] = 'http://localhost:8080/landingTrepcamp/'; */
+$config['base_url'] = 'http://localhost/TrepCamp_git/landingTrepcamp';
 
 /*
 |--------------------------------------------------------------------------
@@ -327,7 +327,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/userguide3/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'M/XP=abX9`:\^I+R(+5h}lWlcWG9+()$';
 
 /*
 |--------------------------------------------------------------------------
