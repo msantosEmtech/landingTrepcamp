@@ -58,4 +58,9 @@ class Chapters extends CI_Model
         return $result;
     }
 
+    public function Update($datos, $id){
+        $where = array('Id' => $id);
+        return $this->db->update("user_chapters", $datos, $where);
+    }
+
 }
