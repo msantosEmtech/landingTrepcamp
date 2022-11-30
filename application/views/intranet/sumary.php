@@ -88,7 +88,7 @@
                         applications until December 16, 2022. You're at the final stretch of joining our Experience Program at New York City, yet remember 
                         to check constantly your registered email, where we'll notify if you won our TrepChallenge.</p>
                         <div class="d-flex justify-content-center mb-4">
-                            <button class="btn btn-primary btnAmarillo"><b>See Last Chapters Winners</b></button>
+                            <button class="btn btn-primary btnAmarillo" style="width: auto!important;"><b>See Last Chapters Winners</b></button>
                         </div>
                     <?php }?>
                     </div>

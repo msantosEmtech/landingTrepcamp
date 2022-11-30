@@ -68,13 +68,24 @@ class ChallengeTiktok extends CI_Controller
 
 
 				$result = $this->ChallengeDetail->Add($datos);
-                if($result){
-                    $res = array('IdStatus' => 6);
+                $result_challenge = $this->ChallengeDetail->AllChallenges($user_chaper_activo['id_chapter']);
 
-                    $this->Chapters->Update($res,$user_chaper_activo['id_chapter']);
-                    $result = true;
+                if($result_challenge['status_challenge'] == 5){
+                    if($result){
+                        $res = array('IdStatus' => 6);
+                        $this->Chapters->Update($res,$user_chaper_activo['id_chapter']);
+                        $result = true;
+                    }else{
+                        $result = false;
+                    }
                 }else{
-                    $result = false;
+                    if($result){
+                        $res = array('IdStatus' => 5);
+                        $this->Chapters->Update($res,$user_chaper_activo['id_chapter']);
+                        $result = true;
+                    }else{
+                        $result = false;
+                    }
                 }
 		}else{
             $result = false;
@@ -84,21 +95,22 @@ class ChallengeTiktok extends CI_Controller
     }
 
     public function AddAssessment(){
-        
-        $idUserChapter = $this->input->post('IdUserChapter');
+        /* $idUserChapter = $this->input->post('IdUserChapter'); */
+        $user = $this->session->userdata('user');
 		$AssessmentResult = $this->input->post('AssessmentResult');
+        $user_chaper_activo = $this->Chapters->GetByIdUser($user['user_id']);
         $AssessmentSubmissionDate = $this->input->post('AssessmentSubmissionDate');
 		
-		$rutaArchivo = "videos_assessment/";
+		$rutaArchivo = "videos_ac/";
 		
 
 		if(!empty($_FILES["file_video"])){
 			$video = $_FILES["file_video"];
 				$this->guardarArchivo($video,$rutaArchivo);
-				$rutaGuardar = "assest/videos_assessment/".$video['name'];
+				$rutaGuardar = "assets/videos_ac/".$video['name'];
 
                 $datos = array(
-                    'IdUserChapter' => $idUserChapter,
+                    'IdUserChapter' => $user_chaper_activo['id_chapter'],
                     'IdTypeChallenge' => 2,
                     'PathVideo' => $rutaGuardar,
                     'UrlTiktok' => null,
@@ -107,13 +119,29 @@ class ChallengeTiktok extends CI_Controller
                     'AssessmentSubmissionDate' => $AssessmentSubmissionDate
                 );
 
-
 				$result = $this->ChallengeDetail->Add($datos);
-                if($result){
-                    $result = true;
+                $result_challenge = $this->ChallengeDetail->AllChallenges($user_chaper_activo['id_chapter']);
+
+                $result = $user_chaper_activo['id_chapter'];
+                if($result_challenge['status_challenge'] == 5){
+                    if($result){
+                        $res = array('IdStatus' => 6);
+                        $this->Chapters->Update($res,$user_chaper_activo['id_chapter']);
+                        $result = true;
+                    }else{
+                        $result = false;
+                    }
                 }else{
-                    $result = false;
+                    if($result){
+                        $res = array('IdStatus' => 5);
+                        $this->Chapters->Update($res,$user_chaper_activo['id_chapter']);
+                        $result = true;
+                    }else{
+                        $result = false;
+                    }
                 }
+
+                
 		}else{
             $result = false;
         }

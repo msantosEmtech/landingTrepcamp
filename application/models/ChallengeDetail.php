@@ -77,5 +77,15 @@ class ChallengeDetail extends CI_Model
 
         return $result;
     }
+
+    public function AllChallenges($idChapter){
+        $sql_challenge = 'SELECT user_chapters.IdStatus as status_challenge FROM `user_chapters` WHERE Id ='.$idChapter;
+        
+        $query_result = $this->db->query($sql_challenge);
+        $result = $query_result->row_array();
+
+        return $result;
+
+    }
     
 }

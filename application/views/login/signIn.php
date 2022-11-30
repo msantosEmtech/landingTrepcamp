@@ -20,12 +20,12 @@
                                 </div>
                             </div>
                             <div class="row pt-3 pb-3">
-                                <form>
+                                <form id="formSignIn">
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" id="txtEmail" placeholder="Email" autocomplete="username">
+                                        <input type="email" class="form-control" id="txtEmailSignIn" placeholder="Email" autocomplete="username" required>
                                     </div>
                                     <div class="mb-3 input-group">
-                                        <input type="password" id="txtPassword" name="current-password" autocomplete="current-password" spellcheck="false" autocorrect="off" autocapitalize="off" class="form-control" placeholder="Password" required>
+                                        <input type="password" id="txtPasswordSignIn" name="current-password" autocomplete="current-password" spellcheck="false" autocorrect="off" autocapitalize="off" class="form-control" placeholder="Password" required>
                                         <button id="toggle-password" type="button" class="d-none"></button>
                                     </div>
                                     <div class="mb-1 form-check">
@@ -40,7 +40,7 @@
                                     
                                     <div class="mb-3 text-center">
                                         <div class="d-grid gap-2">
-                                            <button type="submit" class="btn btn-light" style="background-color: #ffd041;"><span style="color: #FFFFFF;font-weight: 700;">Sign in</span></button>
+                                            <button type="submit" id="btnSignIn" class="btn btn-light" style="background-color: #ffd041;"><span style="color: #FFFFFF;font-weight: 700;">Sign in</span></button>
                                         </div>
                                     </div>
                                     <div class="mb-3 text-center">

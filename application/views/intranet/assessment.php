@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-md-6">
                     <div id="wizard_container" class="px-1 mt-5 mb-4">
-                        <form>
+                        <form id="formAC">
                             <div id="middle-wizard">
                                 <?php foreach ($arr_ac as $question) { ?>
                                     <div class="step" id="ask<?= $question['question_id'] ?>" hidden>
@@ -120,7 +120,7 @@
                             <div class="w-100 p-3 text-center uploads"  style="background-color: rgba(165, 165, 165, 0.12);">
                                 <p id="launch-file" class="m-0"><img src="<?= base_url('assets/img/upload.svg')?>"><b style="padding-left: 10px;"<u>Upload</u></b> original video file</p>
                             </div>
-                            <input type="file" id="ac-vid" accept="video/*" name="video-ac">
+                            <input type="file" id="ac-vid" accept="video/*" name="ac-vid">
                         </div>
                         <hr style="height: 5px !important;">
                         
@@ -133,3 +133,39 @@
         </div>
     </div>
 </section>
+
+<div id="modalCongratulations" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="<?= base_url('assets/img/iconCheckTiktok.png') ?>" ><p style="color: #474747;font-weight: 600;font-size: 16px;line-height: 26px;">Congratulations!</p></h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <p>Your submission for our Entrepreneurial Competencies Assessment was received successfully. You're now participating to win our Assessment Category prize. </p>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button id="btnGoChallenge" type="button" class="btn btn-primary btnAmarillo">Go to challenge</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modalErrorTiktok" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="<?= base_url('assets/img/iconErrorTiktok.png') ?>" ><p style="color: #474747;font-weight: 600;font-size: 16px;line-height: 26px;">Your participation could not be processed</p></h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <p>There was a problem loading your result, please upload it again.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button id="btnGoChallenge2" type="button" class="btn btn-primary btnAmarillo">Go to challenge</button>
+      </div>
+    </div>
+  </div>
+</div>

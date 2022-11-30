@@ -69,13 +69,33 @@ class Intranet extends CI_Controller {
         }else{
             $data['all_challenges'] = 0;//falta algun reto de completar
         }
-       
-        if ($data['estado_user'] < 3) {
-            $progreso = 0;
-        }else if ($data['estado_user'] >= 3) {
-            $progreso = 50;
-        }else {
-            $progreso = 100;
+
+        switch ($data['estado_user']) {
+            case 1:
+                $progreso = 0;
+            break;
+            case 2:
+                $progreso = 0;
+            break;
+            case 3:
+                $progreso = 50;
+            break;
+            case 4:
+                $progreso = 50;
+            break;
+            case 5:
+                $progreso = 100;
+            break;
+            case 6:
+                $progreso = 100;
+            break;
+            case 7:
+                $progreso = 100;
+            break;
+            
+            default:
+                $progreso = 0;
+            break;
         }
 
         if ($progreso <= 9) {
@@ -210,7 +230,6 @@ class Intranet extends CI_Controller {
         $this->load->view('intranet/assessment',$data);
         $this->load->view('footer', $footer);
     }
-
 
 
     public function AddUserChallenge(){
