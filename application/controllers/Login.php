@@ -155,12 +155,18 @@ class Login extends CI_Controller {
         $data = $this->Users->GetByCredentials($email, $password);
 
         if(isset($data) && $data != null){
+            if($data['user_name'] != null && $data['user_name'] != ""){
+                $datosRes = array('status' => 1);
+            }else{
+                $datosRes = array('status' => 2);
+            }
             $this->session->set_userdata('user', $data);
-            echo json_encode(true);
+            echo json_encode($datosRes);
         }
         else{
-            echo json_encode(false);
-        } 
+            $datosRes = array('status' => 0);
+            echo json_encode($datosRes);
+        }
     }
 
     public function logOut(){

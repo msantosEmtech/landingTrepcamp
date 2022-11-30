@@ -80,7 +80,21 @@
         .done(function(result){
             var data = JSON.parse(result);
 
-            if(data != false){
+            if(data.status == 1){
+                var titulo = "Access success";
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: titulo,
+                    showConfirmButton: false,
+                    timer: 1500
+                }).then(result => {
+                    if(result){
+                        window.location.replace(`${trepcamp.base.url}Intranet/sumary`);
+                    }
+                });
+                
+            }else if(data.status == 2){
                 var titulo = "Access success";
                 Swal.fire({
                     position: 'center',
@@ -97,7 +111,6 @@
             }else{
                 var titulo = "Email or password Incorrect";
                 alertaMensajeDenied(titulo);
-                
             }
         });
     });
