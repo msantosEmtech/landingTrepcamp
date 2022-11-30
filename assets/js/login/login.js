@@ -45,23 +45,89 @@
                 'password': elements.$txtPassword.val().trim()
             }
 
-            
-            $.post(uris.add, model, "JSON")
-            .done(function(result){
-                
-                let res = JSON.parse(result);
-                if(res){
-                    Swal.fire('a verification email has been sent');
+            $.ajax({
+                type: 'POST',
+                url:  uris.add,
+                data: model,
+                // here
+                beforeSend: function() {
+                    swal.fire({
+                        html: '<h5>Loading...</h5>',
+                        showConfirmButton: false,
+                        onRender: function() {
+                             // there will only ever be one sweet alert open.
+                            $('.swal2-content').prepend(sweet_loader);
+                        }
+                    });
+                },
+                success: function(json) {
+                    try {
+                        json = JSON.parse(json);
+                    }
+                    catch(error) {
+                        Swal.fire({
+                                position: 'center',
+                                icon: 'error',
+                                title: 'Ups!!',
+                                text: 'your email is already registered',
+                                confirmButtonColor: '#FFD041',
+                                showClass: {
+                                    popup: 'animate__animated animate__zoomInDown'
+                                },
+                                hideClass: {
+                                    popup: 'animate__animated animate__zoomOutUp'
+                                }
+                            });
+                    }
+                    if(json == 1){
+                        Swal.fire('a verification email has been sent');
+                            elements.$txtEmail.val("");
+                            elements.$txtPassword.val("");
+                            elements.$txtPassword2.val("");
+                    }else if(json == -1){
+                        swal.fire({
+                            icon: 'error',
+                            html: '<h5>your email is already registered</h5>'
+                        });
                         elements.$txtEmail.val("");
                         elements.$txtPassword.val("");
                         elements.$txtPassword2.val("");
-                }else{
-                    Swal.fire('error');
-                    elements.$txtEmail.val("");
+                    }
+                    else if(json == 0){
+                        swal.fire({
+                            icon: 'error',
+                            html: '<h5>a verification email has not been sent</h5>'
+                        });
+                        elements.$txtEmail.val("");
                         elements.$txtPassword.val("");
                         elements.$txtPassword2.val("");
+                    }
+                },
+                error: function() {
+                    swal.fire({
+                        icon: 'error',
+                        html: '<h5>Error!</h5>'
+                    });
+                    return false;
                 }
             });
+
+            // $.post(uris.add, model, "JSON")
+            // .done(function(result){
+                
+            //     let res = JSON.parse(result);
+            //     if(res){
+            //         Swal.fire('a verification email has been sent');
+            //             elements.$txtEmail.val("");
+            //             elements.$txtPassword.val("");
+            //             elements.$txtPassword2.val("");
+            //     }else{
+            //         Swal.fire('error');
+            //         elements.$txtEmail.val("");
+            //             elements.$txtPassword.val("");
+            //             elements.$txtPassword2.val("");
+            //     }
+            // });
 
         }else{
             Swal.fire('no is same password');
