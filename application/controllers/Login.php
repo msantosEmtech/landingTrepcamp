@@ -3,6 +3,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 
+    public function __construct(){
+        
+		parent::__construct();
+
+        header('Access-Control-Allow-Origin: *');
+        Header('Access-Control-Allow-Headers: *');
+        Header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+
+		$this->load->model('Users');
+        
+        //Zona horaria
+		date_default_timezone_set('America/Mexico_City');
+	}
+
 	public function index()
 	{
 		$linkJsVista = base_url('assets/js/show-password-toggle.min.js');
