@@ -21,3 +21,10 @@
         });
 
 }());
+
+
+$(document).ready(function() {
+    $('.formInput input').change(function() {
+        $('.formInput p').text("File selected successfully");
+    });
+});
