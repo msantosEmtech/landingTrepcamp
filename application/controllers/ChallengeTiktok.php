@@ -121,8 +121,8 @@ class ChallengeTiktok extends CI_Controller {
     }
 
     private function guardarArchivo($archivo,$ruta){
-        $rutaArchivo = "assest/".$ruta.$archivo["name"];
-        $RESULT = @move_uploaded_file($archivo["tmp_name"], $rutaArchivo);
+        $rutaArchivo = "assets/".$ruta.$archivo["name"];
+        $RESULT = move_uploaded_file($archivo["tmp_name"], $rutaArchivo);
 
         return $RESULT;
     }

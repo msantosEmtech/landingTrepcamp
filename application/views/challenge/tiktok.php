@@ -230,7 +230,7 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-12 formInput">
-                                <input id="videoTiktok" type="file">
+                                <input id="file_video" name="file_video" type="file">
                                 <p style="margin-bottom:1.5rem"><img src="<?=base_url('assets/img/upload.svg') ?>"
                                         style="width: 40px;padding-right: 1rem;">Upload
                                     original video

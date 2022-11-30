@@ -29,7 +29,7 @@
 
     elements.$formTiktok.on("submit", function(e){
         e.preventDefault();
-        let fileVideo = typeof $("#videoTiktok")[0] === 'undefined' ? "" :$("#videoTiktok")[0].files[0];
+        let fileVideo = typeof $("#file_video")[0] === 'undefined' ? "" :$("#file_video")[0].files[0];
         let username = elements.$tiktok_username.val();
         let linktiktok = elements.$tiktok_link.val();
 
